@@ -9,5 +9,5 @@
 * 深度学习的方向：被应用在图像处理与计算机视觉，自然语言处理以及语音识别等领域。
 #### 机器学习算法概览
 <p align="center">
-<img width="100%" align="center" src="../images/overview.png" />
+<img width="100%" align="center" src="assets/images/overview.png" />
 </p>
