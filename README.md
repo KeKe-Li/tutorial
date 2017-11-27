@@ -12,6 +12,8 @@
 <img width="100%" align="center" src="assets/images/overview.png" />
 </p>
 
+ * [BP算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BP.md)
+
 
 
 ### 机器学习教程
