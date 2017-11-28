@@ -17,7 +17,7 @@
 从2017年10月19日，Nature上发表了新一代AlphaGo版本AlphaGo Zero的技术论文。指出一种仅基于强化学习的算法，AlphaGo Zero不使用人类的数据、指导或规则以外的领域知识成了自己的老师。DeepMind代表了目前人工智能领域最强的技术，其核心是两个字：算法。
 很多人都想成为一个AI开发者，不仅是因为AI开发的薪资高，更主要是因为AI这几年的快速发展。
 
- * [BP算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BP.md)
+ * [BP算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BP/BP.md)
 
 
 #### 参考书籍
