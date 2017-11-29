@@ -9,7 +9,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 神经网络由大量的节点（或称神经元）之间相互联接构成，每个节点代表一种特定的输出函数，称为激活函数（activation function）；每两个节点间的连接都代表一个对于通过该连接信号的加权值，称之为权重（weight），神经网络就是通过这种方式来模拟人类的记忆。网络的输出则取决于网络的结构、网络的连接方式、权重和激活函数。而网络自身通常都是对自然界某种算法或者函数的逼近，也可能是对一种逻辑策略的表达，是对传统逻辑学演算的进一步延伸。
 
 <p align="center">
-<img width="300" align="center" src="../../images/1.gif" />
+<img width="300" align="center" src="../../images/1.jpg" />
 </p>
 
 
@@ -24,28 +24,28 @@ B-P算法的网络结构是一个前向多层网络,其基本思想是，学习�
 BP网络的拓扑结构包括输入层、隐层和输出层，它能够在事先不知道输入输出具体数学表达式的情况下，通过学习来存储这种复杂的映射关系．其网络中参数的学习通常采用反向传播的策略，借助最速梯度信息来寻找使网络误差最小化的参数组合．常见的3层BP网络模型如图所示
 
 <p align="center">
-<img width="300" align="center" src="../../images/2.gif" />
+<img width="300" align="center" src="../../images/2.jpg" />
 </p>
 
 其中，各节点的传递函数f必须满足处处可导的条件，最常用的为Sigmoid函数，第i个神经元的净输入为nwti，输出为Oi．如果网络输出层第k个神经元的期望输出为yk*，则网络的平方型误差函数为
 <p align="center">
-<img width="300" align="center" src="../../images/3.gif" />
+<img width="300" align="center" src="../../images/3.jpg" />
 </p>
 
 由于BP算法按照误差函数E的负梯度修改权值，故权值的更新公式可表示为:
 <p align="center">
-<img width="300" align="center" src="../../images/4.gif" />
+<img width="300" align="center" src="../../images/4.jpg" />
 </p>
 
 其中，t表示迭代次数， 对于输出层神经元权值的更新公式为：
 <p align="center">
-<img width="300" align="center" src="../../images/5.gif" />
+<img width="300" align="center" src="../../images/5.jpg" />
 </p>
 
 其中，δk称作输出层第k 个神经元的学习误差．对隐含层神经元权值的更新公式为：
 
 <p align="center">
-<img width="300" align="center" src="../../images/6.gif" />
+<img width="300" align="center" src="../../images/6.jpg" />
 </p>
 
 其中，δj称作隐含层第j个神经元的学习误差．BP的误差反向传播思想可以概括为：利用输出层的误差来估计出其直接前导层的误差，再借助于这个新的误差来计算更前一层的误差，按照这样的方式逐层反传下去便可以得到所有各层的误差估计。
