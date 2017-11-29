@@ -26,3 +26,26 @@ BP网络的拓扑结构包括输入层、隐层和输出层，它能够在事先
 <p align="center">
 <img width="300" align="center" src="../../images/2.gif" />
 </p>
+
+其中，各节点的传递函数f必须满足处处可导的条件，最常用的为Sigmoid函数，第i个神经元的净输入为nwti，输出为Oi．如果网络输出层第k个神经元的期望输出为yk*，则网络的平方型误差函数为
+<p align="center">
+<img width="300" align="center" src="../../images/3.gif" />
+</p>
+
+由于BP算法按照误差函数E的负梯度修改权值，故权值的更新公式可表示为:
+<p align="center">
+<img width="300" align="center" src="../../images/4.gif" />
+</p>
+
+其中，t表示迭代次数， 对于输出层神经元权值的更新公式为：
+<p align="center">
+<img width="300" align="center" src="../../images/5.gif" />
+</p>
+
+其中，δk称作输出层第k 个神经元的学习误差．对隐含层神经元权值的更新公式为：
+
+<p align="center">
+<img width="300" align="center" src="../../images/6.gif" />
+</p>
+
+其中，δj称作隐含层第j个神经元的学习误差．BP的误差反向传播思想可以概括为：利用输出层的误差来估计出其直接前导层的误差，再借助于这个新的误差来计算更前一层的误差，按照这样的方式逐层反传下去便可以得到所有各层的误差估计。
