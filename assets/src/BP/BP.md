@@ -34,7 +34,7 @@ BP网络的拓扑结构包括输入层、隐层和输出层，它能够在事先
 
 由于BP算法按照误差函数E的负梯度修改权值，故权值的更新公式可表示为:
 <p align="center">
-<img width="300" align="center" src="../../images/4.jpg" />
+<img width="100" align="center" src="../../images/4.jpg" />
 </p>
 
 其中，t表示迭代次数， 对于输出层神经元权值的更新公式为：
