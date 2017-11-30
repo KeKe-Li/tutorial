@@ -32,6 +32,7 @@
  * [BIRCH]()
  * [Prefixspan]()
  * [PageRank]()
+ * [AdaBoost]()
 
 
 
