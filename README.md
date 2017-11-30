@@ -31,6 +31,7 @@
  * [协同过滤]()
  * [BIRCH]()
  * [Prefixspan]()
+ * [PageRank]()
 
 
 
