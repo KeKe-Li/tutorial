@@ -17,7 +17,19 @@
 从2017年10月19日，Nature上发表了新一代AlphaGo版本AlphaGo Zero的技术论文。指出一种仅基于强化学习的算法，AlphaGo Zero不使用人类的数据、指导或规则以外的领域知识成了自己的老师。DeepMind代表了目前人工智能领域最强的技术，其核心是两个字：算法。
 很多人都想成为一个AI开发者，不仅是因为AI开发的薪资高，更主要是因为AI这几年的快速发展,但是因为AI本身的门槛就比较高,很多人可能就会比较徘徊，因而想把自己学习AI的过程写成本书,共大家参考和学习！
 
- * [BP算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BP/BP.md)
+ * [BP神经网络](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BP/BP.md)
+ * [RBF算法]()
+ * [SOM神经网络]()
+ * [ART神经网络]()
+ * [贝叶斯网络]()
+ * [粗糙集]()
+ * [孤立点分析]()
+ * [CART]()
+ * [EM]()
+ * [FP—tree]()
+ * [GSP序列]()
+ * [协同过滤]()
+
 
 
 #### 参考书籍
