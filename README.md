@@ -33,6 +33,13 @@
  * [Prefixspan]()
  * [PageRank]()
  * [AdaBoost]()
+ * [CBA]()
+ * [KNN]()
+ * [Hopfield神经网络]()
+ * [决策树]()
+ * [聚类分析]()
+ * [关联规则]()
+ * [支持向量机（SVM）]()
 
 
 
