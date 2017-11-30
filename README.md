@@ -18,7 +18,7 @@
 很多人都想成为一个AI开发者，不仅是因为AI开发的薪资高，更主要是因为AI这几年的快速发展,但是因为AI本身的门槛就比较高,很多人可能就会比较徘徊，因而想把自己学习AI的过程写成本书,共大家参考和学习！
 
  * [BP神经网络](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BP/BP.md)
- * [RBF算法]()
+ * [RBF算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RBF/RBF.md)
  * [SOM神经网络]()
  * [ART神经网络]()
  * [贝叶斯网络]()
