@@ -22,3 +22,7 @@ RBF(Radial Basis Function，径向基函数)是某种沿径向对称的标量函
 中为函数中心向量，为宽度向量。高斯函数的作用域表现出局部性，即当远离时函数取值较小。
 
 如下图所示，RBF 神经网络的结构从左至右分为三层，依次是输入层、隐含层和输出层：
+
+<p align="center">
+<img width="300" align="center" src="../../images/8.jpg" />
+</p>
