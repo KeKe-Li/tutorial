@@ -26,3 +26,14 @@ RBF(Radial Basis Function，径向基函数)是某种沿径向对称的标量函
 <p align="center">
 <img width="300" align="center" src="../../images/8.jpg" />
 </p>
+
+RBF神经网络结构图
+
+网络的输出如下式所示：
+
+<p align="center">
+<img width="300" align="center" src="../../images/9.jpg" />
+</p>
+
+
+
