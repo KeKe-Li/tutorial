@@ -19,7 +19,7 @@
 
  * [BP神经网络](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BP/BP.md)
  * [RBF算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RBF/RBF.md)
- * [SOM神经网络]()
+ * [SOM神经网络](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/SOM/SOM.md)
  * [ART神经网络]()
  * [贝叶斯网络]()
  * [粗糙集]()
