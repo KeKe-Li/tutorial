@@ -38,3 +38,6 @@ d.SOM网络运行原理
 <p align="center">
 <img width="100" align="center" src="../../images/11.jpg" />
 </p>
+<p align="center">
+<img width="100" align="center" src="../../images/18.jpg" />
+</p>
