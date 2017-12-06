@@ -41,3 +41,5 @@ d.SOM网络运行原理
 <p align="center">
 <img width="100" align="center" src="../../images/18.jpg" />
 </p>
+* Nj(t)的形状变化情况
+
