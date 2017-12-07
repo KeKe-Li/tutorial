@@ -61,3 +61,9 @@ d.SOM网络运行原理
 <p align="center">
 <img width="200" align="center" src="../../images/21.jpg" />
 </p>
+
+④ 选择有最小距离的节点Nj*为竞争获胜节点
+<p align="center">
+<img width="200" align="center" src="../../images/22.jpg" />
+</p>
+
