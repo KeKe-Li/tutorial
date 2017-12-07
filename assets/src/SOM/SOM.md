@@ -52,3 +52,7 @@ d.SOM网络运行原理
 <p align="center">
 <img width="200" align="center" src="../../images/19.jpg" />
 </p>
+② 对网络输入一个样本模式。
+<p align="center">
+<img width="200" align="center" src="../../images/20.jpg" />
+</p>
