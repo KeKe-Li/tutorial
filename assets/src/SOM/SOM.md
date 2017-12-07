@@ -64,10 +64,16 @@ d.SOM网络运行原理
 
 ④ 选择有最小距离的节点Nj*为竞争获胜节点
 <p align="center">
-<img width="100" align="center" src="../../images/22.jpg" />
+<img width="200" align="center" src="../../images/22.jpg" />
 </p>
 
 ⑤ 调整权值
 <p align="center">
 <img width="100" align="center" src="../../images/23.jpg" />
 </p>
+其中，0＜α(t)＜1，为增益函数，随着时间t而递减。β(Nj,Nj*)，随着Nj*距离递减。
+⑥ 若还有输入样本则转②，当所有的样本输入完，且满足：
+<p align="center">
+<img width="100" align="center" src="../../images/24.jpg" />
+</p>
+
