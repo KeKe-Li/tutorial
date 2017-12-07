@@ -67,3 +67,7 @@ d.SOM网络运行原理
 <img width="200" align="center" src="../../images/22.jpg" />
 </p>
 
+⑤ 调整权值
+<p align="center">
+<img width="200" align="center" src="../../images/23.jpg" />
+</p>
