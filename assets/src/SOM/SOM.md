@@ -50,5 +50,5 @@ d.SOM网络运行原理
 
 ① 连接权值的初始化
 <p align="center">
-<img width="100" align="center" src="../../images/19.jpg" />
+<img width="200" align="center" src="../../images/19.jpg" />
 </p>
