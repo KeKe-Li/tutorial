@@ -56,3 +56,8 @@ d.SOM网络运行原理
 <p align="center">
 <img width="200" align="center" src="../../images/20.jpg" />
 </p>
+
+③ 计算Xk与全部输出节点间的权值向量W的距离
+<p align="center">
+<img width="200" align="center" src="../../images/21.jpg" />
+</p>
