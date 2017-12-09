@@ -16,7 +16,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 贝叶斯网络的分析流程通常由三个步骤组成，即(1)网络建立,(2)参数学习或参数设置,(3)网络推理，如图所示.
 <p align="center">
-<img width="200" align="center" src="../../images/25.jpg" />
+<img width="400" align="center" src="../../images/25.jpg" />
 </p>
 
 贝叶斯网络分析流程
@@ -42,17 +42,17 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 贝叶斯网络是一种用于描述变量间不确定性因果关系的图形网络模型，由节点、有向连线和节点概率表组成，其中有向连线代表节点间的因果依赖关系．由于网络结构要求节点之间不能形成任何闭环，所以贝叶斯网络模型也被称作有向无环图．下图是一个简单的贝叶斯网络模型，包含４个节点（或称变量），每个节点有2个状态（true or not true）.
 
 <p align="center">
-<img width="200" align="center" src="../../images/26.jpg" />
+<img width="400" align="center" src="../../images/26.jpg" />
 </p>
 
 <p align="center">
-<img width="300" align="center" src="../../images/27.jpg" />
+<img width="400" align="center" src="../../images/27.jpg" />
 </p>
 
 表1和表2是2个边界节点Ａ，B的先验概率表，表３和表４是节点C，D的条件概率表．利用这个模型可以推算出给定证据下任何节点的概率，其基本原理是贝叶斯理论．例如，如果知道节点C发生了，即C＝true，要计算节点A的概率，因为节点C 和A相关，相当于计算条件概率:
 
 <p align="center">
-<img width="100" align="center" src="../../images/28.jpg" />
+<img width="400" align="center" src="../../images/28.jpg" />
 </p>
 
 从表１和表３知道P(A)＝0.1和P(C| A)=0.8,所以上式的分子等于0.08，其分母是边界概率P(C)，由于节点C只和节点A有关系，所以有 P(C)= P(C| A)P(A)+ P(C| notA)×P(notA)＝0.8×0.1＋0.1×0.9＝0.17． 把以上值代入式(1)得到P(A| C)＝0.471．
@@ -60,7 +60,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 如果要计算节点D的概率，由于节点D和节点A、B相关，根据边界概率的定义有:
 
 <p align="center">
-<img width="100" align="center" src="../../images/29.jpg" />
+<img width="400" align="center" src="../../images/29.jpg" />
 </p>
 
 在没有任何证据提供给网络的情况下有初始边界概率为
