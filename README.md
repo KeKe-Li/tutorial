@@ -8,6 +8,12 @@
 * 机器学习的应用：语音识别，自动驾驶，语言翻译，计算机视觉，推荐系统，无人机，识别垃圾邮件，人脸识别，电商推荐系统。
 * 深度学习：深度学习是基于机器学习延伸出来的一个新的领域，由以人大脑结构为启发的神经网络算法为起源加之模型结构深度的增加发展，并伴随大数据和计算能力的提高而产生的一系列新的算法。
 * 深度学习的方向：被应用在图像处理与计算机视觉，自然语言处理以及语音识别等领域。
+
+目前国内在AI感知层面应用已经百花齐放，主要是无人驾驶、智能音箱、嵌入式。但在认知层面还是比较缺乏，所以新入行的AI应用团队可以放在认知层。如开头所述，认知层最重要的是算法，因此需要阅读Nature上最领先的算法公司DeepMind的几篇大作，如下：
+* 201601.Mastering the game of Go with deep neural networks and tree search
+* 201610.Hybrid computing using a neural network with dynamic external memory
+* 201710.Mastering the game of Go without human knowledge
+
 #### 机器学习算法概览
 <p align="center">
 <img width="100%" align="center" src="assets/images/overview.png" />
