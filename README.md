@@ -10,9 +10,9 @@
 * 深度学习的方向：被应用在图像处理与计算机视觉，自然语言处理以及语音识别等领域。
 
 目前国内在AI感知层面应用已经百花齐放，主要是无人驾驶、智能音箱、嵌入式。但在认知层面还是比较缺乏，所以新入行的AI应用团队可以放在认知层。如开头所述，认知层最重要的是算法，因此需要阅读Nature上最领先的算法公司DeepMind的几篇大作，如下：
-* 201601.Mastering the game of Go with deep neural networks and tree search
-* 201610.Hybrid computing using a neural network with dynamic external memory
-* 201710.Mastering the game of Go without human knowledge
+* 2016.01.Mastering the game of Go with deep neural networks and tree search
+* 2016.10.Hybrid computing using a neural network with dynamic external memory
+* 2017.10.Mastering the game of Go without human knowledge
 
 #### 机器学习算法概览
 <p align="center">
