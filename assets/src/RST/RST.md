@@ -13,4 +13,5 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="100" align="center" src="../../images/30.jpg" />
 </p>
 
- 其中U为对象的非空有限集合;A为属性的非空有限集合;V为属性的值域集;f为信息函数,<img width="100" align="center" src="../../images/31.jpg" />
+ 其中U为对象的非空有限集合;A为属性的非空有限集合;V为属性的值域集;f为信息函数,<img width="100" align="center" src="../../images/31.jpg" />.
+ 如果<img width="100" align="center" src="../../images/32.jpg" />,<img width="100" align="center" src="../../images/33.jpg" />,C为条件属性集,D为决策属性集，则把信息系统<img width="100" align="center" src="../../images/34.jpg" />称为决策系统，用<img width="100" align="center" src="../../images/35.jpg" />或<img width="100" align="center" src="../../images/36,.jpg" />,
