@@ -10,7 +10,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 定义1 一个信息系统是一个四元组，可表示为：
 
 <p align="center">
-<img width="300" align="center" src="../../images/30.jpg" />
+<img width="100" align="center" src="../../images/30.jpg" />
 </p>
 
  其中U为对象的非空有限集合;A为属性的非空有限集合;V为属性的值域集;f为信息函数,
