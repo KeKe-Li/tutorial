@@ -14,4 +14,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 </p>
 
  其中U为对象的非空有限集合;A为属性的非空有限集合;V为属性的值域集;f为信息函数,<img width="100" align="center" src="../../images/31.jpg" />.
- 如果<img width="100" align="center" src="../../images/32.jpg" />,<img width="100" align="center" src="../../images/33.jpg" />,C为条件属性集,D为决策属性集，则把信息系统<img width="100" align="center" src="../../images/34.jpg" />称为决策系统，用<img width="100" align="center" src="../../images/35.jpg" />或<img width="100" align="center" src="../../images/36,.jpg" />来表示，其中d为单一的决策属性。从数据库的角度来看，决策系统就是一张表，其中U是记录集合，A是字段集合，每一个对象对应一条记录，这样决策系统又可称为决策表。
+ 如果<img width="100" align="center" src="../../images/33.jpg" />,<img width="100" align="center" src="../../images/32.jpg" />,C为条件属性集,D为决策属性集，则把信息系统<img width="100" align="center" src="../../images/30.jpg" />称为决策系统，用<img width="100" align="center" src="../../images/35.jpg" />或<img width="100" align="center" src="../../images/36,.jpg" />来表示，其中d为单一的决策属性。从数据库的角度来看，决策系统就是一张表，其中U是记录集合，A是字段集合，每一个对象对应一条记录，这样决策系统又可称为决策表。
