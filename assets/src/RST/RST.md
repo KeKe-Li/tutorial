@@ -26,4 +26,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 </p>
 
 其中,<img width="100" align="center" src="../../images/44.jpg" />包含了U中所有能被C正确分类为<img width="100" align="center" src="../../images/43.jpg" />中一类的对象.
-D在C上的依赖度定义为：<img width="100" align="center" src="../../images/45.jpg" />
+D在C上的依赖度定义为：<img width="200" align="center" src="../../images/45.jpg" />
