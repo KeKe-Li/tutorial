@@ -18,3 +18,9 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
  
 定义2：在决策系统<img width="100" align="center" src="../../images/36.jpg" />中，对于<img width="50" align="center" src="../../images/37.jpg" />，则B在U上的不可分辨关系定义为：<img width="300" align="center" src="../../images/38.jpg" />，<img width="50" align="center" src="../../images/39.jpg" />把U划分为k个等价类，<img width="100" align="center" src="../../images/40.jpg" />,<img width="200" align="center" src="../../images/43.jpg" />表示等价关系,<img width="50" align="center" src="../../images/39.jpg" />的所有等价类组成的等价类族，即有:
 <img width="200" align="center" src="../../images/41.jpg" />.
+
+定义3:<img width="100" align="center" src="../../images/30.jpg" />.分类价IND(D)关于条件属性C的正域(简称D的C正域)定义为：
+
+<p align="center">
+<img width="200" align="center" src="../../images/42.jpg" />
+</p>
