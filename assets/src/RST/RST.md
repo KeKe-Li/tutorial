@@ -27,6 +27,6 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 其中,<img width="100" align="center" src="../../images/44.jpg" />包含了U中所有能被C正确分类为<img width="100" align="center" src="../../images/43.jpg" />中一类的对象.
 D在C上的依赖度定义为：<img width="200" align="center" src="../../images/45.jpg" />
-—个属性<img width="100" align="center" src="../../images/46.jpg" />，如果<img width="100" align="center" src="../../images/47.jpg" />，则称为a为可去除的；否则称为不可去除的。
+—个属性<img width="50" align="center" src="../../images/46.jpg" />，如果<img width="100" align="center" src="../../images/47.jpg" />，则称为a为可去除的；否则称为不可去除的。
 属性<img width="100" align="center" src="../../images/48.jpg" />集称为C的一个约简，如果满足以下条件：<img width="100" align="center" src="../../images/49.jpg" />.
 一个条件属性C的约简是具有同C相同分类能力的一个C的子集，并且约简中的任意一个属性都不能在不降低其分类能力的前提下被删除。
