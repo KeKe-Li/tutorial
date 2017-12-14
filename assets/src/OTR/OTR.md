@@ -28,5 +28,5 @@ Hawkins(1980)给出孤立点（outlier）的定义：孤立点是在数据集中
 
 2.算法原理
 <p align="center">
-<img width="100" align="center" src="../../images/50.jpg" />
+<img width="100" align="center" src="../../images/200.jpg" />
 </p>
