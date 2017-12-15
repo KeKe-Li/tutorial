@@ -36,3 +36,5 @@ Hawkins(1980)给出孤立点（outlier）的定义：孤立点是在数据集中
 马克威孤立点算法是基于距离的：设<img width="50" align="center" src="../../images/51.jpg" />表示p点和它的第k个最近邻居的距离。直观地看，<img width="50" align="center" src="../../images/52.jpg" />越大，p越有可能成为孤立点。
 给定d维空间中包含N个点的数据集、参数N（孤立点个数）和k（偏差距离）,如果满足<img width="50" align="center" src="../../images/55.jpg" />的点<img width="20" align="center" src="../../images/53.jpg" />不超过n-1个,那么称p为<img width="20" align="center" src="../../images/54.jpg" />孤立点。
 如果对所有数据点根据其<img width="50" align="center" src="../../images/51.jpg" />距离进行从大到小排序，那么前n个点就被看作是孤立点。
+
+算法步骤如下，对每个p点，计算它的第k个最近邻居的距离<img width="50" align="center" src="../../images/51.jpg" />，把具有极大<img width="50" align="center" src="../../images/54.jpg" />值的前个n点作为孤立点。该算法每次处理一个点p，就需要扫描一遍数据库，总共需要扫描N遍（N为数据点数）。
