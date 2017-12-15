@@ -33,4 +33,4 @@ Hawkins(1980)给出孤立点（outlier）的定义：孤立点是在数据集中
 
 孤立点的挖掘方法主要有：基于统计学的、基于距离的、基于密度的局部离群点方法和基于深度偏差的方法。
 
-马克威孤立点算法是基于距离的：设<img width="50" align="center" src="../../images/51.jpg" />表示p点和它的第k个最近邻居的距离。
+马克威孤立点算法是基于距离的：设<img width="50" align="center" src="../../images/51.jpg" />表示p点和它的第k个最近邻居的距离。直观地看，<img width="50" align="center" src="../../images/52.jpg" />越大，p越有可能成为孤立点。
