@@ -30,3 +30,5 @@ Hawkins(1980)给出孤立点（outlier）的定义：孤立点是在数据集中
 <p align="center">
 <img width="300" align="center" src="../../images/50.jpg" />
 </p>
+
+孤立点的挖掘方法主要有：基于统计学的、基于距离的、基于密度的局部离群点方法和基于深度偏差的方法。
