@@ -15,6 +15,12 @@
 * 2016.10.Hybrid computing using a neural network with dynamic external memory
 * 2017.10.Mastering the game of Go without human knowledge
 
+#### 机器学习步骤框架
+* 把数据拆分为训练集合测试集
+* 用训练集合训练集的特征向量来训练算法
+* 用学习来的算法运用在测试集上累评估算法(可能要设计到调整参数(parameter tuning) 用来验证集(validation set))
+
+
 #### 机器学习算法概览
 <p align="center">
 <img width="100%" align="center" src="assets/images/overview.png" />
