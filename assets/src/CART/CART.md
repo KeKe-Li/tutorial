@@ -29,3 +29,9 @@ CART算法原理:CART决策树是结构简洁的二叉树，采用一种二分�
 <p align="center">
 <img width="300" align="center" src="../../images/56.jpg" />
 </p>
+
+对于给定样本集合D，其基尼指数的计算为：
+<p align="center">
+<img width="300" align="center" src="../../images/57.jpg" />
+</p>
+
