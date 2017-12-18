@@ -46,7 +46,7 @@
  * [贝叶斯网络](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.md)
  * [粗糙集](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RST/RST.md)
  * [孤立点分析](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/OTR/OTR.md)
- * [CART]()
+ * [CART](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CART/CART.md)
  * [EM]()
  * [FP—tree]()
  * [GSP序列]()
