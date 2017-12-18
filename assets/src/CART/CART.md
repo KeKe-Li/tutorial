@@ -27,22 +27,22 @@ CART算法原理:CART决策树是结构简洁的二叉树，采用一种二分�
 决策树的生成就是递归的构建二叉决策树的过程。对回归树用平方误差最小化准则，对分类树用基尼指数最小化原则，进行特征选择，生成二叉树。
 主要的原理如下：(1)分类树原理：分类树采用基尼指数（Gini index, Gini）选择最优特征，同时决定该特征的最优二值切分点。基尼指数定义为：
 <p align="center">
-<img width="300" align="center" src="../../images/56.jpg" />
+<img width="200" align="center" src="../../images/56.jpg" />
 </p>
 
 对于给定样本集合D，其基尼指数的计算为：
 <p align="center">
-<img width="300" align="center" src="../../images/57.jpg" />
+<img width="200" align="center" src="../../images/57.jpg" />
 </p>
 如果样本集合D根据特征A是否取某一可能值a被分割成D1和D2两部分，即：<img width="300" align="center" src="../../images/60.jpg" />,D2=D-D1
 则在特征A的条件下，集合D的基尼指数计算公式为：
 <p align="center">
-<img width="300" align="center" src="../../images/58.jpg" />
+<img width="200" align="center" src="../../images/58.jpg" />
 </p>
 基尼指数Gini(D)表示集合D的不确定性，基尼指数Gini(D,A)表示经A=a分割后集合D的不确定性。基尼指数值越大，样本集合的不确定性也就越大。
 （2）回归树原理：回归树用平方误差最小化准则，进行特征选择，生成二叉树。将输入空间划分为M个区域R1，R2，…，Rm，则生成的回归树模型表示为：
 <p align="center">
-<img width="300" align="center" src="../../images/59.jpg" />
+<img width="200" align="center" src="../../images/59.jpg" />
 </p>
 其中cm表示单元Rm上的最小误差平方的最优解.
 2、决策树的剪枝
