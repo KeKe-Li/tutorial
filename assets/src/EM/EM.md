@@ -24,5 +24,11 @@ EM又称为期望最大化算法（Expectation Maximization, EM），该算法�
 
 EM算法是一种迭代算法，用于含有隐含变量的概率模型参数的极大似然估计，或极大后验概率估计。当给定样本观测变量数据为X，隐变量数据为Z，联合分布表示为p(X,Zθ)，条件分布可以表示为p(ZX,θ))。那么，估计模型的形式可以表示为：
 <p align="center">
-<img width="200" align="center" src="../../images/61.jpg" />
+<img width="300" align="center" src="../../images/61.jpg" />
+</p>
+
+由于模型中存在隐含变量，并不能直接采用极大似然估计法，或贝叶斯估计法，估计上述模型的参数。EM算法能够通过不断求解下界的极大化逼近，来求解对数似然函数，如图所示:
+
+<p align="center">
+<img width="300" align="center" src="../../images/62.jpg" />
 </p>
