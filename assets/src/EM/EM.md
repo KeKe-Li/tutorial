@@ -33,7 +33,12 @@ EM算法是一种迭代算法，用于含有隐含变量的概率模型参数的
 <img width="300" align="center" src="../../images/62.jpg" />
 </p>
 
-EM算法的每次迭代包含两步：EM算法-E步,利用对隐藏变量的现有估计值，计算其最大似然估计值，以此实现期望化的过程，即：
+EM算法的每次迭代包含两步：
+(1)EM算法-E步,利用对隐藏变量的现有估计值，计算其最大似然估计值，以此实现期望化的过程，即：
 <p align="center">
 <img width="200" align="center" src="../../images/63.jpg" />
+</p>
+(2)EM算法-M步：最大化在E步上的最大似然估计值来计算参数的值，每次迭代使得似然函数增大或达到局部极值，即：
+<p align="center">
+<img width="200" align="center" src="../../images/64.jpg" />
 </p>
