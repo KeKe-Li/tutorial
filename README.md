@@ -48,7 +48,7 @@
  * [孤立点分析](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/OTR/OTR.md)
  * [CART](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CART/CART.md)
  * [EM](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/EM/EM.md)
- * [FP—tree]()
+ * [FP—tree](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/FP/FP.md)
  * [GSP序列]()
  * [协同过滤]()
  * [BIRCH]()
