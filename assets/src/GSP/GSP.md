@@ -7,5 +7,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 广义序列模式（简称GSP）算法是Apriori类算法，采用冗余候选模式的剪除策略和特殊的数据结构-哈希树来实现候选模式的快速访存。
 
 GSP算法描述主要包含以下三个步骤：
+
 （1）扫描序列数据库，得到长度为1的序列模式<img width="20" align="center" src="../../images/65.jpg" />，作为初始的种子集。
+（2）根据长度为i的种子集<img width="20" align="center" src="../../images/66.jpg" />，通过连接操作和修剪操作生成长度为i+1的候选序列模式<img width="20" align="center" src="../../images/67.jpg" />，然后扫描序列数据库，计算每个候选序列模式的支持度，产生长度为i+1的序列模式<img width="20" align="center" src="../../images/68.jpg" />，并将<img width="20" align="center" src="../../images/68.jpg" />作为新的种子集。
 
