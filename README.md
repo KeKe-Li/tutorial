@@ -49,7 +49,7 @@
  * [CART](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CART/CART.md)
  * [EM](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/EM/EM.md)
  * [FP—tree](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/FP/FP.md)
- * [GSP序列]()
+ * [GSP序列](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/GSP/GSP.md)
  * [协同过滤]()
  * [BIRCH]()
  * [Prefixspan]()
