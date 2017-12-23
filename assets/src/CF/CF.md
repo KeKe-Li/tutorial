@@ -15,3 +15,8 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <p align="center">
 <img width="400" align="center" src="../../images/69.jpg" />
 </p>
+
+皮尔逊相关系数：
+<p align="center">
+<img width="400" align="center" src="../../images/70.jpg" />
+</p>
