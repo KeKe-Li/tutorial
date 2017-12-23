@@ -13,5 +13,5 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 欧几里德距离：
 <p align="center">
-<img width="300" align="center" src="../../images/69.jpg" />
+<img width="400" align="center" src="../../images/69.jpg" />
 </p>
