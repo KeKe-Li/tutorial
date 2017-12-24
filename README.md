@@ -52,7 +52,7 @@
  * [FP—tree](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/FP/FP.md)
  * [GSP序列](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/GSP/GSP.md)
  * [协同过滤](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CF/CF.md)
- * [BIRCH]()
+ * [BIRCH](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BIR/BIR.md)
  * [Prefixspan]()
  * [PageRank]()
  * [AdaBoost]()
