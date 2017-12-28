@@ -24,5 +24,5 @@ PageRank算法基本思想：是让链接来“投票”，即网页的重要性
 
 在初始阶段，通过网页链接关系构建有向图，每个页面设置相同的PR值，通过PageRank的计算公式每次迭代更新当前页面的PR值，通过若干轮递归计算，会得到每个页面的最终的PR值。PageRank算法公式为：
 <p align="center">
-<img width="200" align="center" src="assets/images/71.png" />
+<img width="200" align="center" src="assets/images/71.jpg" />
 </p>
