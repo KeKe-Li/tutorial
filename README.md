@@ -66,6 +66,85 @@
 
 后面的算法我会持续更新整理算法和算法模型，后续的算法章节会不断的补上，希望可以对新入门学习AI开发和算法的开发者有所帮助！
 
+#### 算法模型
+ * [回归算法]
+     * [线性回归]()  
+     * [逻辑回归]()  
+     * [多元自适应回归(MARS)]()  
+     * [本地散点平滑估计(LOESS)]()  
+ * [基于实例的学习算法] 
+     * [K-邻近算法（KNN）]()
+     * [学习矢量化（LVQ）]()
+     * [自组织映射算法（SOM）]()
+     * [局部加权学习算法（LWL）]()
+ * [正则化算法]    
+     * [岭回归（Ridge Regression）]()
+     * [LASSO（Least Absolute Shrinkage and Selection Operator）]()
+     * [Elastic Net]()
+     * [最小角回归（LARS）]()
+ * [决策树算法]
+     * [分类和回归树（CART）]()
+     * [ID3算法(Iterative Dichotomiser 3)]()
+     * [CHAID（Chi-squared Automatic Interaction Detection]()
+     * [随机森林（Random Forest）]()
+     * [多元自适应回归样条（MARS）]()
+     * [梯度推进机（Gradient Boosting Machine， GBM）]()
+ * [贝叶斯算法]
+     * [朴素贝叶斯]()
+     * [高斯朴素贝叶斯]()
+     * [多项式朴素贝叶斯]()
+     * [AODE（Averaged One-Dependence Estimators）]()
+     * [贝叶斯网络（Bayesian Belief Network）]()
+ * [基于核的算法]   
+     * [支持向量机（SVM）]()
+     * [径向基函数（Radial Basis Function ，RBF)]()
+     * [线性判别分析（Linear Discriminate Analysis ，LDA)]()
+ * [聚类算法]
+     * [K-均值]()
+     * [K-中位数]()
+     * [EM算法]()
+     * [分层聚类]()
+ * [关联规则学习]   
+     * [Apriori算法]() 
+     * [Eclat算法]() 
+ * [神经网络]      
+     * [感知器]() 
+     * [反向传播算法（BP）]() 
+     * [Hopfield网络]() 
+     * [径向基函数网络（RBFN）]() 
+ * [深度学习] 
+     * [深度玻尔兹曼机（DBM）]() 
+     * [卷积神经网络（CNN）]() 
+     * [递归神经网络（RNN、LSTM）]()
+     * [栈式自编码算法（Stacked Auto-Encoder）]()
+ * [降维算法]
+     * [主成分分析法（PCA）]()
+     * [主成分回归（PCR）]()
+     * [偏最小二乘回归（PLSR）]()
+     * [萨蒙映射]()
+     * [多维尺度分析法（MDS]()
+     * [投影寻踪法（PP）]()
+     * [线性判别分析法（LDA）]()
+     * [混合判别分析法（MDA）]()
+     * [二次判别分析法（QDA）]()
+     * [灵活判别分析法（Flexible Discriminant Analysis，FDA]()
+ * [集成算法]
+      * [Boosting]()
+      * [Bagging]()
+      * [AdaBoost]()
+      * [堆叠泛化（混合）]()
+      * [GBM 算法]()
+      * [GBRT 算法]()
+      * [随机森林]()
+ * [其他算法]
+      * [特征选择算法]()
+      * [性能评估算法]()
+      * [自然语言处理]()
+      * [计算机视觉]()
+      * [推荐系统]()
+      * [强化学习]()
+      * [迁移学习]()
+
 #### 机器学习的基础
 * 机器学习需要的理论基础：数学，线性代数，数理统计，概率论，高等数学、凸优化理论，形式逻辑等
 
@@ -82,7 +161,6 @@
 * [深度学习](https://github.com/KeKe-Li/book/blob/master/AI/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0Deep%20Learning.pdf)
 * [神经网络和深度学习](https://github.com/KeKe-Li/book/blob/master/AI/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%92%8C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0.pdf)
 * [梯度下降](https://github.com/KeKe-Li/book/blob/master/AI/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D.pdf)
-* [机器学习](https://blog.openai.com/robots-that-learn/)
 * [无监督神经元](https://blog.openai.com/unsupervised-sentiment-neuron/)
 
 ### 机器学习
