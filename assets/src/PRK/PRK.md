@@ -27,4 +27,4 @@ PageRank算法基本思想：是让链接来“投票”，即网页的重要性
 <img width="200" align="center" src="../../images/71.jpg" />
 </p>
 
-其中<img width="50" align="center" src="../../images/72.jpg" />是<img width="50" align="center" src="../../images/73.jpg" />页面的PageRank值
+其中<img width="50" align="center" src="../../images/72.jpg" />是<img width="30" align="center" src="../../images/73.jpg" />页面的PageRank值
