@@ -28,3 +28,6 @@ PageRank算法基本思想：是让链接来“投票”，即网页的重要性
 </p>
 
 其中<img width="50" align="center" src="../../images/72.jpg" />是<img width="20" align="center" src="../../images/73.jpg" />页面的PageRank值,n是所有页面的数量，<img width="20" align="center" src="../../images/73.jpg" />是不同的页面，M(i)是<img width="20" align="center" src="../../images/73.jpg" />链入页面的集合，L(j)是<img width="20" align="center" src="../../images/73.jpg" />链出页面的数量，d是阻尼系数（任意时刻用户到达某页面后并继续向后浏览的概率），d的取值范围为0到1。
+
+
+#### 相关应用
