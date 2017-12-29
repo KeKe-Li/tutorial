@@ -55,7 +55,7 @@
  * [BIRCH](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BIR/BIR.md)
  * [Prefixspan](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/PN/PN.md)
  * [PageRank](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/PRK/PRK.md)
- * [AdaBoost]()
+ * [AdaBoost](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ABT/ABT.md)
  * [CBA]()
  * [KNN]()
  * [Hopfield神经网络]()
