@@ -162,6 +162,7 @@
 * [神经网络和深度学习](https://github.com/KeKe-Li/book/blob/master/AI/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%92%8C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0.pdf)
 * [梯度下降](https://github.com/KeKe-Li/book/blob/master/AI/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D.pdf)
 * [无监督神经元](https://blog.openai.com/unsupervised-sentiment-neuron/)
+* [tensorflow实践](https://tensorflow.feisky.xyz/install/cpu.html)
 
 ### 机器学习
 觉得此文章不错可以给我star！如果有问题可以加我的微信Sen0676,可以一起交流算法和机器学习！
