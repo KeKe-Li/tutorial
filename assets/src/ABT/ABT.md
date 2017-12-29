@@ -14,5 +14,5 @@
 #### AdaBoost
 自适应提升（AdaBoost：Adaptive Boosting）算法是基于概率近似正确的学习模型下提出的一种提升算法。在分类问题中，AdaBoost通过修改训练样本的权值分布，学习多个弱分类器，并将这些分类器进行线性组合，构成一个强分类器，提高分类性能。其中强分类器可理解为分类精确度高的算法，弱分类器可理解为分类精度低的算法，一般AdaBoost算法是弱分类器的线性组合为：
 <p align="center">
-<img width="100" align="center" src="../../images/74.jpg" />
+<img width="160" align="center" src="../../images/74.jpg" />
 </p>
