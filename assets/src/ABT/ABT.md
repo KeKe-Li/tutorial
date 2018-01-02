@@ -28,3 +28,10 @@ AdaBoost算法的特点是通过迭代每次学习一个基本分类器(即弱�
 输入：训练数据集T={(x1,y1),(x2,y2),…,(xn,yn)}；其中<img width="=50" align="center" src="../../images/76.jpg" />，<img width="100" align="center" src="../../images/77.jpg" />
 
 输出：最终的分类器G(x)
+
+(1)初始化训练数据集的权值分布
+<p align="center">
+<img width="300" align="center" src="../../images/78.jpg" />
+</p>
+
+
