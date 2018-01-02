@@ -35,4 +35,4 @@ AdaBoost算法的特点是通过迭代每次学习一个基本分类器(即弱�
 <img width="300" align="center" src="../../images/78.jpg" />
 </p>
 
-
+(2)对于m=1,2,…,M
