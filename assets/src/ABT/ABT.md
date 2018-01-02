@@ -23,4 +23,4 @@ AdaBoost算法的特点是通过迭代每次学习一个基本分类器(即弱�
 </p>
 
 #### 算法原理
-假设给定一个二分类的训练数据集T={(x1,y1),(x2,y2),…,(xn,yn)}；其中，每个样本点由实例与标记组成。实例<img width="100" align="center" src="../../images/76.jpg" />,标记<img width="100" align="center" src="../../images/77.jpg" />,其中X是实例空间，Y是标记集合。AdaBoost算法的原理如下：
+假设给定一个二分类的训练数据集T={(x1,y1),(x2,y2),…,(xn,yn)}；其中，每个样本点由实例与标记组成。实例<img width="=50" align="center" src="../../images/76.jpg" />,标记<img width="100" align="center" src="../../images/77.jpg" />,其中X是实例空间，Y是标记集合。AdaBoost算法的原理如下：
