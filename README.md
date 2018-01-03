@@ -55,7 +55,7 @@
  * [Prefixspan](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/PN/PN.md)
  * [PageRank](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/PRK/PRK.md)
  * [AdaBoost](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ABT/ABT.md)
- * [CBA]()
+ * [CBA](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CBA/CBA.md)
  * [KNN]()
  * [Hopfield神经网络]()
  * [决策树]()
