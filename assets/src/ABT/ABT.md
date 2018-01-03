@@ -63,3 +63,13 @@ AdaBoost算法的特点是通过迭代每次学习一个基本分类器(即弱�
 <p align="center">
 <img width="200" align="center" src="../../images/82.jpg" />
 </p>
+
+(3)构建基本分类器的线性组合
+<p align="center">
+<img width="200" align="center" src="../../images/83.jpg" />
+</p>
+
+得到最终分类器为
+<p align="center">
+<img width="200" align="center" src="../../images/85.jpg" />
+</p>
