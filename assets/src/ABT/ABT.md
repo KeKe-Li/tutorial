@@ -48,5 +48,5 @@ AdaBoost算法的特点是通过迭代每次学习一个基本分类器(即弱�
 
 (c)计算Gm(x)的系数
 <p align="center">
-<img width="300" align="center" src="../../images/84.jpg" />
+<img width="100" align="center" src="../../images/84.jpg" />
 </p>
