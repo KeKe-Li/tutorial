@@ -58,3 +58,8 @@ AdaBoost算法的特点是通过迭代每次学习一个基本分类器(即弱�
 <p align="center">
 <img width="300" align="center" src="../../images/86.jpg" />
 </p>
+
+其中Zm是规范化因子
+<p align="center">
+<img width="300" align="center" src="../../images/82.jpg" />
+</p>
