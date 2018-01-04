@@ -163,7 +163,7 @@
 * [梯度下降](https://github.com/KeKe-Li/book/blob/master/AI/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D.pdf)
 * [无监督神经元](https://blog.openai.com/unsupervised-sentiment-neuron/)
 * [Tensorflow实践](https://tensorflow.feisky.xyz/install/cpu.html)
-* [Artificial Intelligence]()
+* [Artificial Intelligence](https://github.com/owainlewis/awesome-artificial-intelligence)
 
 ### 机器学习
 觉得此文章不错可以给我star！如果有问题可以加我的微信Sen0676,可以一起交流算法和机器学习！
