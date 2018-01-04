@@ -4,3 +4,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 
 #### CBA
+CBA（Classification base of Association）算法是一个基于关联规则进行分类的算法，该算法首先利用Apriori算法挖掘出的关联规则，然后进行分类判断。
