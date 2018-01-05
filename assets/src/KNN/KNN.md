@@ -20,5 +20,5 @@ K最近邻算法是一种基于类比的分类方法，主要通过给定的检�
 
 最小-最大规范化：将原始数据值映射到[0,1]空间中，假定minA和maxA分别是属性A的最小值和最大值，则规范化的公式为：
 <p align="center">
-<img width="200" align="center" src="../../images/88.jpg" />
+<img width="100" align="center" src="../../images/88.jpg" />
 </p>
