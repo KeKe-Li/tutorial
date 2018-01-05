@@ -24,5 +24,5 @@ K最近邻算法是一种基于类比的分类方法，主要通过给定的检�
 </p>
 零均值规范化：基于属性A的均值和标准差上的规范化方法，具体计算如下：
 <p align="center">
-<img width="100" align="center" src="../../images/89.jpg" />
+<img width="80" align="center" src="../../images/89.jpg" />
 </p>
