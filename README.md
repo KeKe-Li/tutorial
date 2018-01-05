@@ -56,7 +56,7 @@
  * [PageRank](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/PRK/PRK.md)
  * [AdaBoost](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ABT/ABT.md)
  * [CBA](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CBA/CBA.md)
- * [KNN]()
+ * [KNN](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/KNN/KNN.md)
  * [Hopfield神经网络]()
  * [决策树]()
  * [聚类分析]()
