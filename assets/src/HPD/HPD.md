@@ -60,3 +60,6 @@ Hopfield强调工程实践的重要性，他利用电阻、电容和运算放大
 <p align="center">
 <img width="300" align="center" src="../../images/95.jpg" />
 </p>
+
+
+
