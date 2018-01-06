@@ -57,3 +57,6 @@ Hopfield强调工程实践的重要性，他利用电阻、电容和运算放大
 <img width="300" align="center" src="../../images/94.jpg" />
 </p>
 其中，fi代表了第i个神经元的传递函数，并定义W=Rij-1 （i,j＝1,2,…,n）为网络的权系数矩阵．为证明连续型网络的稳定性，Hopfield定义了如下的能量函数：
+<p align="center">
+<img width="300" align="center" src="../../images/95.jpg" />
+</p>
