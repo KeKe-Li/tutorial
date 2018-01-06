@@ -51,3 +51,8 @@ Hopfield强调工程实践的重要性，他利用电阻、电容和运算放大
 <p align="center">
 <img width="300" align="center" src="../../images/93.jpg" />
 </p>
+同时，每一个运算放大器模拟了神经元输入和输出之间的非线性特性，即有
+
+<p align="center">
+<img width="300" align="center" src="../../images/94.jpg" />
+</p>
