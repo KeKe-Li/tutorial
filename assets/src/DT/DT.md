@@ -18,3 +18,6 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 决策树（Decision Tree）是应用于分类的一种树结构。其中的每个内部节点（internal node）代表对某个属性的一次测试判别，一个分枝代表一个测试结果，叶子（leaf）代表某个类（class）或者类的分布（class distribution）。最顶层的节点是根结点。可以将决策树理解为一个if-then规则的集合，由决策树的根节点到叶节点的每一条路径构建一条规则。
 
+<p align="center">
+<img width="100" align="center" src="../../images/96.jpg" />
+</p>
