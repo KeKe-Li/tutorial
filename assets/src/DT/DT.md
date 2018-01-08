@@ -28,3 +28,5 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 信息增益算法：
 设D是s个样本的集合，具有n个不同的类别<img width="100" align="center" src="../../images/97.jpg" />，设<img width="100" align="center" src="../../images/98.jpg" />是类<img width="100" align="center" src="../../images/99.jpg" />的样本数，那么对给定的样本分类所需要的经验熵为：
+
+
