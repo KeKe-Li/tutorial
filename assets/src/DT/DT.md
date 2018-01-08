@@ -27,8 +27,8 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 构造的思路是，如果训练样本集合中的所有样本是同类的，则将之作为叶子节点，节点内容即是该类别标记。否则，根据某种策略（如信息熵或GINI系数）选择一个属性，按照属性的各个取值，把样本集合划分为若干子集合，使得每个子集上的所有样本在该属性上具有同样的属性值，然后再依次递归处理各个子集。这种思路实际上就是“分而治之”的道理。
 
 信息增益算法：
-设D是s个样本的集合，具有n个不同的类别<img width="100" align="center" src="../../images/97.jpg" />，设<img width="100" align="center" src="../../images/98.jpg" />是类<img width="100" align="center" src="../../images/99.jpg" />的样本数，那么对给定的样本分类所需要的经验熵为：
+设D是s个样本的集合，具有n个不同的类别<img width="100" align="center" src="../../images/97.jpg" />，设<img width="40" align="center" src="../../images/98.jpg" />是类<img width="40" align="center" src="../../images/99.jpg" />的样本数，那么对给定的样本分类所需要的经验熵为：
 <p align="center">
-<img width="500" align="center" src="../../images/100.jpg" />
+<img width="200" align="center" src="../../images/100.jpg" />
 </p>
 
