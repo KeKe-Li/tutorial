@@ -59,7 +59,7 @@
  * [KNN](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/KNN/KNN.md)
  * [Hopfield神经网络](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/HPD/HPD.md)
  * [决策树](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.md)
- * [聚类分析]()
+ * [聚类分析](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CAS/CAS.md)
  * [关联规则]()
  * [支持向量机（SVM）]()
 
