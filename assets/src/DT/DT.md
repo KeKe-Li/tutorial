@@ -42,4 +42,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="200" align="center" src="../../images/108.jpg" />
 </p>
 
-当<img width="20" align="center" src="../../images/109.jpg" />熵值越小，子集划分的纯度越高。
+当<img width="40" align="center" src="../../images/109.jpg" />熵值越小，子集划分的纯度越高。
