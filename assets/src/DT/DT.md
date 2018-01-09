@@ -43,3 +43,9 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 </p>
 
 当<img width="40" align="center" src="../../images/109.jpg" />熵值越小，子集划分的纯度越高。
+
+在属性A上分枝将获得的信息增益为：
+
+<p align="center">
+<img width="200" align="center" src="../../images/109.jpg" />
+</p>
