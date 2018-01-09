@@ -36,4 +36,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 其中<img width="20" align="center" src="../../images/101.jpg" />为任意样本属于类<img width="20" align="center" src="../../images/99.jpg" />的概率，并用<img width="30" align="center" src="../../images/102.jpg" />估计。
 
 
-设属性A具有v个不同的值<img width="70" align="center" src="../../images/103.jpg" />
+设属性A具有v个不同的值<img width="70" align="center" src="../../images/103.jpg" />,可以用A属性将集合D划分为v个子集
