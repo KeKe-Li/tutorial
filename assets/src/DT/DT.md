@@ -33,4 +33,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 </p>
 
 
-其中<img width="20" align="center" src="../../images/101.jpg" />为任意样本属于类的概率，并用估计。
+其中<img width="20" align="center" src="../../images/101.jpg" />为任意样本属于类<img width="20" align="center" src="../../images/99.jpg" />的概率，并用<img width="20" align="center" src="../../images/102.jpg" />估计。
