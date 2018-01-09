@@ -37,3 +37,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 
 设属性A具有v个不同的值<img width="70" align="center" src="../../images/103.jpg" />,可以用A属性将集合D划分为v个子集<img width="70" align="center" src="../../images/104.jpg" />,其中<img width="20" align="center" src="../../images/105.jpg" />包含D中属性A上取值<img width="20" align="center" src="../../images/106.jpg" />的一些样本。令<img width="20" align="center" src="../../images/107.jpg" />是子集<img width="20" align="center" src="../../images/99.jpg" />中类的样本数。根据A划分成子集的经验熵为：
+
+<p align="center">
+<img width="100" align="center" src="../../images/108.jpg" />
+</p>
