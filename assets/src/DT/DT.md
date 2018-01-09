@@ -27,7 +27,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 构造的思路是，如果训练样本集合中的所有样本是同类的，则将之作为叶子节点，节点内容即是该类别标记。否则，根据某种策略（如信息熵或GINI系数）选择一个属性，按照属性的各个取值，把样本集合划分为若干子集合，使得每个子集上的所有样本在该属性上具有同样的属性值，然后再依次递归处理各个子集。这种思路实际上就是“分而治之”的道理。
 
 信息增益算法：
-设D是s个样本的集合，具有n个不同的类别<img width="100" align="center" src="../../images/97.jpg" />，设<img width="20" align="center" src="../../images/98.jpg" />是类<img width="20" align="center" src="../../images/99.jpg" />的样本数，那么对给定的样本分类所需要的经验熵为：
+设D是s个样本的集合，具有n个不同的类别<img width="100" align="center" src="../../images/97.jpg" />，设<img width="20" align="center" src="../../images/98.jpg" />是类<img width="10" align="center" src="../../images/99.jpg" />的样本数，那么对给定的样本分类所需要的经验熵为：
 <p align="center">
 <img width="200" align="center" src="../../images/100.jpg" />
 </p>
@@ -36,4 +36,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 其中<img width="20" align="center" src="../../images/101.jpg" />为任意样本属于类<img width="20" align="center" src="../../images/99.jpg" />的概率，并用<img width="30" align="center" src="../../images/102.jpg" />估计。
 
 
-设属性A具有v个不同的值<img width="70" align="center" src="../../images/103.jpg" />,可以用A属性将集合D划分为v个子集<img width="70" align="center" src="../../images/104.jpg" />,其中<img width="20" align="center" src="../../images/105.jpg" />包含D中属性A上取值<img width="20" align="center" src="../../images/106.jpg" />的一些样本。令<img width="20" align="center" src="../../images/107.jpg" />是子集<img width="20" align="center" src="../../images/98.jpg" />中类的样本数。根据A划分成子集的经验熵为：
+设属性A具有v个不同的值<img width="70" align="center" src="../../images/103.jpg" />,可以用A属性将集合D划分为v个子集<img width="70" align="center" src="../../images/104.jpg" />,其中<img width="20" align="center" src="../../images/105.jpg" />包含D中属性A上取值<img width="20" align="center" src="../../images/106.jpg" />的一些样本。令<img width="20" align="center" src="../../images/107.jpg" />是子集<img width="10" align="center" src="../../images/99.jpg" />中类的样本数。根据A划分成子集的经验熵为：
