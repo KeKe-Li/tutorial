@@ -40,3 +40,5 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 
 主要可分为：划分方法（partitioning method），层次方法(hierarchical method)，基于密度的方法(density-basedmethod)，基于网格的方法(grid-based method)，和基于模型的方法(model-based method)。
+
+分层聚类算法原理
