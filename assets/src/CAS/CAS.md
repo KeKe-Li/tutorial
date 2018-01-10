@@ -76,5 +76,5 @@ a.对原始数据进行变换。变换方法通常有标准化变换、极差变
 b.计算模糊相似矩阵。选取在[-1，1]区间中的普通相似系数rij*=cosθ构成相似系数矩阵
 
 <p align="center">
-<img width="200" align="center" src="../../images/112.jpg" />
+<img width="100" align="center" src="../../images/117.jpg" />
 </p>
