@@ -80,4 +80,6 @@ b.计算模糊相似矩阵。选取在[-1，1]区间中的普通相似系数rij*
 </p>
 
 在此基础上做如下变换：
-
+<p align="center">
+<img width="200" align="center" src="../../images/118.jpg" />
+</p>
