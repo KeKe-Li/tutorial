@@ -81,7 +81,7 @@ b.计算模糊相似矩阵。选取在[-1，1]区间中的普通相似系数rij*
 
 在此基础上做如下变换：
 <p align="center">
-<img width="200" align="center" src="../../images/118.jpg" />
+<img width="200" align="center" src="../../images/112.jpg" />
 </p>
 
 使得rij*被压缩到[0,1]区间内，R=rij构成了一个模糊矩阵。
@@ -89,6 +89,6 @@ b.计算模糊相似矩阵。选取在[-1，1]区间中的普通相似系数rij*
 c.建立模糊等价矩阵。对模糊矩阵进行褶积计算: R→R2→R3→…→Rn,经过有限次褶积后使得Rn。R=Rn,由此得到模糊分类关系Rn。模糊褶积的运算法则：设A和B是n×p和p×m的模糊矩阵，则乘积C=A*B为n×m阵，其元素为：
 
 <p align="center">
-<img width="200" align="center" src="../../images/119.jpg" />
+<img width="200" align="center" src="../../images/113.jpg" />
 </p>
 
