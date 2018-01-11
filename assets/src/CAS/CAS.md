@@ -92,3 +92,4 @@ c.建立模糊等价矩阵。对模糊矩阵进行褶积计算: R→R2→R3→�
 <img width="300" align="center" src="../../images/113.jpg" />
 </p>
 
+符号<img width="300" align="center" src="../../images/114.jpg" />
