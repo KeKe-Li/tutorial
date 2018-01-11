@@ -93,3 +93,10 @@ c.建立模糊等价矩阵。对模糊矩阵进行褶积计算: R→R2→R3→�
 </p>
 
 符号<img width="30" align="center" src="../../images/114.jpg" />和<img width="30" align="center" src="../../images/119.jpg" />的含义是：
+
+<p align="center">
+<img width="500" align="center" src="../../images/115.jpg" />
+</p>
+<p align="center">
+<img width="500" align="center" src="../../images/116.jpg" />
+</p>
