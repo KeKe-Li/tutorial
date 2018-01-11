@@ -83,3 +83,5 @@ b.计算模糊相似矩阵。选取在[-1，1]区间中的普通相似系数rij*
 <p align="center">
 <img width="200" align="center" src="../../images/118.jpg" />
 </p>
+
+使得rij*被压缩到[0,1]区间内，R=rij构成了一个模糊矩阵。
