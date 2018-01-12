@@ -60,7 +60,7 @@
  * [Hopfield神经网络](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/HPD/HPD.md)
  * [决策树](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.md)
  * [聚类分析](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CAS/CAS.md)
- * [关联规则]()
+ * [关联规则](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARS/ARS.md)
  * [支持向量机（SVM）]()
 
 后面的算法和我们的算法模型，我会持续更新整理，后续的算法章节会不断的补上，希望可以对新入门学习AI开发和算法的开发者有所帮助！
