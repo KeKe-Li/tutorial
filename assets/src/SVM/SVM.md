@@ -28,6 +28,9 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <p align="center">
 <img width="200" align="center" src="../../images/122.jpg" />
 </p>
+<p align="center">
+<img width="200" align="center" src="../../images/125.jpg" />
+</p>
 
 求出⍵和b的最优解。
 
