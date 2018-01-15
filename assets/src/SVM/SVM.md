@@ -40,7 +40,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 </p>
 分类决策函数
 <p align="center">
-<img width="100" align="center" src="../../images/124.jpg" />
+<img width="200" align="center" src="../../images/124.jpg" />
 </p>
 
 其中，C＞0为惩罚参数。
