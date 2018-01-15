@@ -26,12 +26,12 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 支持向量
 <p align="center">
-<img width="300" align="center" src="../../images/122.jpg" />
+<img width="200" align="center" src="../../images/122.jpg" />
 </p>
 
 求出⍵和b的最优解。
 
 从而得到分离的超平面：
 <p align="center">
-<img width="300" align="center" src="../../images/123.jpg" />
+<img width="100" align="center" src="../../images/123.jpg" />
 </p>
