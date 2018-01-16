@@ -70,3 +70,50 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <p align="center">
 <img width="300" align="center" src="../../images/128.jpg" />
 </p>
+
+```markdown
+   #!/usr/bin/env python
+# h(X)= b + wX
+%matplotlib inline
+import tensorflow as tf
+import numpy as np
+import matplotlib.pyplot as plt
+
+def model(X, w, b):
+    return tf.mul(X, w) + b
+
+trX = np.linspace(-1, 1, 101).astype(np.float32)
+# create a y value which is approximately linear but with some random noise
+trY = 2 * trX + np.random.randn(*trX.shape) * 0.33 + 10
+
+# create a shared variable (like theano.shared) for the weight matrix
+w = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
+b = tf.Variable(tf.zeros([1]))
+cost = tf.reduce_mean(tf.square(trY-model(trX, w, b)))
+
+# construct an optimizer to minimize cost and fit line to my data
+train_op = tf.train.GradientDescentOptimizer(0.01).minimize(cost)
+
+# Launch the graph in a session
+with tf.Session() as sess:
+    # you need to initialize variables (in this case just variable W)
+    tf.initialize_all_variables().run()
+
+    for i in range(1000):
+        sess.run(train_op)
+
+    print "w should be something around [2]: ", sess.run(w)
+    print "b should be something around [10]:", sess.run(b)
+
+    plt.plot(trX, trY, "ro", label="Orinal data")
+    plt.plot(trX, w.eval()*trX + b.eval(), label="Fitted line")
+    plt.legend()
+    plt.show()
+
+    # Plot with pandas
+    #import pandas as pd
+    #fig, axes = plt.subplots(nrows=1, ncols=1)
+    #pd.DataFrame({'x':trX,'y':trY}).plot.scatter(x='x', y='y', ax=axes, color='red')
+    #pd.DataFrame({'x':trX,'y':w.eval()*trX + b.eval()}).plot.scatter(x='x', y='y', ax=axes, color='blue')
+```
+
