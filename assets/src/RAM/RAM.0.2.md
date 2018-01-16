@@ -72,7 +72,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 </p>
 
 ```markdown
-   #!/usr/bin/env python
+#!/usr/bin/env python
 # h(X)= b + wX
 %matplotlib inline
 import tensorflow as tf
@@ -121,4 +121,8 @@ with tf.Session() as sess:
    w should be something around [2]:  [ 2.00981951]
    b should be something around [10]: [ 9.98865509]
 ```
+
+<p align="center">
+<img width="300" align="center" src="../../images/128.jpg" />
+</p>
 
