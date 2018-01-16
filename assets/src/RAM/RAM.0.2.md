@@ -117,3 +117,8 @@ with tf.Session() as sess:
     #pd.DataFrame({'x':trX,'y':w.eval()*trX + b.eval()}).plot.scatter(x='x', y='y', ax=axes, color='blue')
 ```
 
+```markdown
+   w should be something around [2]:  [ 2.00981951]
+   b should be something around [10]: [ 9.98865509]
+```
+
