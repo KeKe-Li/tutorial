@@ -19,30 +19,11 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### 单变量模型
 模型
+<p>
+  <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>w</mi><mi>T</mi></msup><mi>x</mi><mo>+</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">f(x)=w^Tx+b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8413309999999999em;"></span><span class="strut bottom" style="height:1.0913309999999998em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord"><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathit mtight" style="margin-right:0.13889em;">T</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mord mathit">x</span><span class="mbin">+</span><span class="mord mathit">b</span></span></span></span>
+</p>
 
-<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-<mtable>
-  <mlabeledtr>
-    <mtd id="mjx-eqn-1_1">
-      <mtext>(1)</mtext>
-    </mtd>
-    <mtd>
-      <mi>f</mi>
-      <mo stretchy="false">(</mo>
-      <mi mathvariant="bold-italic">x</mi>
-      <mo stretchy="false">)</mo>
-      <mo>=</mo>
-      <msup>
-        <mi mathvariant="bold-italic">w</mi>
-        <mi>T</mi>
-      </msup>
-      <mi mathvariant="bold-italic">x</mi>
-      <mo>+</mo>
-      <mi>b</mi>
-    </mtd>
-  </mlabeledtr>
-</mtable>
-</math>
-线性模型(linear model)简单, 易于建模, 但却蕴含着机器学习的重要思想.由于w直观地表达了各属性在预测中的重要性, 所以线性模型有着很好的可解释性(comprehensibility).
+线性模型(linear model)
+简单, 易于建模, 但却蕴含着机器学习的重要思想.由于w直观地表达了各属性在预测中的重要性, 所以线性模型有着很好的可解释性(comprehensibility).
 目标函数（最小二乘参数估计）
 
