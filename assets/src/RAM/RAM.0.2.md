@@ -20,6 +20,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 #### 单变量模型
 模型
 
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
 <mtable>
   <mlabeledtr>
     <mtd id="mjx-eqn-1_1">
@@ -41,6 +42,6 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
     </mtd>
   </mlabeledtr>
 </mtable>
-
+</math>
 目标函数（最小二乘参数估计）
 
