@@ -18,4 +18,29 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 回归分析中，只包括一个自变量和一个因变量，且二者的关系可用一条直线近似表示，这种回归分析称为一元线性回归分析。如果回归分析中包括两个或两个以上的自变量，且因变量和自变量之间是线性关系，则称为多元线性回归分析。
 
 #### 单变量模型
+模型
+
+<mtable>
+  <mlabeledtr>
+    <mtd id="mjx-eqn-1_1">
+      <mtext>(1)</mtext>
+    </mtd>
+    <mtd>
+      <mi>f</mi>
+      <mo stretchy="false">(</mo>
+      <mi mathvariant="bold-italic">x</mi>
+      <mo stretchy="false">)</mo>
+      <mo>=</mo>
+      <msup>
+        <mi mathvariant="bold-italic">w</mi>
+        <mi>T</mi>
+      </msup>
+      <mi mathvariant="bold-italic">x</mi>
+      <mo>+</mo>
+      <mi>b</mi>
+    </mtd>
+  </mlabeledtr>
+</mtable>
+
+目标函数（最小二乘参数估计）
 
