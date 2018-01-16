@@ -65,3 +65,8 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <p align="center">
 <img width="300" align="center" src="../../images/127.jpg" />
 </p>
+
+单变量示例
+<p align="center">
+<img width="300" align="center" src="../../images/128.jpg" />
+</p>
