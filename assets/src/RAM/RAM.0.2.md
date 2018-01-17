@@ -42,11 +42,11 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 当$X^TX$为满秩矩阵时，可以得到最优解
 <p align="center">
-<img width="270" align="center" src="../../images/134.jpg" />
+<img width="240" align="center" src="../../images/134.jpg" />
 </p>
 
-<p align="center">
-<img width="270" align="center" src="../../images/135.jpg" />
+<p>
+<img width="350" align="center" src="../../images/135.jpg" />
 </p>
 
 
