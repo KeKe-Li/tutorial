@@ -30,3 +30,5 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <p align="center">
 <img width="200" align="center" src="../../images/138.jpg" />
 </p>
+
+#### 逻辑回归算法
