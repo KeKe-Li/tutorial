@@ -45,9 +45,11 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="240" align="center" src="../../images/134.jpg" />
 </p>
 
-<p>
-<img width="350" align="center" src="../../images/135.jpg" />
-</p>
+注意：
+    1.多变量时需要对输入数据作归一化，如<img width="240" align="center" src="../../images/135.jpg" />
+    
+ 
+    
 
 
 #### 多变量模型
