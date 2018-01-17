@@ -30,6 +30,13 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="230" align="center" src="../../images/130.jpg" />
 </p>
 
+多变量时可以表示为矩阵
+<p align="center">
+<img width="230" align="center" src="../../images/132.jpg" />
+</p>
+
+
+
 #### 多变量模型
 
 
