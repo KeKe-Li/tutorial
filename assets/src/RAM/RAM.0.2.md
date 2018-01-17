@@ -247,7 +247,7 @@ with tf.Session() as sess:
 
 
 ```markdown
-  loss at step  0 : [54929292.0]
+loss at step  0 : [54929292.0]
 loss at step  10 :  [14629748.0]
 loss at step  20 :  [7090800.0]
 loss at step  30 :  [5680201.0]
