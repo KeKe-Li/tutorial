@@ -46,10 +46,6 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 目标函数（最小二乘参数估计）
 
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>J</mi><mo>=</mo><msub><mrow><mi>arg</mi><mi>m</mi><mi>i</mi><mi>n</mi></mrow><mrow><mo>(</mo><mi>w</mi><mo separator="true">,</mo><mi>b</mi><mo>)</mo></mrow></msub><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>m</mi></mrow></msubsup><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>−</mo><mi>w</mi><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mi>b</mi><msup><mo>)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">J={\arg min}_{(w,b)}\sum_{i=1}^{m}(y_i-wx_i-b)^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:1.2335479999999999em;vertical-align:-0.41944em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.09618em;">J</span><span class="mrel">=</span><span class="mord"><span class="mord textstyle uncramped"><span class="mop">ar<span style="margin-right:0.01389em;">g</span></span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">n</span></span><span class="msupsub"><span class="vlist"><span style="top:0.24444em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mopen mtight">(</span><span class="mord mathit mtight" style="margin-right:0.02691em;">w</span><span class="mpunct mtight">,</span><span class="mord mathit mtight">b</span><span class="mclose mtight">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mop"><span class="mop op-symbol small-op" style="top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist"><span style="top:0.30001em;margin-left:0em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mathit mtight">i</span><span class="mrel mtight">=</span><span class="mord mathrm mtight">1</span></span></span></span><span style="top:-0.364em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mathit mtight">m</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.03588em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.02691em;">w</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord mathit mtight">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span><span class="mbin">−</span><span class="mord mathit">b</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></span></p>
-
-
-
 #### 代码例子
 
 ```markdown
@@ -166,8 +162,8 @@ with tf.Session() as sess:
             print "Cost at step", i, "is:", cost.eval()
         sess.run(train_op)
 
-    print "w should be something around [3, 5]: ", sess.run(w)
-    print "b should be something around [20,100]:", sess.run(b)
+print "w should be something around [3, 5]: ", sess.run(w)
+print "b should be something around [20,100]:", sess.run(b)
 Cost at step 0 is: 5329.87
 Cost at step 99 is: 1.22204
 Cost at step 198 is: 0.998043
@@ -247,3 +243,114 @@ with tf.Session() as sess:
     coord.join(threads)
     # saver.save(sess, 'my-model', global_step=training_steps)
 ```
+#### 输出：
+
+
+```markdown
+  loss at step  0 : [54929292.0]
+loss at step  10 :  [14629748.0]
+loss at step  20 :  [7090800.0]
+loss at step  30 :  [5680201.0]
+loss at step  40 :  [5416011.0]
+loss at step  50 :  [5366280.5]
+loss at step  60 :  [5356678.0]
+loss at step  70 :  [5354588.0]
+loss at step  80 :  [5353913.0]
+loss at step  90 :  [5353510.0]
+loss at step  100 : [5353166.0]
+loss at step  110 : [5352839.5]
+loss at step  120 : [5352525.0]
+loss at step  130 : [5352218.5]
+loss at step  140 : [5351921.0]
+loss at step  150 : [5351631.5]
+loss at step  160 : [5351349.0]
+loss at step  170 : [5351075.0]
+loss at step  180 : [5350808.0]
+loss at step  190 : [5350549.5]
+loss at step  200 : [5350297.0]
+loss at step  210 : [5350050.5]
+loss at step  220 : [5349814.0]
+loss at step  230 : [5349580.5]
+loss at step  240 : [5349356.0]
+loss at step  250 : [5349134.0]
+loss at step  260 : [5348922.0]
+loss at step  270 : [5348712.5]
+loss at step  280 : [5348511.5]
+loss at step  290 : [5348313.5]
+loss at step  300 : [5348123.5]
+loss at step  310 : [5347935.0]
+loss at step  320 : [5347753.5]
+loss at step  330 : [5347577.5]
+loss at step  340 : [5347405.0]
+loss at step  350 : [5347237.0]
+loss at step  360 : [5347073.0]
+loss at step  370 : [5346915.0]
+loss at step  380 : [5346761.0]
+loss at step  390 : [5346611.0]
+loss at step  400 : [5346464.5]
+loss at step  410 : [5346320.5]
+loss at step  420 : [5346182.5]
+loss at step  430 : [5346047.5]
+loss at step  440 : [5345914.0]
+loss at step  450 : [5345786.0]
+loss at step  460 : [5345662.0]
+loss at step  470 : [5345539.5]
+loss at step  480 : [5345420.5]
+loss at step  490 : [5345305.5]
+loss at step  500 : [5345193.0]
+loss at step  510 : [5345082.5]
+loss at step  520 : [5344976.5]
+loss at step  530 : [5344871.0]
+loss at step  540 : [5344771.0]
+loss at step  550 : [5344670.5]
+loss at step  560 : [5344574.5]
+loss at step  570 : [5344480.5]
+loss at step  580 : [5344388.0]
+loss at step  590 : [5344298.0]
+loss at step  600 : [5344212.0]
+loss at step  610 : [5344127.0]
+loss at step  620 : [5344042.5]
+loss at step  630 : [5343962.0]
+loss at step  640 : [5343882.0]
+loss at step  650 : [5343805.5]
+loss at step  660 : [5343729.5]
+loss at step  670 : [5343657.0]
+loss at step  680 : [5343584.0]
+loss at step  690 : [5343514.5]
+loss at step  700 : [5343446.5]
+loss at step  710 : [5343380.0]
+loss at step  720 : [5343314.5]
+loss at step  730 : [5343250.0]
+loss at step  740 : [5343187.5]
+loss at step  750 : [5343128.0]
+loss at step  760 : [5343067.5]
+loss at step  770 : [5343010.5]
+loss at step  780 : [5342952.5]
+loss at step  790 : [5342897.5]
+loss at step  800 : [5342843.0]
+loss at step  810 : [5342791.5]
+loss at step  820 : [5342738.5]
+loss at step  830 : [5342688.5]
+loss at step  840 : [5342638.5]
+loss at step  850 : [5342589.5]
+loss at step  860 : [5342543.0]
+loss at step  870 : [5342496.5]
+loss at step  880 : [5342449.5]
+loss at step  890 : [5342406.0]
+loss at step  900 : [5342363.0]
+loss at step  910 : [5342319.5]
+loss at step  920 : [5342277.5]
+loss at step  930 : [5342236.0]
+loss at step  940 : [5342197.5]
+loss at step  950 : [5342157.0]
+loss at step  960 : [5342118.5]
+loss at step  970 : [5342080.5]
+loss at step  980 : [5342043.0]
+loss at step  990 : [5342007.5]
+[[ 318.77984619]]
+[[ 266.52853394]]
+```
+
+
+
+
