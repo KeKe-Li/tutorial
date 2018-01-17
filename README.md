@@ -164,6 +164,7 @@
 * [无监督神经元](https://blog.openai.com/unsupervised-sentiment-neuron/)
 * [Tensorflow实践](https://tensorflow.feisky.xyz/install/cpu.html)
 * [Artificial Intelligence](https://github.com/owainlewis/awesome-artificial-intelligence)
+* [Tensorflow新手入门](http://www.tensorfly.cn/tfdoc/tutorials/mnist_beginners.html)
 
 ### 机器学习
 觉得此文章不错可以给我star！如果有问题可以加我的微信Sen0676,可以一起交流算法和机器学习！
