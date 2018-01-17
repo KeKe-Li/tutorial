@@ -20,14 +20,14 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 #### 单变量模型
 模型
 <p align="center">
-<img width="100" align="center" src="../../images/131.jpg" />
+<img width="300" align="center" src="../../images/131.jpg" />
 </p>
 线性模型(linear model)
 简单, 易于建模, 但却蕴含着机器学习的重要思想.由于w直观地表达了各属性在预测中的重要性, 所以线性模型有着很好的可解释性(comprehensibility).
 
 目标函数（最小二乘参数估计）
 <p align="center">
-<img width="100" align="center" src="../../images/130.jpg" />
+<img width="300" align="center" src="../../images/130.jpg" />
 </p>
 
 #### 多变量模型
