@@ -35,6 +35,19 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="270" align="center" src="../../images/132.jpg" />
 </p>
 
+目标函数为
+<p align="center">
+<img width="270" align="center" src="../../images/133.jpg" />
+</p>
+
+当$X^TX$为满秩矩阵时，可以得到最优解
+<p align="center">
+<img width="270" align="center" src="../../images/134.jpg" />
+</p>
+
+<p align="center">
+<img width="270" align="center" src="../../images/135.jpg" />
+</p>
 
 
 #### 多变量模型
