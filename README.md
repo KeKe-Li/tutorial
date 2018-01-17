@@ -24,7 +24,7 @@
 深度学习的方向：被应用在图像处理与计算机视觉，自然语言处理以及语音识别等领域。 
 
  * [深度神经网络](https://github.com/AI-algorithms/Algorithms-Tutorial/blob/master/src/Neural%20Network/NNK.01.md)
- * [深度学习的入门]()
+ * [深度学习的入门](https://github.com/AI-algorithms/Algorithms-Tutorial/blob/master/src/Neural%20Network/NNK.02.md)
  * [深度学习的应用案例]()
  * [深度学习所需要的数据]()
 
