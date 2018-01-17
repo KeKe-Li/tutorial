@@ -25,3 +25,8 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <p align="center">
 <img width="230" align="center" src="../../images/137.jpg" />
 </p>
+
+如果将$y$看作是样本$x$作为正例的可能性，那么可以得到反应$x$作为正例的相对可能性对数几率（logit）
+<p align="center">
+<img width="230" align="center" src="../../images/138.jpg" />
+</p>
