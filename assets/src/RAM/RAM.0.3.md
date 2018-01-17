@@ -18,5 +18,10 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 最理想的转换函数为单位阶跃函数（也称Heaviside函数），但单位阶跃函数是不连续的，没法在实际计算中使用。故而，在分类过程中更常使用对数几率函数（即sigmoid函数）：
 
 <p align="center">
-<img width="260" align="center" src="../../images/136.jpg" />
+<img width="230" align="center" src="../../images/136.jpg" />
+</p>
+
+这样，模型就变成了
+<p align="center">
+<img width="230" align="center" src="../../images/137.jpg" />
 </p>
