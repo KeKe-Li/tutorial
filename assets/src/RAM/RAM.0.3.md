@@ -47,4 +47,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 一般是在目标函数(经验风险)中加上一个正则化项<img width="40" align="center" src="../../images/144.jpg" />，即
 
 <img width="460" align="center" src="../../images/143.jpg" />
-而这个正则化项一般会采用L1范数或者L2范数。其形式分别为<img width="300" align="center" src="../../images/145.jpg" />
+而这个正则化项一般会采用L1范数或者L2范数。其形式分别为：<img width="300" align="center" src="../../images/145.jpg" />
