@@ -38,3 +38,10 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 假设<img width="190" align="center" src="../../images/139.jpg" />，似然函数为<img width="200" align="center" src="../../images/140.jpg" />，那么对数似然函数为<img width="460" align="center" src="../../images/141.jpg" />，
 <img width="460" align="center" src="../../images/142.jpg" />
 然后就可以使用梯度下降算法、牛顿法或者BFGS等拟牛顿法来求解了。
+
+
+#### 正则化
+
+在模型过于复杂的情况下，模型会学习到很多特征，从而导致可能把所有训练样本都拟合到，这样就导致了过拟合。解决过拟合可以从两个方面入手，一是减少模型复杂度，一是增加训练集个数。而正则化就是减少模型复杂度的一个方法。
+
+一般是在目标函数(经验风险)中加上一个正则化项<img width="200" align="center" src="../../images/143.jpg" />
