@@ -37,3 +37,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 假设<img width="190" align="center" src="../../images/139.jpg" />，似然函数为<img width="200" align="center" src="../../images/140.jpg" />，那么对数似然函数为<img width="460" align="center" src="../../images/141.jpg" />，
 <img width="460" align="center" src="../../images/142.jpg" />
+然后就可以使用梯度下降算法、牛顿法或者BFGS等拟牛顿法来求解了。
