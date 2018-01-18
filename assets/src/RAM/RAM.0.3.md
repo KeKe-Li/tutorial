@@ -35,4 +35,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 可以使用极大似然估计法来估计参数$w$和$b$
 
-假设<img width="190" align="center" src="../../images/139.jpg" />，似然函数为<img width="200" align="center" src="../../images/140.jpg" />，那么对数似然函数为<img width="300" align="center" src="../../images/141.jpg" />
+假设<img width="190" align="center" src="../../images/139.jpg" />，似然函数为<img width="200" align="center" src="../../images/140.jpg" />，那么对数似然函数为<img width="400" align="center" src="../../images/141.jpg" />
