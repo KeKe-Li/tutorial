@@ -60,7 +60,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### 代码例子
 
-```markdown
+```python
     #Indicate the matplotlib to show the graphics inline
     %matplotlib inline 
     import matplotlib.pyplot as plt # import matplotlib
@@ -84,7 +84,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="300" align="center" src="../../images/128.jpg" />
 </p>
 
-```markdown
+```python
 #!/usr/bin/env python
 # h(X)= b + wX
 %matplotlib inline
@@ -130,7 +130,7 @@ with tf.Session() as sess:
     #pd.DataFrame({'x':trX,'y':w.eval()*trX + b.eval()}).plot.scatter(x='x', y='y', ax=axes, color='blue')
 ```
 
-```markdown
+```python
    w should be something around [2]:  [ 2.00981951]
    b should be something around [10]: [ 9.98865509]
 ```
@@ -142,7 +142,7 @@ with tf.Session() as sess:
 #### 多变量示例
 多变量其实就是输入变成了矩阵：
 
-```markdown
+```python
 #!/usr/bin/env python
 # h(X)= B + WX
 %matplotlib inline
@@ -258,7 +258,7 @@ with tf.Session() as sess:
 #### 输出：
 
 
-```markdown
+```python
 loss at step  0 : [54929292.0]
 loss at step  10 :  [14629748.0]
 loss at step  20 :  [7090800.0]
@@ -366,7 +366,7 @@ loss at step  990 : [5342007.5]
 
 #### sklearn示例
 
-```markdown
+```python
 import tensorflow.contrib.learn.python.learn as learn
 from sklearn import datasets, metrics, preprocessing
 

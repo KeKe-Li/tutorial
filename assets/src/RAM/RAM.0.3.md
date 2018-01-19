@@ -65,7 +65,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### 示例代码
 
-```markdown
+```python
 
 import os
 import tensorflow as tf
@@ -180,7 +180,7 @@ with tf.Session() as sess:
 
 
 
-```markdown
+```python
 
 loss at step  0 : [1.0275139]
 loss at step  100 : [1.389969]
@@ -198,7 +198,7 @@ loss at step  900 : [0.89417559]
 #### minst回归示例
 
 
-```markdown
+```python
 import tensorflow as tf
 import numpy as np
 import input_data
@@ -267,7 +267,7 @@ with tf.Session() as sess:
 
 ```
 
-```markdown
+```python
 Epoch: 0001 cost= 1.181141054
 Epoch: 0002 cost= 0.664358092
 Epoch: 0003 cost= 0.553026987
