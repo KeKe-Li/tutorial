@@ -194,3 +194,74 @@ loss at step  800 : [1.0500686]
 loss at step  900 : [0.89417559]
 0.72
 ```
+
+#### minst回归示例
+
+
+```markdown
+import tensorflow as tf
+import numpy as np
+import input_data
+
+# Import MINST data
+mnist = input_data.read_data_sets("../MNIST_data/", one_hot=True)
+Extracting ../MNIST_data/train-images-idx3-ubyte.gz
+Extracting ../MNIST_data/train-labels-idx1-ubyte.gz
+Extracting ../MNIST_data/t10k-images-idx3-ubyte.gz
+Extracting ../MNIST_data/t10k-labels-idx1-ubyte.gz
+# Parameters
+learning_rate = 0.01
+training_epochs = 25
+batch_size = 100
+display_step = 1
+
+# tf Graph Input
+x = tf.placeholder("float", [None, 784]) # mnist data image of shape 28*28=784
+y = tf.placeholder("float", [None, 10]) # 0-9 digits recognition => 10 classes
+
+# Create model
+def init_weights(shape):
+    return tf.Variable(tf.random_normal(shape, stddev=0.01))
+
+def model(X, w):
+    return tf.matmul(X, w)
+
+# like in linear regression, we need a shared variable weight matrix
+# for logistic regression
+w = init_weights([784, 10]) 
+
+# Construct model
+# compute mean cross entropy (softmax is applied internally)
+cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(model(x, w), y)) 
+train_op = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost) # construct optimizer
+predict_op = tf.argmax(model(x, w), 1) # at predict time, evaluate the argmax of the logistic regression
+
+# Launch the graph
+with tf.Session() as sess:
+    tf.initialize_all_variables().run()
+
+    # Training cycle
+    for epoch in range(training_epochs):
+        avg_cost = 0.
+        total_batch = int(mnist.train.num_examples/batch_size)
+        # Loop over all batches
+        for i in range(total_batch):
+            batch_xs, batch_ys = mnist.train.next_batch(batch_size)
+            # Fit training using batch data
+            sess.run(train_op, feed_dict={x: batch_xs, y: batch_ys})
+            # Compute average loss
+            avg_cost += sess.run(cost, feed_dict={x: batch_xs, y: batch_ys})/total_batch
+        # Display logs per epoch step
+        if epoch % display_step == 0:
+            print "Epoch:", '%04d' % (epoch+1), "cost=", "{:.9f}".format(avg_cost)
+
+    print "Optimization Finished!"
+
+    # Test model
+    correct_prediction = tf.equal(predict_op, tf.argmax(y, 1))
+    # Calculate accuracy
+    accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))
+    print "Accuracy:", accuracy.eval({x: mnist.test.images, y: mnist.test.labels})
+
+```
+
