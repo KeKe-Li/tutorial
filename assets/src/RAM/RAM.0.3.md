@@ -300,7 +300,7 @@ Accuracy: 0.9122
 
 #### sklearn示例
 
-```markdown
+```python
 from sklearn import datasets
 from sklearn import metrics
 import tensorflow as tf
