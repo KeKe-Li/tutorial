@@ -209,6 +209,8 @@ Extracting ../MNIST_data/train-images-idx3-ubyte.gz
 Extracting ../MNIST_data/train-labels-idx1-ubyte.gz
 Extracting ../MNIST_data/t10k-images-idx3-ubyte.gz
 Extracting ../MNIST_data/t10k-labels-idx1-ubyte.gz
+
+
 # Parameters
 learning_rate = 0.01
 training_epochs = 25
@@ -265,3 +267,35 @@ with tf.Session() as sess:
 
 ```
 
+```markdown
+Epoch: 0001 cost= 1.181141054
+Epoch: 0002 cost= 0.664358092
+Epoch: 0003 cost= 0.553026987
+Epoch: 0004 cost= 0.499294951
+Epoch: 0005 cost= 0.466518660
+Epoch: 0006 cost= 0.443856266
+Epoch: 0007 cost= 0.427351894
+Epoch: 0008 cost= 0.414347254
+Epoch: 0009 cost= 0.403219846
+Epoch: 0010 cost= 0.394844531
+Epoch: 0011 cost= 0.387121435
+Epoch: 0012 cost= 0.380693078
+Epoch: 0013 cost= 0.375634897
+Epoch: 0014 cost= 0.369904718
+Epoch: 0015 cost= 0.365776612
+Epoch: 0016 cost= 0.361626607
+Epoch: 0017 cost= 0.358361928
+Epoch: 0018 cost= 0.354674878
+Epoch: 0019 cost= 0.351685582
+Epoch: 0020 cost= 0.349124772
+Epoch: 0021 cost= 0.346287186
+Epoch: 0022 cost= 0.344134942
+Epoch: 0023 cost= 0.341778976
+Epoch: 0024 cost= 0.340130984
+Epoch: 0025 cost= 0.337454195
+Optimization Finished!
+Accuracy: 0.9122
+
+```
+
+#### sklearn示例
