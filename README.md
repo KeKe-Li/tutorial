@@ -70,7 +70,7 @@
      * [线性回归](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RAM/RAM.0.2.md)  
      * [逻辑回归](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RAM/RAM.0.3.md)  
      * [多元自适应回归(MARS)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RAM/RAM.0.4.md)  
-     * [本地散点平滑估计(LOESS)]()  
+     * [本地散点平滑估计(LOESS)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RAM/RAM.0.5.md)  
  * [基于实例的学习算法]() 
      * [K-邻近算法（KNN）]()
      * [学习矢量化（LVQ）]()
