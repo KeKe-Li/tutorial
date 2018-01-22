@@ -13,7 +13,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### 本地散点平滑估计
 
-本地散点平滑估计（Locally Estimated Scatterplot Smoothing，LOESS），事先不用确定参数数量
+本地散点平滑估计（Locally Estimated Scatterplot Smoothing，LOESS），事先不用确定参数数量，每次预测的时候，用指定的样本点周围的样本点进行临时训练，确定参数。
 
 优点：.直接、快速 知名度高
 
