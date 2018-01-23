@@ -72,7 +72,7 @@
      * [多元自适应回归(MARS)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RAM/RAM.0.4.md)  
      * [本地散点平滑估计(LOESS)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RAM/RAM.0.5.md)  
  * [基于实例的学习算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BA/BA.0.1.md) 
-     * [K-邻近算法（KNN）]()
+     * [K-邻近算法（KNN）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BA/BA.0.2.md)
      * [学习矢量化（LVQ）]()
      * [自组织映射算法（SOM）]()
      * [局部加权学习算法（LWL）]()
