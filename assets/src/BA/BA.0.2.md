@@ -42,18 +42,7 @@ k近邻没有显式的训练过程，是“懒惰学习”的代表。此类学�
 
 
 ```python
-    #Indicate the matplotlib to show the graphics inline
-    %matplotlib inline 
-    import matplotlib.pyplot as plt # import matplotlib
-    import numpy as np # import numpy
-    import tensorflow as tf
-    import numpy as np
     
-    trX = np.linspace(-1, 1, 101) #Create a linear space of 101 points between 1 and 1
-    trY = 2 * trX + np.random.randn(*trX.shape) * 0.4 + 0.2 #Create The y function based on the x axis
-    plt.figure() # Create a new figure
-    plt.scatter(trX,trY) #Plot a scatter draw of the random datapoints
-    plt.plot (trX, .2 + 2 * trX) # Draw one line with the line function
 ```
 
 
