@@ -94,4 +94,8 @@ k近邻没有显式的训练过程，是“懒惰学习”的代表。此类学�
     print "Accuracy:", sess.run(accuracy)
 ```
 
+<p align="center">
+<img width="400" align="center" src="../../images/147.jpg" />
+</p>
+
 
