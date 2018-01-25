@@ -41,10 +41,10 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 * 根据分类是否正确按照不同规则调整获胜神经元的权值，当网络分类结果与教师信号一致时，向输入样本方向调整权值：
 
 <p align="center">
-<img width="100" align="center" src="../../images/151.jpg" />
+<img width="300" align="center" src="../../images/151.jpg" />
 </p>
 
 当网络分类结果与教师信号不一致时，向输入样本反方向调整权值：
 <p align="center">
-<img width="100" align="center" src="../../images/152.jpg" />
+<img width="300" align="center" src="../../images/152.jpg" />
 </p>
