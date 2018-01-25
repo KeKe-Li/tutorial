@@ -67,4 +67,176 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 初始化输入层与竞争层之间的权值W_ij及学习率η(η>0)。
 将输入向量<img width="200" align="center" src="../../images/154.jpg" />送入到输入层，并计算竞争层神经元与输入向量的距离：
-<img width="200" align="center" src="../../images/155.jpg" />
+<img width="200" align="center" src="../../images/155.jpg" />。
+
+#### 案例
+```python
+
+function [dw,ls] = learnlv3(w,p,z,n,a,t,e,gW,gA,d,lp,ls)
+%LEARNLV2 LVQ2 weight learning function.
+%
+% Syntax
+% 
+% [dW,LS] = learnlv3(w,p,n,a,T,lp,ls,Ttrain,C)
+% info = learnlv2(code)
+%
+% Description
+%
+% LEARNLV3 is the OLVQ weight learning function.
+%
+% LEARNLV2(W,P,Z,N,A,T,E,gW,gA,D,LP,LS) takes several inputs,
+% W - SxR weight matrix (or Sx1 bias vector).
+% P - RxQ input vectors (or ones(1,Q)).
+% Z - SxQ weighted input vectors.
+% N - SxQ net input vectors.
+% A - SxQ output vectors.
+% T - SxQ layer target vectors.
+% E - SxQ layer error vectors.
+% gW - SxR weight gradient with respect to performance.
+% gA - SxQ output gradient with respect to performance.
+% D - SxS neuron distances.
+% LP - Learning parameters, none, LP = [].
+% LS - Learning state, initially should be = [].
+% and returns,
+% dW - SxR weight (or bias) change matrix.
+% LS - New learning state.
+%
+% Learning occurs according to LEARNLV1's learning parameter,
+% shown here with its default value.
+% LP.lr - 0.01 - Learning rate
+%
+% LEARNLV2(CODE) returns useful information for each CODE string:
+% 'pnames' - Returns names of learning parameters.
+% 'pdefaults' - Returns default learning parameters.
+% 'needg' - Returns 1 if this function uses gW or gA.
+%
+% Examples
+%
+% Here we define a sample input P, output A, weight matrix W, and
+% output gradient gA for a layer with a 2-element input and 3 neurons.
+% We also define the learning rate LR.
+%
+% p = rand(2,1);
+% w = rand(3,2);
+% n = negdist(w,p);
+% a = compet(n);
+% gA = [-1;1; 1];
+% lp.lr = 0.5;
+%
+% Since LEARNLV2 only needs these values to calculate a weight
+% change (see Algorithm below), we will use them to do so.
+%
+% dW = learnlv3(w,p,n,a,lp,Ttrain,C)
+%
+% Network Use
+%
+% You can create a standard network that uses LEARNLV2 with NEWLVQ.
+%
+% To prepare the weights of layer i of a custom network
+% to learn with LEARNLV1:
+% 1) Set NET.trainFcn to 'trainwb1'.
+% (NET.trainParam will automatically become TRAINWB1's default parameters.)
+% 2) Set NET.adaptFcn to 'adaptwb'.
+% (NET.adaptParam will automatically become TRAINWB1's default parameters.)
+% 3) Set each NET.inputWeights{i,j}.learnFcn to 'learnlv2'.
+% Set each NET.layerWeights{i,j}.learnFcn to 'learnlv2'.
+% (Each weight learning parameter property will automatically
+% be set to LEARNLV2's default parameters.)
+%
+% To train the network (or enable it to adapt):
+% 1) Set NET.trainParam (or NET.adaptParam) properties as desired.
+% 2) Call TRAIN (or ADAPT).
+%
+% Algorithm
+%
+% LEARNLV3 calculates the weight change dW for a given neuron from
+% the neuron's input P, output A, train vector target T train, output
+% conexion matrix C and learning rate LR
+% according to the OLVQ rule, given i the index of the neuron whose
+% output a(i) is 1:
+%
+% dw(i,:) = +lr*(p-w(i,:)) if C(:,i) = Ttrain
+% = -lr*(p-w(i,:)) if C(:,i) ~= Ttrain
+%
+% if C(:,i) ~= Ttrain then the index j is found of the neuron with the
+% greatest net input n(k), from the neurons whose C(:,k)=Ttrain. This
+% neuron's weights are updated as follows:
+%
+% dw(j,:) = +lr*(p-w(i,:))
+%
+% See also LEARNLV1, ADAPTWB, TRAINWB, ADAPT, TRAIN.
+
+% Mark Beale, 11-31-97
+% Copyright (c) 1992-1998 by The MathWorks, Inc.
+% $Revision: 1.1.1.1 $
+
+% FUNCTION INFO
+% =============
+if isstr(w)
+  switch lower(w)
+  case 'name'
+      dw = 'Learning Vector Quantization 3';
+  case 'pnames'
+    dw = {'lr';'window'};
+  case 'pdefaults'
+    lp.lr = 0.01;
+    lp.window = 0.25;
+    dw = lp;
+  case 'needg'
+    dw = 1;
+  otherwise
+    error('NNET:Arguments','Unrecognized code.')
+  end
+  return
+end
+
+
+% CALCULATION
+% ===========
+
+[S,R] = size(w);
+Q = size(p,2);
+pt = p';
+dw = zeros(S,R);
+% For each q...
+for q=1:Q
+
+  % Find closest neuron k1 找到获胜神经元
+  nq = n(:,q);
+  k1 = find(nq == max(nq));
+  k1 = k1(1);
+
+  % Find next closest neuron k2 次获胜神经元
+  nq(k1) = -inf;
+  k2 = find(nq == max(nq));
+  k2 = k2(1);
+
+
+  % and if x falls into the window...
+  d1 = abs(n(k1,q)); % Shorter distance
+  d2 = abs(n(k2,q)); % Greater distance
+
+  if d2/d1 > ((1-lp.window)/(1+lp.window))
+
+      % then move incorrect neuron away from input,
+      % and the correct neuron towards the input
+      ptq = pt(q,:);
+      if gA(k1,q) ~= gA(k2,q)
+          % indicate the incorrect neuron with i, the other with j
+          if gA(k1,q) ~= 0
+              i = k1;
+              j = k2;
+          else
+              i = k2;
+              j = k1;
+          end
+          dw(i,:) = dw(i,:) - lp.lr*(ptq - w(i,:));
+          dw(j,:) = dw(j,:) + lp.lr*(ptq - w(j,:));
+      else
+          dw(k1,:) = dw(k1,:) + 0.11*lp.window*(ptq-w(k1,:));
+       % dw(k2,:) = dw(k2,:) + 0.11*lp.window*(ptq-w(k2,:));
+      end
+  end
+end
+
+```
