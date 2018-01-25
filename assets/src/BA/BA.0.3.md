@@ -201,12 +201,12 @@ dw = zeros(S,R);
 % For each q...
 for q=1:Q
 
-  % Find closest neuron k1 找到获胜神经元
+  % Find closest neuron k1 
   nq = n(:,q);
   k1 = find(nq == max(nq));
   k1 = k1(1);
 
-  % Find next closest neuron k2 次获胜神经元
+  % Find next closest neuron k2 
   nq(k1) = -inf;
   k2 = find(nq == max(nq));
   k2 = k2(1);
