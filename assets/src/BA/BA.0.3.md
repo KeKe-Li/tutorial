@@ -48,3 +48,9 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <p align="center">
 <img width="300" align="center" src="../../images/152.jpg" />
 </p>
+其他非激活神经元权值保持不变。
+* 更新学习速率
+<p align="center">
+<img width="300" align="center" src="../../images/153.jpg" />
+</p>
+* 当训练次数未达到设定的次数时，转到步骤输入样本向量输入下一个样本，重复各步骤直到达到设定训练次数为止。上述训练过程中，要保证η（t）为单调下降函数。
