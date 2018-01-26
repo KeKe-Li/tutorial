@@ -74,7 +74,7 @@
  * [基于实例的学习算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BA/BA.0.1.md) 
      * [K-近邻算法（KNN）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BA/BA.0.2.md)
      * [学习矢量化（LVQ）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BA/BA.0.3.md)
-     * [自组织映射算法（SOM）](http://www.infoq.com/cn/articles/etcd-interpretation-application-scenario-implement-principle)
+     * [自组织映射算法（SOM）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BA/BA.0.4.md)
      * [局部加权学习算法（LWL）]()
  * [正则化算法]()    
      * [岭回归（Ridge Regression）]()
