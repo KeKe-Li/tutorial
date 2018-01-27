@@ -148,3 +148,7 @@ if __name__ == "__main__":
     plt.show()
 ```
 最后，我们分别对ττ取值  0.10.1  和  11 ，得到了不同的拟合曲线：
+<p align="center">
+<img width="50" align="center" src="../../images/159.jpg" />
+</p>
+
