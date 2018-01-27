@@ -8,143 +8,67 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 局部加权回归（LWR）是我们遇到的第一个non-parametric（非参数）学习算法，而线性回归则是我们遇到的以一个parametric（参数）学习算法。因为参数学习算法它有固定的明确的参数，所以参数一旦确定，就不会改变了，我们不需要在保留训练集中的训练样本。而非参数学习算法，每进行一次预测，就需要重新学习一组，是变化的，所以需要一直保留训练样本。因而，当训练集的容量较大时，非参数学习算法需要占用更多的存储空间，计算速度也较慢。所以有得必有失，效果好了，计算速度却降下来了。
 
 ```python
+# coding: utf-8
+# linear_regression/regression.py
 
-using namespace std;  
-  
-const int Number = 6;  
-const int Dimesion = 3;  
-const float learningRate=0.001;       
-const float errorThr=1; //variance threshold  
-const int MAX=1000;     //Max times of iteration  
-  
-typedef struct Data{  
-    float vectorComponent[Dimesion];  
-}vectorData;  
-  
-vectorData x[Number] = {  
-    {1,1,8},  
-    {1,1,3},  
-    {1,1,6},  
-    {1,2,3},  
-    {1,2,1},  
-    {1,2,2},  
-};  
-float y[Number]={2,10,5,13,5,8};  
-/lwr(局部线性回归)  
-float weightValue(vectorData xi,vectorData x){  
-    float weight = 0.0;  
-    for(int i=0;i<Dimesion;i++){  
-        weight+=pow(xi.vectorComponent[i]-x.vectorComponent[i],2);  
-    }  
-    float tempWeight = exp(-(weight/(2*36)));  
-    if(tempWeight<0.02)  
-        tempWeight = 0.0;  
-    return tempWeight;  
-}  
-  
-float multiPly(vectorData x1,vectorData x2){  
-    float temp = 0.0;  
-    for(int i=0;i<Dimesion;i++){  
-        temp += x1.vectorComponent[i]*x2.vectorComponent[i];  
-    }  
-    return temp;  
-}  
-  
-vectorData addVectorData(vectorData x1,vectorData x2){  
-    vectorData temp;  
-    for(int i=0;i<Dimesion;i++)  
-        temp.vectorComponent[i] = x1.vectorComponent[i]+x2.vectorComponent[i];  
-    return temp;  
-}  
-  
-vectorData minusVectorData(vectorData x1,vectorData x2){  
-    vectorData temp;  
-    for(int i=0;i<Dimesion;i++)  
-        temp.vectorComponent[i] = x1.vectorComponent[i]-x2.vectorComponent[i];  
-    return temp;  
-}  
-  
-vectorData numberMultiVectorData(float para,vectorData x1){  
-    vectorData temp;  
-    for(int i=0;i<Dimesion;i++)  
-        temp.vectorComponent[i] = x1.vectorComponent[i]*para;  
-    return temp;  
-}  
-float costFunction(vectorData parameter[],vectorData inputData[],float inputResultData[],vectorData object){  
-    float costValue = 0.0;  
-    float tempValue = 0.0;  
-    float weightedValue = 0.0;  
-    for(int i=0;i<Number;i++){  
-        tempValue = 0.0;  
-          
-        //consider all the parameters although most of them is zero  
-        for(int j=0;j<Number;j++)  
-            tempValue += multiPly(parameter[j],inputData[i]);  
-        costValue += weightValue(inputData[i],object)*pow((inputResultData[i]-tempValue),2);      
-    }  
-  
-    return (costValue/2*4);  
-}  
-  
-  
-int LocallyWeightedAgression(vectorData parameter[],vectorData inputData[],float resultData[],vectorData objectVector){  
-    float tempValue = 0.0;  
-    float errorCost = 0.0;  
-    float weightedValue = 0.0;  
-    errorCost=costFunction(parameter,inputData,resultData,objectVector);  
-    if(errorCost<errorThr)  
-        return 1;  
-    for(int iteration=0;iteration<MAX;iteration++){  
-  
-        //stochastic  
-        for(int i=0;i<Number;i++){  
-            //calculate the h(x)  
-            weightedValue = weightValue(inputData[i],objectVector);  
-            tempValue=0.0;  
-            for(int j=0;j<Number;j++)  
-                tempValue+=multiPly(parameter[j],inputData[i]);  
-            //update the parameter by stochastic(随机梯度下降)  
-            printf("the next parameter is ");  
-            for(int ii=0;ii<Number;ii++){  
-                parameter[ii] = addVectorData(parameter[ii],numberMultiVectorData(weightedValue*learningRate*(resultData[i]-tempValue),inputData[i]));  
-                if(multiPly(parameter[ii],parameter[ii])!=0){  
-                    for(int jj=0;jj<Dimesion;jj++){  
-                        printf("%f ",parameter[ii].vectorComponent[jj]);  
-                    }  
-                }  
-            }  
-            printf("\n");  
-            errorCost=costFunction(parameter,inputData,resultData,objectVector);  
-            printf("error cost is %f\n",errorCost);  
-            if(errorCost<errorThr)  
-                break;  
-        }//end stochastic one time  
-  
-    }//end when the iteration becomes MAX   
-  
-    //calculate the object vector  
-    float resultValue = 0.0;  
-    for(int i=0;i<Number;i++){  
-        resultValue += weightValue(inputData[i],objectVector)*multiPly(parameter[i],objectVector);  
-    }  
-    printf("result value is %f \n",resultValue);  
-    return 1;  
-}  
-  
-int testLWA(){  
-    vectorData objectData = {1,1.5,1.5};  
-    vectorData localParameter[Number] = {0.0};  
-    LocallyWeightedAgression(localParameter,x,y,objectData);  
-    return 1;  
-}  
-int main(){  
-  //  DescendAlgorithm(parameter,x,y);  
-    //clearParameter(parameter);  
-    //Stochastic(parameter,x,y);  
-    //float ForTestData[] = {1,10,20};  
-    //testData(ForTestData);  
-    testLWA();  
-    system("pause");  
-    return 1;  
-}  
+def JLwr(theta, X, y, x, c):
+    """局部加权线性回归的代价函数计算式
+
+    Args:
+        theta: 相关系数矩阵
+        X: 样本集矩阵
+        y: 标签集矩阵
+        x: 待预测输入
+        c: tau
+    Returns:
+        预测代价
+    """
+    m,n = X.shape
+    summerize = 0
+    for i in range(m):
+        diff = (X[i]-x)*(X[i]-x).T
+        w = np.exp(-diff/(2*c*c))
+        predictDiff = np.power(y[i] - X[i]*theta,2)
+        summerize = summerize + w*predictDiff
+    return summerize
+
+@exeTime
+def lwr(rate, maxLoop, epsilon, X, y, x, c=1):
+    """局部加权线性回归
+
+    Args:
+        rate: 学习率
+        maxLoop: 最大迭代次数
+        epsilon: 预测精度
+        X: 输入样本
+        y: 标签向量
+        x: 待预测向量
+        c: tau
+    """
+    m,n = X.shape
+    # 初始化theta
+    theta = np.zeros((n,1))
+    count = 0
+    converged = False
+    error = float('inf')
+    errors = []
+    thetas = {}
+    for j in range(n):
+        thetas[j] = [theta[j,0]]
+    # 执行批量梯度下降
+    while count<=maxLoop:
+        if(converged):
+            break
+        count = count + 1
+        for j in range(n):
+            deriv = (y-X*theta).T*X[:, j]/m
+            theta[j,0] = theta[j,0]+rate*deriv
+            thetas[j].append(theta[j,0])
+        error = JLwr(theta, X, y, x, c)
+        errors.append(error[0,0])
+        # 如果已经收敛
+        if(error < epsilon):
+            converged = True
+    return theta,errors,thetas
+
 ```
