@@ -4,6 +4,8 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### 正则化算法
 
+监督机器学习问题就是“minimizeyour error while regularizing your parameters”，在规则化参数的同时最小化误差。最小化误差是为了让我们的模型拟合我们的训练数据，
+
 * 岭回归（Ridge Regression）
 * LASSO（Least Absolute Shrinkage and Selection Operator）
 * Elastic Net
