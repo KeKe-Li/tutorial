@@ -4,7 +4,3 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### 正则化算法
 
-* 岭回归（Ridge Regression）
-* LASSO（Least Absolute Shrinkage and Selection Operator）
-* Elastic Net
-* 最小角回归（LARS）
