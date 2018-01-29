@@ -153,6 +153,6 @@ if __name__ == "__main__":
 ```
 最后，我们分别对ττ取值  0.10.1  和  11 ，得到了不同的拟合曲线：
 <p align="center">
-<img width="400" align="center" src="../../images/159.jpg" />
+<img width="600" align="center" src="../../images/159.jpg" />
 </p>
 
