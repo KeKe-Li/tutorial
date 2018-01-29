@@ -77,7 +77,7 @@
      * [学习矢量化（LVQ）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BA/BA.0.3.md)
      * [自组织映射算法（SOM）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BA/BA.0.4.md)
      * [局部加权学习算法（LWR）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BA/BA.0.5.md)
- * [正则化算法]()    
+ * [正则化算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.1.md)    
      * [岭回归（Ridge Regression）]()
      * [LASSO（Least Absolute Shrinkage and Selection Operator）]()
      * [Elastic Net]()
