@@ -27,10 +27,10 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 因而，我们需要将不适定问题转化为适定问题：我们为上述损失函数加上一个正则化项，变为
 <p align="center">
-<img width="100" align="center" src="../../images/166.jpg" />
+<img width="200" align="center" src="../../images/166.jpg" />
 </p>
 
-其中，我们定义<img width="100" align="center" src="../../images/167.jpg" />，于是：
+其中，我们定义<img width="40" align="center" src="../../images/167.jpg" />，于是：
 <p align="center">
-<img width="100" align="center" src="../../images/168.jpg" />
+<img width="300" align="center" src="../../images/168.jpg" />
 </p>
