@@ -21,3 +21,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <p align="center">
 <img width="100" align="center" src="../../images/162.jpg" />
 </p>
+当X不是列满秩时，或者某些列之间的线性相关性比较大时，<img width="100" align="center" src="../../images/163.jpg" />的行列式接近于0，即<img width="100" align="center" src="../../images/163.jpg" />接近于奇异，上述问题变为一个不适定问题，此时，计算<img width="100" align="center" src="../../images/164.jpg" />时误差会很大，传统的最小二乘法缺乏稳定性与可靠性。
