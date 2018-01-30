@@ -13,3 +13,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <p align="center">
 <img width="70" align="center" src="../../images/160.jpg" />
 </p>
+采用最小二乘法，定义损失函数为残差的平方，最小化损失函数:
+<p align="center">
+<img width="70" align="center" src="../../images/161.jpg" />
+</p>
