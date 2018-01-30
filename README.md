@@ -79,7 +79,7 @@
      * [局部加权学习算法（LWR）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BA/BA.0.5.md)
  * [正则化算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.1.md)    
      * [岭回归（Ridge Regression）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.2.md)
-     * [LASSO（Least Absolute Shrinkage and Selection Operator）]()
+     * [LASSO（Least Absolute Shrinkage and Selection Operator）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.3.md)
      * [Elastic Net]()
      * [最小角回归（LARS）]()
  * [决策树算法]()
