@@ -32,5 +32,6 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 其中，我们定义<img width="40" align="center" src="../../images/167.jpg" />，于是：
 <p align="center">
-<img width="300" align="center" src="../../images/168.jpg" />
+<img width="200" align="center" src="../../images/168.jpg" />
 </p>
+其中I是单位矩阵。
