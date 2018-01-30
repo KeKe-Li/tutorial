@@ -17,3 +17,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <p align="center">
 <img width="70" align="center" src="../../images/161.jpg" />
 </p>
+也可以采用梯度下降法进行求解优化，也可以采用如下公式进行直接求解
+<p align="center">
+<img width="70" align="center" src="../../images/162.jpg" />
+</p>
