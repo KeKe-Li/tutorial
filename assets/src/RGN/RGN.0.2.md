@@ -29,3 +29,8 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <p align="center">
 <img width="100" align="center" src="../../images/166.jpg" />
 </p>
+
+其中，我们定义<img width="100" align="center" src="../../images/167.jpg" />，于是：
+<p align="center">
+<img width="100" align="center" src="../../images/168.jpg" />
+</p>
