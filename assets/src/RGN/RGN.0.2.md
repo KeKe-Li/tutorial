@@ -38,3 +38,5 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 随着的<img width="10" align="center" src="../../images/169.jpg" />增大，<img width="30" align="center" src="../../images/170.jpg" />各元素<img width="30" align="center" src="../../images/171.jpg" />的绝对值均趋于不断变小，它们相对于正确值<img width="10" align="center" src="../../images/163.jpg" />的偏差也越来越大。<img width="10" align="center" src="../../images/169.jpg" />趋于无穷大时，<img width="30" align="center" src="../../images/170.jpg" />趋于0。其中，<img width="30" align="center" src="../../images/170.jpg" />随<img width="10" align="center" src="../../images/169.jpg" />的改变而变化的轨迹，就称为岭迹。实际计算中可选非常多的  值，做出一个岭迹图，看看这个图在取哪个值的时候变稳定了，那就确定<img width="10" align="center" src="../../images/169.jpg" />值了。
 岭回归是对最小二乘回归的一种补充，它损失了无偏性，来换取高的数值稳定性，从而得到较高的计算精度。
+
+#### 应用案例
