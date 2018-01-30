@@ -11,5 +11,5 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 回归分析中常用的最小二乘法是一种无偏估计。对于一个适定问题，X通常是列满秩的：
 <p align="center">
-<img width="100" align="center" src="../../images/160.jpg" />
+<img width="70" align="center" src="../../images/160.jpg" />
 </p>
