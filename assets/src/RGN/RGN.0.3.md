@@ -6,4 +6,9 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 Lasso算法（least absolute shrinkage and selection operator，又译最小绝对值收敛和选择算子、套索算法）是一种同时进行特征选择和正则化（数学）的回归分析方法，旨在增强统计模型的预测准确性和可解释性，最初由斯坦福大学统计学教授Robert Tibshirani于1996年基于Leo Breiman的非负参数推断(Nonnegative Garrote, NNG)提出[1][2]。
 
-Lasso算法最初用于计算最小二乘法模型，这个简单的算法揭示了很多估计量的重要性质，如估计量与岭回归（Ridge regression，也叫Tikhonov regularization）和最佳子集选择的关系，Lasso系数估计值(estimate)和软阈值（soft thresholding）之间的联系。它也揭示了当协变量共线时，Lasso系数估计值不一定唯一（类似标准线性回归）。
+Lasso算法最初用于计算最小二乘法模型，这个简单的算法揭示了很多估计量的重要性质，如估计量与岭回归（Ridge regression，也叫Tikhonov regularization）和最佳子集选择的关系，Lasso系数估计值(estimate)和软阈值（soft thresholding）之间的联系。它也揭示了当协变量共线时，Lasso系数估计值不一定唯一（类似标准线性回归）。Lasso是另一种缩减方法，将回归系数收缩在一定的区域内。Lasso的主要思想是构造一个一阶惩罚函数获得一个精炼的模型, 通过最终确定一些变量的系数为0进行特征筛选。以两个变量为例，标准线性回归的cost function还是可以用二维平面的等值线表示，而约束条件则与岭回归的圆不同，Lasso的约束条件可以用方形表示，如图:
+
+
+
+
+#### 应用案例
