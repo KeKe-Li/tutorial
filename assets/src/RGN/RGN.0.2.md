@@ -93,7 +93,6 @@ def show_plot(alphas, scores):
 
 if __name__ == '__main__':
     #X_train, X_test, y_train, y_test = load_data()
-    #进行训练并且预测结果
     #test_ridge(X_train, X_test, y_train, y_test)
 
     #使用自己设置的alpha
