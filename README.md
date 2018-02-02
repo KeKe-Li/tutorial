@@ -80,7 +80,7 @@
  * [正则化算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.1.md)    
      * [岭回归（Ridge Regression）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.2.md)
      * [LASSO（Least Absolute Shrinkage and Selection Operator）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.3.md)
-     * [Elastic Net]()
+     * [Elastic Net](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.4.md)
      * [最小角回归（LARS）]()
  * [决策树算法]()
      * [分类和回归树（CART）]()
