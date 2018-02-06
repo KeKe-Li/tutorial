@@ -13,3 +13,8 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 在实践中，Lasso 和 Ridge 之间权衡的一个优势是它允许在循环过程（Under rotate）中继承 Ridge 的稳定性。
 
 在这里，最小化的目标函数是:
+<p align="center">
+<img width="300" align="center" src="../../images/173.jpg" />
+</p>
+
+
