@@ -82,7 +82,7 @@
      * [LASSO（Least Absolute Shrinkage and Selection Operator）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.3.md)
      * [弹性网络(Elastic Net)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.4.md)
      * [最小角回归(LARS)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.5.md)
- * [决策树算法]()
+ * [决策树算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.1.md)
      * [分类和回归树（CART）]()
      * [ID3算法(Iterative Dichotomiser 3)]()
      * [CHAID（Chi-squared Automatic Interaction Detection]()
