@@ -20,3 +20,5 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 5. 它很容易修改并为其他估算器生成解，比如Least Absolute Shrinkage and Selection Operator。
 
 缺点：
+
+1. 因为 LARS 是建立在循环拟合剩余变量上的，所以它对噪声非常敏感。
