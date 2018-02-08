@@ -83,7 +83,7 @@
      * [弹性网络(Elastic Net)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.4.md)
      * [最小角回归(LARS)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.5.md)
  * [决策树算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.1.md)
-     * [分类和回归树（CART）]()
+     * [分类和回归树（CART）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.2.md)
      * [ID3算法(Iterative Dichotomiser 3)]()
      * [CHAID（Chi-squared Automatic Interaction Detection]()
      * [随机森林（Random Forest）]()
