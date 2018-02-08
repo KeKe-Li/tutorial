@@ -8,6 +8,41 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 最小角回归(LARS)是对高维数据的回归算法， 由 Bradley Efron, Trevor Hastie, Iain Johnstone 和 Robert Tibshirani 开发完成。 LARS 和逐步回归很像。在每一步，它寻找与响应最有关联的 预测。当有很多预测有相同的关联时，它没有继续利用相同的预测，而是在这些预测中找出应该等角的方向。
 
 
+#### 示例应用
+```python
+print(__doc__)
+
+# Author: Fabian Pedregosa <fabian.pedregosa@inria.fr>
+#         Alexandre Gramfort <alexandre.gramfort@inria.fr>
+# License: BSD 3 clause
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+from sklearn import linear_model
+from sklearn import datasets
+
+diabetes = datasets.load_diabetes()
+X = diabetes.data
+y = diabetes.target
+
+print("Computing regularization path using the LARS ...")
+alphas, _, coefs = linear_model.lars_path(X, y, method='lasso', verbose=True)
+
+xx = np.sum(np.abs(coefs.T), axis=1)
+xx /= xx[-1]
+
+plt.plot(xx, coefs.T)
+ymin, ymax = plt.ylim()
+plt.vlines(xx, ymin, ymax, linestyle='dashed')
+plt.xlabel('|coef| / max|coef|')
+plt.ylabel('Coefficients')
+plt.title('LASSO Path')
+plt.axis('tight')
+plt.show()
+```
+
+
 
 #### 优点和缺点
 
