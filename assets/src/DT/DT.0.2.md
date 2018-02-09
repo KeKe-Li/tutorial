@@ -3,4 +3,6 @@
 AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### 分类和回归树（CART）
+分类回归树(Classification And Regression Tree, CART)模型是决策树学习方法的一种，CART既可以用于分类计算，也可以用于回归。
 
+不同于C4.5，CART本质是对特征空间进行二元划分（即CART生成的决策树是一棵二叉树），并能够对标量属性（nominal attribute）与连续属性（continuous attribute）进行分裂。
