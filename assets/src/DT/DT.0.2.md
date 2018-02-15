@@ -31,3 +31,4 @@ CART算法包括两个过程：
 <p align="center">
 <img width="200" align="center" src="../../images/58.jpg" />
 </p>
+基尼指数Gini(D)表示集合D的不确定性，基尼指数Gini(D,A)表示经A=a分割后集合D的不确定性。基尼指数值越大，样本集合的不确定性也就越大。
