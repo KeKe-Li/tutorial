@@ -28,3 +28,6 @@ CART算法包括两个过程：
 </p>
 如果样本集合D根据特征A是否取某一可能值a被分割成D1和D2两部分，即：<img width="300" align="center" src="../../images/60.jpg" />,D2=D-D1
 则在特征A的条件下，集合D的基尼指数计算公式为：
+<p align="center">
+<img width="200" align="center" src="../../images/58.jpg" />
+</p>
