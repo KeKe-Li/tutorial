@@ -36,3 +36,4 @@ CART算法包括两个过程：
 <p align="center">
 <img width="200" align="center" src="../../images/59.jpg" />
 </p>
+其中cm表示单元Rm上的最小误差平方的最优解.
