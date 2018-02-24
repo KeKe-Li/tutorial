@@ -176,7 +176,8 @@
 * [Tensorflow新手入门](http://www.tensorfly.cn/tfdoc/tutorials/mnist_beginners.html)
 
 ### 机器学习
-觉得此文章不错可以给我star！如果有问题可以加我的微信Sen0676,可以一起交流算法和机器学习！
+
+觉得此文章不错，支持我的话可以给我star ，:star: :star: :star:！如果有问题可以加我的微信Sen0676,可以一起交流算法和机器学习！
 
 
 ### License
