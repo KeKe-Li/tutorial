@@ -3,5 +3,5 @@
 AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 
-#### 分类和回归树（CART）
+#### ID3算法(Iterative Dichotomiser 3)
 
