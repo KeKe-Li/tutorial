@@ -49,8 +49,4 @@ def splitDataSet(dataSet, axis, value):#按照给定特征划分数据集
             retDataSet.append(reducedFeatVec)
     return retDataSet
 
-作者：哈劳斯军士
-链接：https://www.jianshu.com/p/c3df8616abe6
-來源：简书
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
