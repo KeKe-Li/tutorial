@@ -13,68 +13,6 @@ ID3算法是决策树的一种，它是基于奥卡姆剃刀原理的，即用�
 #### 应用案例
 
 ```python
-using namespace std;
-void ReadData() //读入数据
-{
-    ifstream fin("F:\\data.txt");
-    ;i<NUM;i++)
-    {
-      ;j<;j++)
-        {
-            fin>>DataTable[i][j];
-            cout<<DataTable[i][j]<<"\t";
-        }
-      cout<<endl;
-    }
-    fin.close();
-}
-
-double ComputLog(double &p) //计算以2为底的log
-{
-    ||p==)
-    ;
-    else
-    {
-        );
-        return result;
-    }
-}
-
-double ComputInfo(double &p) //计算信息熵
-{
-    //cout<<"The value of p is: "<<p<<endl;
-    -p;
-    /p;
-    /q;
-    return (p*ComputLog(m)+q*ComputLog(n));
-}
-
-void CountInfoNP(int begin,int end,int &CountP,int &CountN) //搜索的起始位置、终止位置、计数变量
-{
-    CountP=;
-    CountN=;
-    for(int i=begin;i<=end;i++)
-        ]=="Yes")
-            CountP++;
-        else
-            CountN++;
-}
-
-bool CompareData(string &data,int &count,string &result) //判断该属性值是否出现过
-{
-    ;k<count;k++)
-        if(data==DataValueWeight[k].AttriValueName) //如果该值出现过，则将其出现次数加一
-            {
-                DataValueWeight[k].ValueWeight+=;
-                if(result=="Yes")
-                    DataValueWeight[k].ValuePWeight+=;
-                else
-                    DataValueWeight[k].ValueNWeight+=;
-                //cout<<"Exist Here"<<endl;
-                return false;
-            }
-    return true; //如果该值没有出现过，则返回真值
-}
 
 
 ```
