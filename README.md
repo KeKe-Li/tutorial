@@ -93,7 +93,7 @@
  * [决策树算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.1.md)
      * [分类和回归树（CART）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.2.md)
      * [ID3算法(Iterative Dichotomiser 3)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.3.md)
-     * [CHAID（Chi-squared Automatic Interaction Detection]()
+     * [CHAID（Chi-squared Automatic Interaction Detection](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.4.md)
      * [随机森林（Random Forest）]()
      * [多元自适应回归样条（MARS）]()
      * [梯度推进机（Gradient Boosting Machine， GBM）]()
