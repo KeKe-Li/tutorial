@@ -114,3 +114,9 @@ for pre, fill, node in RenderTree(root_node):
 RenderTreeGraph(root_node).to_picture("decision_tree_id3.png")
 
 ```
+
+#### 优缺点
+
+优点：决策树ID3算法易于理解,能处理数据型的也能处理常规型的数据,还可以在相对较短的时间内能够对大型的数据集做出可行且较好的结果。
+
+缺点：决策树ID3算法比较偏向于选择属性值多的类别。
