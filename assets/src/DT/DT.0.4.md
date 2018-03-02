@@ -3,3 +3,4 @@
 AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### 卡方自动交互检测算法 CHAID（Chi-squared Automatic Interaction Detection)
+卡方自动交互检测法（chi-squared automatic interaction detector, CHAID）最早由Kass于1980年提出，是一个用来发现变量之间关系的工具。CHAID可用于预测（类似回归分析，CHAID最初被称为XAID）以及分类，并用于检测变量之间的相互作用。
