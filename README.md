@@ -100,7 +100,7 @@
      * [CHAID（Chi-squared Automatic Interaction Detection)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.4.md)
      * [随机森林（Random Forest）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.5.md)
      * [多元自适应回归样条（MARS）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.6.md)
-     * [梯度推进机（Gradient Boosting Machine,GBM）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.7.md)
+     * [梯度推进机（Gradient Boosting Machine,GBM）]()
  * [贝叶斯算法]()
      * [朴素贝叶斯]()
      * [高斯朴素贝叶斯]()
