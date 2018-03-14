@@ -3,4 +3,4 @@
 AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 
-#### 多元自适应回归样条（MARS）
+#### 梯度推进机（Gradient Boosting Machine,GBM）
