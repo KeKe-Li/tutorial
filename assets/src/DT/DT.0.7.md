@@ -11,7 +11,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 梯度推进理论梯度提升将弱“学习者”以迭代的方式组合成一个强大的学习者。在最小二乘回归设置中解释最容易，其目标是“教”一个模型F预测表单的值<img width="100" align="center" src="../../images/180.jpg" />通过最小化均方误差<img width="70" align="center" src="../../images/181.jpg" />，在输出变量的一些实际值的训练集上进行平均y。
 
-在每个阶段 m，<img width="150" align="center" src="../../images/182.jpg" />，梯度提升，可以假定存在一些不完善的模型<img width="60" align="center" src="../../images/183.jpg" />（首先，可以使用一个非常弱的模型，它可以预测训练集中的平均值y).梯度提升算法进一步改进<img width="60" align="center" src="../../images/183.jpg" />通过构建一个新的模型来增加一个估计器h来提供一个更好的模型：<img width="200" align="center" src="../../images/184.jpg" />.寻找h梯度增强解决方案从观察到完美的h意味着开始
+在每个阶段 m，<img width="150" align="center" src="../../images/182.jpg" />，梯度提升，可以假定存在一些不完善的模型<img width="50" align="center" src="../../images/183.jpg" />（首先，可以使用一个非常弱的模型，它可以预测训练集中的平均值y).梯度提升算法进一步改进<img width="50" align="center" src="../../images/183.jpg" />通过构建一个新的模型来增加一个估计器h来提供一个更好的模型：<img width="200" align="center" src="../../images/184.jpg" />.寻找h梯度增强解决方案从观察到完美的h意味着开始
 <p align="center">
 <img width="500" align="center" src="../../images/185.jpg" />
 </p>
@@ -21,4 +21,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="300" align="center" src="../../images/186.jpg" />
 </p>
 
-因此，梯度升压将适合h到残余<img width="100" align="center" src="../../images/187.jpg" />。就像其他增强型变体一样，<img width="100" align="center" src="../../images/188.jpg" />学会纠正其前任 <img width="100" align="center" src="../../images/183.jpg" />.把这个想法推广到除了平方误差之外的损失函数 - 以及分类和排序问题 - 从观察残差开始<img width="70" align="center" src="../../images/187.jpg" />对于给定的模型是平方误差损失函数的负梯度(相对于F(x))<img width="150" align="center" src="../../images/191.jpg" />.所以，梯度增强是一种梯度下降算法; 并推广它需要“插入”不同的损失及其梯度。
+因此，梯度升压将适合h到残余<img width="100" align="center" src="../../images/187.jpg" />。就像其他增强型变体一样，<img width="100" align="center" src="../../images/188.jpg" />学会纠正其前任 <img width="50" align="center" src="../../images/183.jpg" />.把这个想法推广到除了平方误差之外的损失函数 - 以及分类和排序问题 - 从观察残差开始<img width="50" align="center" src="../../images/187.jpg" />对于给定的模型是平方误差损失函数的负梯度(相对于F(x))<img width="150" align="center" src="../../images/191.jpg" />.所以，梯度增强是一种梯度下降算法; 并推广它需要“插入”不同的损失及其梯度。
