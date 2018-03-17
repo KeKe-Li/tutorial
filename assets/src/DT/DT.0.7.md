@@ -28,12 +28,12 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 梯度提升通常用于作为基础学习者的固定大小的决策树（特别是CART树）。对于这种特殊情况，弗里德曼提出了对梯度提升方法的修改，该方法可以提高每个基础学习者的适应质量。
 
-第m步中的通用梯度提升将适合决策树<img width="30" align="center" src="../../images/191.jpg" />伪残差。让<img width="30" align="center" src="../../images/192.jpg" />是它的叶子的数量。树将输入空间分成<img width="30" align="center" src="../../images/192.jpg" />不相交的地区<img width="30" align="center" src="../../images/193.jpg" />，...，<img width="30" align="center" src="../../images/194.jpg" />并预测每个地区的恒定值。使用指标符号，输出<img width="30" align="center" src="../../images/191.jpg" />对于输入x可以写成总和：
+第m步中的通用梯度提升将适合决策树<img width="30" align="center" src="../../images/191.jpg" />伪残差。让<img width="30" align="center" src="../../images/192.jpg" />是它的叶子的数量。树将输入空间分成<img width="30" align="center" src="../../images/192.jpg" />不相交的地区<img width="30" align="center" src="../../images/193.jpg" />，...，<img width="40" align="center" src="../../images/194.jpg" />并预测每个地区的恒定值。使用指标符号，输出<img width="40" align="center" src="../../images/191.jpg" />对于输入x可以写成总和：
 <p align="center">
 <img width="300" align="center" src="../../images/195.jpg" />
 </p>
 
-哪里<img width="30" align="center" src="../../images/196.jpg" />是该地区预测的价值<img width="30" align="center" src="../../images/197.jpg" />。
+哪里<img width="40" align="center" src="../../images/196.jpg" />是该地区预测的价值<img width="40" align="center" src="../../images/197.jpg" />。
 
 然后是系数<img width="30" align="center" src="../../images/196.jpg" />乘以某个值<img width="30" align="center" src="../../images/198.jpg" />，使用线搜索选择以便最小化损失函数，并且模型更新如下：
 <p align="center">
