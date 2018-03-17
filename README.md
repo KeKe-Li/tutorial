@@ -101,7 +101,7 @@
      * [随机森林（Random Forest）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.5.md)
      * [多元自适应回归样条（MARS）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.6.md)
      * [梯度推进机（Gradient Boosting Machine,GBM）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.7.md)
- * [贝叶斯算法]()
+ * [贝叶斯算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.0.1.md)
      * [朴素贝叶斯(Naive Bayes)]()
      * [高斯朴素贝叶斯(Gaussian Naive Bayes)]()
      * [多项式朴素贝叶斯(Multinomial Naive Bayes)]()
