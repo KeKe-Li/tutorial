@@ -30,18 +30,18 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 第m步中的通用梯度提升将适合决策树<img width="40" align="center" src="../../images/191.jpg" />伪残差。让<img width="30" align="center" src="../../images/192.jpg" />是它的叶子的数量。树将输入空间分成<img width="30" align="center" src="../../images/192.jpg" />不相交的地区<img width="30" align="center" src="../../images/193.jpg" />，...，<img width="40" align="center" src="../../images/194.jpg" />并预测每个地区的恒定值。使用指标符号，输出<img width="40" align="center" src="../../images/191.jpg" />对于输入x可以写成总和：
 <p align="center">
-<img width="300" align="center" src="../../images/195.jpg" />
+<img width="200" align="center" src="../../images/195.jpg" />
 </p>
 
 哪里<img width="40" align="center" src="../../images/196.jpg" />是该地区预测的价值<img width="40" align="center" src="../../images/197.jpg" />。
 
 然后是系数<img width="30" align="center" src="../../images/196.jpg" />乘以某个值<img width="30" align="center" src="../../images/198.jpg" />，使用线搜索选择以便最小化损失函数，并且模型更新如下：
 <p align="center">
-<img width="600" align="center" src="../../images/199.jpg" />
+<img width="650" align="center" src="../../images/199.jpg" />
 </p>
 
 弗里德曼提出修改这个算法，以便它选择一个单独的最优值<img width="40" align="center" src="../../images/201.jpg" />对于每个树的区域，而不是一个
 <img width="40" align="center" src="../../images/198.jpg" />为整棵树。他称修改后的算法为“TreeBoost”。系数<img width="40" align="center" src="../../images/196.jpg" />从树形拟合过程可以简单地被丢弃并且模型更新规则变为：
 <p align="center">
-<img width="600" align="center" src="../../images/200.jpg" />
+<img width="650" align="center" src="../../images/200.jpg" />
 </p>
