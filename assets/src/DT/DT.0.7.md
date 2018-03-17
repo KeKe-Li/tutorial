@@ -33,9 +33,9 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="300" align="center" src="../../images/195.jpg" />
 </p>
 
-哪里<img width="70" align="center" src="../../images/196.jpg" />是该地区预测的价值<img width="70" align="center" src="../../images/197.jpg" />。
+哪里<img width="30" align="center" src="../../images/196.jpg" />是该地区预测的价值<img width="30" align="center" src="../../images/197.jpg" />。
 
-然后是系数<img width="70" align="center" src="../../images/196.jpg" />乘以某个值<img width="70" align="center" src="../../images/198.jpg" />，使用线搜索选择以便最小化损失函数，并且模型更新如下：
+然后是系数<img width="30" align="center" src="../../images/196.jpg" />乘以某个值<img width="30" align="center" src="../../images/198.jpg" />，使用线搜索选择以便最小化损失函数，并且模型更新如下：
 <p align="center">
 <img width="600" align="center" src="../../images/199.jpg" />
 </p>
