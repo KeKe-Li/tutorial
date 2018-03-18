@@ -40,8 +40,10 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="650" align="center" src="../../images/199.jpg" />
 </p>
 
+
 弗里德曼提出修改这个算法，以便它选择一个单独的最优值<img width="40" align="center" src="../../images/201.jpg" />对于每个树的区域，而不是一个
 <img width="40" align="center" src="../../images/198.jpg" />为整棵树。他称修改后的算法为“TreeBoost”。系数<img width="40" align="center" src="../../images/196.jpg" />从树形拟合过程可以简单地被丢弃并且模型更新规则变为：
 <p align="center">
 <img width="650" align="center" src="../../images/200.jpg" />
 </p>
+
