@@ -21,7 +21,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="200" align="center" src="../../images/186.jpg" />
 </p>
 
-因此，梯度升压将适合h到残余<img width="100" align="center" src="../../images/187.jpg" />。就像其他增强型变体一样，<img width="70" align="center" src="../../images/188.jpg" />学会纠正其前任 <img width="30" align="center" src="../../images/183.jpg" />.把这个想法推广到除了平方误差之外的损失函数 - 以及分类和排序问题 - 从观察残差开始<img width="100" align="center" src="../../images/187.jpg" />对于给定的模型是平方误差损失函数的负梯度(相对于F(x)) <img width="100" align="center" src="../../images/190.jpg" /> 。所以，梯度增强是一种梯度下降算法; 并推广它需要“插入”不同的损失及其梯度。
+因此，梯度升压将适合h到残余<img width="100" align="center" src="../../images/187.jpg" />。就像其他增强型变体一样，<img width="60" align="center" src="../../images/188.jpg" />学会纠正其前任 <img width="30" align="center" src="../../images/183.jpg" />.把这个想法推广到除了平方误差之外的损失函数 - 以及分类和排序问题 - 从观察残差开始<img width="100" align="center" src="../../images/187.jpg" />对于给定的模型是平方误差损失函数的负梯度(相对于F(x)) <img width="100" align="center" src="../../images/190.jpg" /> 。所以，梯度增强是一种梯度下降算法; 并推广它需要“插入”不同的损失及其梯度。
 
 
 #### 梯度提升
