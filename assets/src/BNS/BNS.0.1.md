@@ -2,7 +2,7 @@
 谷歌的人工智能位于全球前列，在图像识别、语音识别、无人驾驶等技术上都已经落地。而百度实质意义上扛起了国内的人工智能的大旗，覆盖无人驾驶、智能助手、图像识别等许多层面。苹果业已开始全面拥抱机器学习，新产品进军家庭智能音箱并打造工作站级别Mac。另外，腾讯的深度学习平台Mariana已支持了微信语音识别的语音输入法、语音开放平台、长按语音消息转文本等产品，在微信图像识别中开始应用。全球前十大科技公司全部发力人工智能理论研究和应用的实现，虽然入门艰难，但是一旦入门，高手也就在你的不远处！
 AI的开发离不开算法那我们就接下来开始学习算法吧！
 
-#### 贝叶斯网络
+#### 贝叶斯算法
 
 贝叶斯网络（Bayesian networks or Bayesnets）也称为因果概率网络（CPNs，Causal Probabilistic Networks）、贝叶斯信念网络（BNS，Bayesian belief Networks）或信念网络，是用来对那些带有不确定性问题的问题域进行建模的系统。
 
@@ -12,3 +12,11 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 贝叶斯网络根据每个节点的概率表，在给定部分（一个或多个）节点状态值的前提下，对其余全部或部分节点的概率分布进行预测的过程即为网络的推理过程。
 
+贝叶斯网络（Bayesian networks or Bayesnets）这里的应用算法有：
+
+* 朴素贝叶斯(Naive Bayes)
+* 高斯朴素贝叶斯(Gaussian Naive Bayes)
+* 多项式朴素贝叶斯(Multinomial Naive Bayes)
+* AODE（Averaged One-Dependence Estimators）
+* 多元自适应回归样条（MARS）
+* 贝叶斯网络（Bayesian Belief Network）
