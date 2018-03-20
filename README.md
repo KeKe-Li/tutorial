@@ -28,7 +28,7 @@
 * 机器学习的应用：机器学习已广泛应用于数据挖掘、计算机视觉、自然语言处理、生物特征识别、搜索引擎、医学诊断、检测信用卡欺诈、证券市场分析、DNA序列测序、语音和手写识别、战略游戏和机器人等领域。下面开启我们的机器学习！
   
  * [机器学习环境的搭建](https://github.com/AI-algorithms/Algorithms-Tutorial/blob/master/src/Machine%20Learning/ML.01.md)
- * [机器学习的入门]()
+ * [机器学习的入门](https://github.com/AI-algorithms/Algorithms-Tutorial/blob/master/src/Machine%20Learning/ML.02.md)
  * [机器学习的框架]()
  * [机器学习的应用案例]()
 
