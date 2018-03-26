@@ -13,3 +13,23 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 朴素贝叶斯分类器的一个优势在于只需要根据少量的训练数据就可以估计出必要的参数（变量的均值和方差）。由于变量独立假设，只需要估计各个变量的方法，而不需要确定整个协方差矩阵。
 
 #### 应用案例
+```python
+import org.apache.spark.mllib.classification.{NaiveBayes, NaiveBayesModel}
+import org.apache.spark.mllib.linalg.Vectors
+import org.apache.spark.mllib.regression.LabeledPoint
+//读取并处理数据
+val data = sc.textFile("data/mllib/sample_naive_bayes_data.txt")
+val parsedData = data.map { line =>
+  val parts = line.split(',')
+  LabeledPoint(parts(0).toDouble, Vectors.dense(parts(1).split(' ').map(_.toDouble)))
+}
+// 切分数据为训练数据和测试数据
+val splits = parsedData.randomSplit(Array(0.6, 0.4), seed = 11L)
+val training = splits(0)
+val test = splits(1)
+//训练模型
+val model = NaiveBayes.train(training, lambda = 1.0, modelType = "multinomial")
+//测试数据
+val predictionAndLabel = test.map(p => (model.predict(p.features), p.label))
+val accuracy = 1.0 * predictionAndLabel.filter(x => x._1 == x._2).count() / test.count()
+```
