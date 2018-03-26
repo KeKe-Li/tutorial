@@ -33,3 +33,8 @@ val model = NaiveBayes.train(training, lambda = 1.0, modelType = "multinomial")
 val predictionAndLabel = test.map(p => (model.predict(p.features), p.label))
 val accuracy = 1.0 * predictionAndLabel.filter(x => x._1 == x._2).count() / test.count()
 ```
+#### 优缺点
+
+优点：学习和预测的效率高，且易于实现；在数据较少的情况下仍然有效，可以处理多分类问题。
+
+缺点：分类效果不一定很高，特征独立性假设会是朴素贝叶斯变得简单，但是会牺牲一定的分类准确率。
