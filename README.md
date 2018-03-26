@@ -103,7 +103,7 @@
      * [梯度推进机（Gradient Boosting Machine,GBM）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.7.md)
  * [贝叶斯算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.0.1.md)
      * [朴素贝叶斯(Naive Bayes)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.0.2.md)
-     * [高斯朴素贝叶斯(Gaussian Naive Bayes)]()
+     * [高斯朴素贝叶斯(Gaussian Naive Bayes)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.0.3.md)
      * [多项式朴素贝叶斯(Multinomial Naive Bayes)]()
      * [AODE（Averaged One-Dependence Estimators）]()
      * [贝叶斯网络（Bayesian Belief Network）]()
