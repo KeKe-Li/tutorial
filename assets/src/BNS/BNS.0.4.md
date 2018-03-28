@@ -4,4 +4,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### 多项式朴素贝叶斯(Multinomial Naive Bayes)
 
- 多项式朴素贝叶斯(Multinomial Naive Bayes)算法，用于文本分类(这个领域中数据往往以词向量表示，尽管在实践中 tf-idf向量在预测时表现良好)的两大经典朴素贝叶斯算法之一。分布参数由每类<img width="10" align="center" src="../../images/206.jpg" />的<img width="160" align="center" src="../../images/207.jpg" />向量决定， 式中 n 是特征的数量(对于文本分类，是词汇量的大小)<img width="30" align="center" src="../../images/208.jpg" />是样本中属于类 y 中特征i概率<img width="70" align="center" src="../../images/209.jpg" /> 。
+ 多项式朴素贝叶斯(Multinomial Naive Bayes)算法，用于文本分类(这个领域中数据往往以词向量表示，尽管在实践中 tf-idf向量在预测时表现良好)的两大经典朴素贝叶斯算法之一。分布参数由每类<img width="10" align="center" src="../../images/206.jpg" />的<img width="160" align="center" src="../../images/207.jpg" />向量决定， 式中 n 是特征的数量(对于文本分类，是词汇量的大小)<img width="30" align="center" src="../../images/208.jpg" />是样本中属于类 y 中特征i概率<img width="100" align="center" src="../../images/209.jpg" /> 。
