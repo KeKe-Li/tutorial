@@ -8,5 +8,5 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
  
 参数 <img width="30" align="center" src="../../images/210.jpg" /> 。 使用平滑过的最大似然估计法来估计，即相对频率计数:
 <p align="center">
-<img width="200" align="center" src="../../images/211.jpg" />
+<img width="190" align="center" src="../../images/211.jpg" />
 </p>
