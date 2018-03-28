@@ -10,4 +10,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <p align="center">
 <img width="190" align="center" src="../../images/211.jpg" />
 </p>
-式中<img width="30" align="center" src="../../images/212.jpg" /> 是训练集T中特征 i 在类 y 中出现的次数，<img width="30" align="center" src="../../images/213.jpg" /> 是类 y 中出现所有特征的计数总和。
+式中<img width="70" align="center" src="../../images/212.jpg" />是训练集T中特征 i 在类 y 中出现的次数，<img width="70" align="center" src="../../images/213.jpg" />是类 y 中出现所有特征的计数总和。
