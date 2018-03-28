@@ -14,4 +14,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 式中<img width="160" align="center" src="../../images/212.jpg" />是训练集T中特征 i 在类 y 中出现的次数，<img width="160" align="center" src="../../images/213.jpg" />是类y中出现所有特征的计数总和。
 
-先验平滑因子<img width="130" align="center" src="../../images/213.jpg" />应用于在学习样本中没有出现的特征，以防在将来的计算中出现0概率输出。 把  <img width="130" align="center" src="../../images/214.jpg" />被称为拉普拉斯平滑(Lapalce smoothing)，而 <img width="130" align="center" src="../../images/215.jpg" />被称为利德斯通(Lidstone smoothing)。
+先验平滑因子<img width="130" align="center" src="../../images/214.jpg" />应用于在学习样本中没有出现的特征，以防在将来的计算中出现0概率输出。 把  <img width="130" align="center" src="../../images/215.jpg" />被称为拉普拉斯平滑(Lapalce smoothing)，而 <img width="130" align="center" src="../../images/216.jpg" />被称为利德斯通(Lidstone smoothing)。
