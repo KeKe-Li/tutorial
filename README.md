@@ -105,7 +105,7 @@
      * [朴素贝叶斯(Naive Bayes)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.0.2.md)
      * [高斯朴素贝叶斯(Gaussian Naive Bayes)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.0.3.md)
      * [多项式朴素贝叶斯(Multinomial Naive Bayes)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.0.4.md)
-     * [AODE（Averaged One-Dependence Estimators）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.0.5.md)
+     * [平均依赖性评估（Averaged One-Dependence Estimators）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.0.5.md)
      * [贝叶斯网络（Bayesian Belief Network）]()
  * [基于核的算法]()   
      * [支持向量机（SVM）]()
