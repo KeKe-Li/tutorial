@@ -14,6 +14,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### 应用示例
 
+
 ```python
 from bayesian.bbn import build_bbn
 
