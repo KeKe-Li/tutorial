@@ -48,9 +48,4 @@ if __name__ == '__main__':
     g.q(guest_door='A')
 g.q(guest_door='A', monty_door='B')
 
-作者：xieyan0811
-链接：https://www.jianshu.com/p/83288566f834
-來源：简书
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
 ```
