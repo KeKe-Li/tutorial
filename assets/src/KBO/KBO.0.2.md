@@ -60,8 +60,8 @@ plot_results_with_hyperplane(clf, clf_name, df, plt_nmbr):
     "Logistic" : linear_model.LogisticRegression(),
     "Decision Tree": tree.DecisionTreeClassifier(),}
     
-    plt_nmbr = 1for clf_name, clf in clfs.iteritems():
+    plt_nmbr = for clf_name, clf in clfs.iteritems():
     clf.fit(df[train_cols], df.animal_type)
     plot_results_with_hyperplane(clf, clf_name, df, plt_nmbr)
-    plt_nmbr += 1pl.show()
+    plt_nmbr += pl.show()
 ```
