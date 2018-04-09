@@ -67,3 +67,4 @@ plot_results_with_hyperplane(clf, clf_name, df, plt_nmbr):
     plot_results_with_hyperplane(clf, clf_name, df, plt_nmbr)
     plt_nmbr += pl.show()
 ```
+相比于神经网络这样更先进的算法，支持向量机有两大主要优势：更高的速度、用更少的样本（千以内）取得更好的表现。这使得该算法非常适合文本分类问题。
