@@ -55,9 +55,12 @@ plot_results_with_hyperplane(clf, clf_name, df, plt_nmbr):
         # x's are cows, o's are wolves
         if item in ['o', 'x']:
             animals.append([x, y, item])df = pd.DataFrame(animals, columns=["x", "y", "animal"])df['animal_type'] = df.animal.apply(lambda x: 0 if x=="x" else 1)# train using the x and y position coordiantestrain_cols = ["x", "y"]clfs = {
+    
     "SVM": svm.SVC(),
     "Logistic" : linear_model.LogisticRegression(),
-    "Decision Tree": tree.DecisionTreeClassifier(),}plt_nmbr = 1for clf_name, clf in clfs.iteritems():
+    "Decision Tree": tree.DecisionTreeClassifier(),}
+    
+    plt_nmbr = 1for clf_name, clf in clfs.iteritems():
     clf.fit(df[train_cols], df.animal_type)
     plot_results_with_hyperplane(clf, clf_name, df, plt_nmbr)
     plt_nmbr += 1pl.show()
