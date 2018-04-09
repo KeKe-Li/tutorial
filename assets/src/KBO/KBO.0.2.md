@@ -54,17 +54,23 @@ plot_results_with_hyperplane(clf, clf_name, df, plt_nmbr):
                    label="cows" if animal=="x" else "wolves",
                    color='black')
     pl.title(clf_name)
-    pl.legend(loc="best")data = open("cows_and_wolves.txt").read()data = [row.split('\t') for row in data.strip().split('\n')]animals = []for y, row in enumerate(data):
+    pl.legend(loc="best")data = open("cows_and_wolves.txt").read()data = [row.split('\t') for row in data.strip().split('\n')]
+    animals = []for y, row in enumerate(data):
     for x, item in enumerate(row):
         # x's are cows, o's are wolves
         if item in ['o', 'x']:
-            animals.append([x, y, item])df = pd.DataFrame(animals, columns=["x", "y", "animal"])df['animal_type'] = df.animal.apply(lambda x: 0 if x=="x" else 1)# train using the x and y position coordiantestrain_cols = ["x", "y"]clfs = {
-    "SVM": svm.SVC(),
-    "Logistic" : linear_model.LogisticRegression(),
-    "Decision Tree": tree.DecisionTreeClassifier(),}
-    plt_nmbr = for clf_name, clf in clfs.iteritems():
-    clf.fit(df[train_cols], df.animal_type)
-    plot_results_with_hyperplane(clf, clf_name, df, plt_nmbr)
-    plt_nmbr += pl.show()
+            animals.append([x, y, item])df = pd.DataFrame(animals,
+            columns=["x", "y", "animal"])df['animal_type'] = df.animal.apply(lambda x: 0 if x=="x" else 1)
+            # train using the x and y position 
+            coordiantestrain_cols = ["x", "y"]
+            clfs = {
+            "SVM": svm.SVC(),
+            "Logistic" : linear_model.LogisticRegression(),
+            "Decision Tree": tree.DecisionTreeClassifier(),}
+            plt_nmbr = for clf_name, clf in clfs.iteritems():
+            clf.fit(df[train_cols], df.animal_type)
+            plot_results_with_hyperplane(clf, clf_name, df, plt_nmbr)
+            plt_nmbr += pl.show()
+            }
 ```
 相比于神经网络这样更先进的算法，支持向量机有两大主要优势：更高的速度、用更少的样本（千以内）取得更好的表现。这使得该算法非常适合文本分类问题。
