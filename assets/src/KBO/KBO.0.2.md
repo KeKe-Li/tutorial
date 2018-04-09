@@ -22,56 +22,303 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### 应用示例
 ```python
-# Data driven farmer goes to the Rodeo
-import numpy as npimport pylab as plfrom sklearn 
-import svmfrom sklearn 
-import linear_modelfrom sklearn 
-import treeimport pandas as pddef 
+# coding: utf8
+# svm/smo.py
 
-plot_results_with_hyperplane(clf, clf_name, df, plt_nmbr):
-    x_min, x_max = df.x.min() - .5, df.x.max() + .5
-    y_min, y_max = df.y.min() - .5, df.y.max() + .5
+import numpy as np
 
-    # step between points. i.e. [0, 0.02, 0.04, ...]
-    step = .02
-    # to plot the boundary, we're going to create a matrix of every possible point
-    # then label each point as a wolf or cow using our classifier
-    xx, yy = np.meshgrid(np.arange(x_min, x_max, step), np.arange(y_min, y_max, step))
-    Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])
-    # this gets our predictions back into a matrix
-    Z = Z.reshape(xx.shape)
+from sklearn.metrics.pairwise import rbf_kernel
 
-    # create a subplot (we're going to have more than 1 plot on a given image)
-    pl.subplot(2, 2, plt_nmbr)
-    # plot the boundaries
-    pl.pcolormesh(xx, yy, Z, cmap=pl.cm.Paired)
+"""
+svm模型
+"""
 
-    # plot the wolves and cows
-    for animal in df.animal.unique():
-        pl.scatter(df[df.animal==animal].x,
-                   df[df.animal==animal].y,
-                   marker=animal,
-                   label="cows" if animal=="x" else "wolves",
-                   color='black')
-    pl.title(clf_name)
-    pl.legend(loc="best")data = open("cows_and_wolves.txt").read()
-    data = [row.split('\t') for row in data.strip().split('\n')]
-    animals = []for y, row in enumerate(data):
-    for x, item in enumerate(row):
-        # x's are cows, o's are wolves
-        if item in ['o', 'x']:
-            animals.append([x, y, item])df = pd.DataFrame(animals,
-            columns=["x", "y", "animal"])df['animal_type'] = df.animal.apply(lambda x: 0 if x=="x" else 1)
-            # train using the x and y position 
-            coordiantestrain_cols = ["x", "y"]
-            clfs = {
-            "SVM": svm.SVC(),
-            "Logistic" : linear_model.LogisticRegression(),
-            "Decision Tree": tree.DecisionTreeClassifier(),}
-            plt_nmbr = for clf_name, clf in clfs.iteritems():
-            clf.fit(df[train_cols], df.animal_type)
-            plot_results_with_hyperplane(clf, clf_name, df, plt_nmbr)
-            plt_nmbr += pl.show()
-            }
+def linearKernel():
+    """线性核函数
+    """
+    def calc(X, A):
+        return X * A.T
+    return calc
+
+def rbfKernel(delta):
+    """rbf核函数
+    """
+    gamma = 1.0 / (2 * delta**2)
+
+    def calc(X, A):
+        return np.mat(rbf_kernel(X, A, gamma=gamma))
+    return calc
+
+def getSmo(X, y, C, tol, maxIter, kernel=linearKernel()):
+    """SMO
+
+    Args:
+        X 训练样本
+        y 标签集
+        C 正规化参数
+        tol 容忍值
+        maxIter 最大迭代次数
+        K 所用核函数
+
+    Returns:
+        trainSimple 简化版训练算法
+        train 完整版训练算法
+        predict 预测函数
+    """
+    # 存放核函数的转化结果
+    K = kernel(X, X)
+    # Cache存放预测误差，用以加快计算速度
+    ECache = np.zeros((m,2))
+
+    def predict(X, alphas, b, supportVectorsIndex, supportVectors):
+        """计算权值向量
+
+        Args:
+            X 预测矩阵
+            alphas alphas
+            b b
+            supportVectorsIndex 支持向量坐标集
+            supportVectors 支持向量
+        Returns:
+            predicts 预测结果
+        """
+        Ks = kernel(supportVectors, X)
+        predicts = (np.multiply(alphas[supportVectorsIndex], y[
+            supportVectorsIndex]).T * Ks + b).T
+        predicts = np.sign(predicts)
+        return predicts
+
+    def w(alphas, b, supportVectorsIndex, supportVectors):
+        """计算权值
+
+        Args:
+            alphas alphas
+            b b
+            supportVectorsIndex 支持向量坐标
+            supportVectors 支持向量
+        Returns:
+            w 权值向量
+        """
+        return (np.multiply(alphas[supportVectorsIndex], y[
+            supportVectorsIndex]).T * supportVectors).T
+
+    def E(i, alphas, b):
+        """计算预测误差
+
+        Args:
+            i i
+            alphas alphas
+            b b
+        Returns:
+            E_i 第i个样本的预测误差
+        """
+        FXi = float(np.multiply(alphas, y).T * K[:, i]) + b
+        E = FXi - float(y[i])
+        return E
+
+    def updateE(i, alphas, b):
+        ECache[i] = [1, E(i, alphas, b)]
+
+    def selectJRand(i):
+        """
+        """
+        j = i
+        while j == i:
+            j = int(np.random.uniform(0, m))
+        return j
+
+    def selectJ(i, Ei, alphas, b):
+        """选择权值 {% math %}\alpha^{(i)}{% endmath %}
+        """
+        maxJ = 0; maxDist=0; Ej = 0
+        ECache[i] = [1, Ei]
+        validCaches = np.nonzero(ECache[:, 0])[0]
+        if len(validCaches) > 1:
+            for k in validCaches:
+                if k==i: continue
+                Ek = E(k, alphas, b)
+                dist = np.abs(abs(Ei-Ek))
+                if maxDist < dist:
+                    Ej = Ek
+                    maxJ = k
+                    maxDist = dist
+            return maxJ, Ej
+        else:
+            ### 随机选择
+            j = selectJRand(i)
+            Ej = E(j, alphas, b)
+            return j, Ej
+
+    def select(i, alphas, b):
+        """alpha对选择
+        """
+        Ei = E(i, alphas, b)
+        # 选择违背KKT条件的，作为alpha2
+        Ri = y[i] * Ei
+        if (Ri < -tol and alphas[i] < C) or \
+                (Ri > tol and alphas[i] > 0):
+            # 选择第二个参数
+            j = selectJRand(i)
+            Ej = E(j, alphas, b)
+            # j, Ej = selectJ(i, Ei, alphas, b)
+            # get bounds
+            if y[i] != y[j]:
+                L = max(0, alphas[j] - alphas[i])
+                H = min(C, C + alphas[j] - alphas[i])
+            else:
+                L = max(0, alphas[j] + alphas[i] - C)
+                H = min(C, alphas[j] + alphas[i])
+            if L == H:
+                return 0, alphas, b
+            Kii = K[i, i]
+            Kjj = K[j, j]
+            Kij = K[i, j]
+            eta = 2.0 * Kij - Kii - Kjj
+            if eta >= 0:
+                return 0, alphas, b
+            iOld = alphas[i].copy()
+            jOld = alphas[j].copy()
+            alphas[j] = jOld - y[j] * (Ei - Ej) / eta
+            if alphas[j] > H:
+                alphas[j] = H
+            elif alphas[j] < L:
+                alphas[j] = L
+            if abs(alphas[j] - jOld) < tol:
+                alphas[j] = jOld
+                return 0, alphas, b
+            alphas[i] = iOld + y[i] * y[j] * (jOld - alphas[j])
+            # update ECache
+            updateE(i, alphas, b)
+            updateE(j, alphas, b)
+            # update b
+            bINew = b - Ei - y[i] * (alphas[i] - iOld) * Kii - y[j] * \
+                (alphas[j] - jOld) * Kij
+            bJNew = b - Ej - y[i] * (alphas[i] - iOld) * Kij - y[j] * \
+                (alphas[j] - jOld) * Kjj
+            if alphas[i] > 0 and alphas[i] < C:
+                bNew = bINew
+            elif alphas[j] > 0 and alphas[j] < C:
+                bNew = bJNew
+            else:
+                bNew = (bINew + bJNew) / 2
+            return 1, alphas, b
+        else:
+            return 0, alphas, b
+
+    def train():
+        """完整版训练算法
+
+        Returns:
+            alphas alphas
+            w w
+            b b
+            supportVectorsIndex 支持向量的坐标集
+            supportVectors 支持向量
+            iterCount 迭代次数
+        """
+        numChanged = 0
+        examineAll = True
+        iterCount = 0
+        alphas = np.mat(np.zeros((m, 1)))
+        b = 0
+        # 如果所有alpha都遵从 KKT 条件，则在整个训练集上迭代
+        # 否则在处于边界内 (0, C) 的 alpha 中迭代
+        while (numChanged > 0 or examineAll) and (iterCount < maxIter):
+            numChanged = 0
+            if examineAll:
+                for i in range(m):
+                    changed, alphas, b = select(i, alphas, b)
+                    numChanged += changed
+            else:
+                nonBoundIds = np.nonzero((alphas.A > 0) * (alphas.A < C))[0]
+                for i in nonBoundIds:
+                    changed, alphas, b = select(i, alphas, b)
+                    numChanged += changed
+            iterCount += 1
+
+            if examineAll:
+                examineAll = False
+            elif numChanged == 0:
+                examineAll = True
+        supportVectorsIndex = np.nonzero(alphas.A > 0)[0]
+        supportVectors = np.mat(X[supportVectorsIndex])
+        return alphas, w(alphas, b, supportVectorsIndex, supportVectors), b, \
+            supportVectorsIndex, supportVectors, iterCount
+
+    def trainSimple():
+        """简化版训练算法
+
+        Returns:
+            alphas alphas
+            w w
+            b b
+            supportVectorsIndex 支持向量的坐标集
+            supportVectors 支持向量
+            iterCount 迭代次数
+        """
+        numChanged = 0
+        iterCount = 0
+        alphas = np.mat(np.zeros((m, 1)))
+        b = 0
+        L = 0
+        H = 0
+        while iterCount < maxIter:
+            numChanged = 0
+            for i in range(m):
+                Ei = E(i, alphas, b)
+                Ri = y[i] * Ei
+                # 选择违背KKT条件的，作为alpha2
+                if (Ri < -tol and alphas[i] < C) or \
+                        (Ri > tol and alphas[i] > 0):
+                    # 选择第二个参数
+                    j = selectJRand(i)
+                    Ej = E(j, alphas, b)
+                    # get bounds
+                    if y[i] != y[j]:
+                        L = max(0, alphas[j] - alphas[i])
+                        H = min(C, C + alphas[j] - alphas[i])
+                    else:
+                        L = max(0, alphas[j] + alphas[i] - C)
+                        H = min(C, alphas[j] + alphas[i])
+                    if L == H:
+                        continue
+                    Kii = K[i, i]
+                    Kjj = K[j, j]
+                    Kij = K[i, j]
+                    eta = 2.0 * Kij - Kii - Kjj
+                    if eta >= 0:
+                        continue
+                    iOld = alphas[i].copy();
+                    jOld = alphas[j].copy()
+                    alphas[j] = jOld - y[j] * (Ei - Ej) / eta
+                    if alphas[j] > H:
+                        alphas[j] = H
+                    elif alphas[j] < L:
+                        alphas[j] = L
+                    if abs(alphas[j] - jOld) < tol:
+                        alphas[j] = jOld
+                        continue
+                    alphas[i] = iOld + y[i] * y[j] * (jOld - alphas[j])
+                    # update b
+                    bINew = b - Ei - y[i] * (alphas[i] - iOld) * Kii - y[j] * \
+                        (alphas[j] - jOld) * Kij
+                    bJNew = b - Ej - y[i] * (alphas[i] - iOld) * Kij - y[j] * \
+                        (alphas[j] - jOld) * Kjj
+                    if alphas[i] > 0 and alphas[i] < C:
+                        b = bINew
+                    elif alphas[j] > 0 and alphas[j] < C:
+                        b = bJNew
+                    else:
+                        b = (bINew + bJNew) / 2.0
+                    numChanged += 1
+            if numChanged == 0:
+                iterCount += 1
+            else:
+                iterCount = 0
+        supportVectorsIndex = np.nonzero(alphas.A > 0)[0]
+        supportVectors = np.mat(X[supportVectorsIndex])
+        return alphas, w(alphas, b, supportVectorsIndex, supportVectors), b, \
+            supportVectorsIndex, supportVectors, iterCount
+    return trainSimple, train, predict
 ```
 相比于神经网络这样更先进的算法，支持向量机有两大主要优势：更高的速度、用更少的样本（千以内）取得更好的表现。这使得该算法非常适合文本分类问题。
