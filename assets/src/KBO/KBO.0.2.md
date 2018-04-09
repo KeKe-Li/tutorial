@@ -54,7 +54,8 @@ plot_results_with_hyperplane(clf, clf_name, df, plt_nmbr):
                    label="cows" if animal=="x" else "wolves",
                    color='black')
     pl.title(clf_name)
-    pl.legend(loc="best")data = open("cows_and_wolves.txt").read()data = [row.split('\t') for row in data.strip().split('\n')]
+    pl.legend(loc="best")data = open("cows_and_wolves.txt").read()
+    data = [row.split('\t') for row in data.strip().split('\n')]
     animals = []for y, row in enumerate(data):
     for x, item in enumerate(row):
         # x's are cows, o's are wolves
