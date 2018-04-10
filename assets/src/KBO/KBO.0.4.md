@@ -102,7 +102,6 @@ fig.tight_layout()
 
 plt.show()
 
-# 从上图的结果中可以看出，花瓣的长度和宽度看起来在不同的类别有较强的区分性，因为这2个特征的直方图中，不同的类别的样本较为分散。
 # 因此在实际应用中，我们对特征进行降维，除了使用类似于LDA的特征投影方法（或者叫extraction），特征选择（selection）也是一种较好的方式。
 # 像上图这种低纬度的数据集，看一眼直方图我们就可以做出一定的判断。
 
@@ -117,7 +116,6 @@ for cl in range(1,4):
     
 
 # step2: 计算散度矩阵
-
 # 计算类内散度矩阵：Sw
 S_W = np.zeros((4,4))
 for cl,mv in zip(range(1,4), mean_vectors):
@@ -169,7 +167,6 @@ eig_pairs = sorted(eig_pairs, key=lambda k: k[0], reverse=True)
 print('Eigenvalues in decreasing order:\n')
 for i in eig_pairs:
     print (i[0], i[1])
-    
     
 # 从上面的特征值可以看到有2个特征值非常接近0，这2个值之所以接近0，一是代表了他们不包含信息量，第二是因为浮点运算的精确度问题。
 # 实际上这2分特征值应该就是0， 因为在LDA中，如果有C类，线性判别式最多只有C-1个，因此对于之前3类的数据集，最多只有2个特征值。
