@@ -132,3 +132,17 @@ def smoP(dataMatIn, classLabels, C, toler, maxIter, kTup=('lin', 0)):
         print("iteration number: %d" % iter)
     return oS.b, oS.alphas
 ```
+
+#### RBF优点
+优点：
+1. 它具有唯一最佳的特性，且无局部极小问题存在；
+2. RBF神经网络具有较强的输入和输出映射功能，并且理论证明在前向网络中RBF神经网络是完成映射功能的最有效网络；
+3. 分类能力好；
+4. 学习过程收敛速度快。
+
+
+#### RBF缺点
+缺点：
+1. 没有能力来解释自己的推理过程和推理依据；
+2. 当样本数据不足时，预测结果不太准确。
+
