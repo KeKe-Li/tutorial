@@ -15,4 +15,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 使用拉格朗日乘子法<img width="150" align="center" src="../../images/225.jpg" />可以求解得到<img width="80" align="center" src="../../images/226.jpg" />.
 
-对多分类情况，<img width="150" align="center" src="../../images/227.jpg" />，W的解是<img width="150" align="center" src="../../images/228.jpg" />的N−1 个最大广义特征值所对应的特征向量组成的矩阵。
+对多分类情况，<img width="150" align="center" src="../../images/227.jpg" />，W的解是<img width="100" align="center" src="../../images/228.jpg" />的N−1 个最大广义特征值所对应的特征向量组成的矩阵。
