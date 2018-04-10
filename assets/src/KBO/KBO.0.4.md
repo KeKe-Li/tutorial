@@ -21,4 +21,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 * 通过均值向量，计算类间散度矩阵<img width="50" align="center" src="../../images/229.jpg" />和类内散度矩阵<img width="50" align="center" src="../../images/230.jpg" />。
 * 对<img width="120" align="center" src="../../images/231.jpg" />进行特征值求解， 求出<img width="60" align="center" src="../../images/228.jpg" />的特征向量和特征值。
 * 对特征向量按照特征值的大小降序排列，并选择前K个特征向量组成投影矩阵W。
-* 通过D*K维的特征值矩阵将样本点投影到新的子空间中，<img width="120" align="center" src="../../images/232.jpg" />.
+* 通过D*K维的特征值矩阵将样本点投影到新的子空间中，<img width="60" align="center" src="../../images/232.jpg" />.
