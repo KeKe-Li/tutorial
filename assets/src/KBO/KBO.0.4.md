@@ -8,3 +8,11 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 由于LDA把原来N维的样本投影到了N-1维空间，因而也常被视为一种经典的降维技术。
 
+预使得同类样例的投影点尽可能接近，可以让同类样例投影点的协方差尽可能小，即<img width="80" align="center" src="../../images/220.jpg" />尽可能小。预使得异类样例的投影点尽可能远，可以让不同类样例的投影点尽可能远，即让类中心距离尽可能大，即<img width="80" align="center" src="../../images/221.jpg" /> 尽可能大。这样，目标函数为<img width="80" align="center" src="../../images/222.jpg" />.
+
+类内散度矩阵<img width="80" align="center" src="../../images/223.jpg" />.
+类间散度矩阵<img width="80" align="center" src="../../images/224.jpg" />.
+
+使用拉格朗日乘子法<img width="80" align="center" src="../../images/225.jpg" />可以求解得到<img width="80" align="center" src="../../images/226.jpg" />.
+
+对多分类情况，<img width="80" align="center" src="../../images/227.jpg" />，W的解是<img width="80" align="center" src="../../images/228.jpg" />的N−1 个最大广义特征值所对应的特征向量组成的矩阵。
