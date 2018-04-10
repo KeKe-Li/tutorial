@@ -51,3 +51,84 @@ RBF 神经网络的学习分成两阶段，自组织学习阶段和监督学习�
 
 综合以上两个原则设定隐含层中心个数，然后可以根据训练和测试的效果，对中心个数进行适当调整。一般情况下，中心个数设得越多，训练的效果越好，但所需要的时间越长；而当中心个数多到一定程度的时候，增多中心个数对训练效果的改善已不大。另外，隐含层中心数应该不大于训练数据记录数。
 
+
+#### 应用示例
+```python
+def kernelTrans(X, A, kTup):  # calc the kernel or transform data to a higher dimensional space
+    """
+    核转换函数
+    Args:
+        X     dataMatIn数据集
+        A     dataMatIn数据集的第i行的数据
+        kTup  核函数的信息
+
+    Returns:
+
+    """
+    m, n = shape(X)
+    K = mat(zeros((m, 1)))
+    if kTup[0] == 'lin':
+        # linear kernel:   m*n * n*1 = m*1
+        K = X * A.T
+    elif kTup[0] == 'rbf':
+        for j in range(m):
+            deltaRow = X[j, :] - A
+            K[j] = deltaRow * deltaRow.T
+        # 径向基函数的高斯版本
+        K = exp(K / (-1 * kTup[1] ** 2))  # divide in NumPy is element-wise not matrix like Matlab
+    else:
+        raise NameError('Houston We Have a Problem -- That Kernel is not recognized')
+    return K
+
+def smoP(dataMatIn, classLabels, C, toler, maxIter, kTup=('lin', 0)):
+    """
+    Args:
+        dataMatIn    数据集
+        classLabels  类别标签
+        C   松弛变量(常量值)，允许有些数据点可以处于分隔面的错误一侧。
+            控制最大化间隔和保证大部分的函数间隔小于1.0这两个目标的权重。
+            可以通过调节该参数达到不同的结果。
+        toler   容错率
+        maxIter 退出前最大的循环次数
+        kTup    包含核函数信息的元组
+    Returns:
+        b       模型的常量值
+        alphas  拉格朗日乘子
+    """
+
+    # 创建一个 optStruct 对象
+    oS = optStruct(mat(dataMatIn), mat(classLabels).transpose(), C, toler, kTup)
+    iter = 0
+    entireSet = True
+    alphaPairsChanged = 0
+
+    # 循环遍历：循环maxIter次 并且 （alphaPairsChanged存在可以改变 or 所有行遍历一遍）
+    while (iter < maxIter) and ((alphaPairsChanged > 0) or (entireSet)):
+        alphaPairsChanged = 0
+
+        #  当entireSet=true or 非边界alpha对没有了；就开始寻找 alpha对，然后决定是否要进行else。
+        if entireSet:
+            # 在数据集上遍历所有可能的alpha
+            for i in range(oS.m):
+                # 是否存在alpha对，存在就+1
+                alphaPairsChanged += innerL(i, oS)
+                # print("fullSet, iter: %d i:%d, pairs changed %d" % (iter, i, alphaPairsChanged))
+            iter += 1
+
+        # 对已存在 alpha对，选出非边界的alpha值，进行优化。
+        else:
+            # 遍历所有的非边界alpha值，也就是不在边界0或C上的值。
+            nonBoundIs = nonzero((oS.alphas.A > 0) * (oS.alphas.A < C))[0]
+            for i in nonBoundIs:
+                alphaPairsChanged += innerL(i, oS)
+                # print("non-bound, iter: %d i:%d, pairs changed %d" % (iter, i, alphaPairsChanged))
+            iter += 1
+
+        # 如果找到alpha对，就优化非边界alpha值，否则，就重新进行寻找，如果寻找一遍 遍历所有的行还是没找到，就退出循环。
+        if entireSet:
+            entireSet = False  # toggle entire set loop
+        elif (alphaPairsChanged == 0):
+            entireSet = True
+        print("iteration number: %d" % iter)
+    return oS.b, oS.alphas
+```
