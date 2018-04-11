@@ -121,8 +121,13 @@ print ("Found in %.2f seconds" % (end - start)), iters, "iterations"
 print "Centroids:", centers
 print "Cluster assignments:", assignments
 ```
+<p align="center">
+<img width="400" align="center" src="../../images/233.jpg" />
+</p>
 
-
+<p align="center">
+<img width="400" align="center" src="../../images/234.jpg" />
+</p>
 
 ```python
 Found in 2.15 seconds 8 iterations
