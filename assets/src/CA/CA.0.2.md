@@ -10,6 +10,117 @@ k-means算法属于非监督学习方法。此算法以k为参数，把n 个对�
 
 聚类相似度是利用各聚类中对象的均值所获得一个“中心对象”（引力中心）来进行计算的。相异度计算方法：欧几里得距离,曼哈顿距离,闵可夫斯基距离,皮尔逊相关系数.
 
+#### 应用示例
+
+输入：簇的数目k和包含n个对象的数据库。 输出：k个簇，使平方误差准则最小。
+
+算法步骤：
+
+* 1.为每个聚类确定一个初始聚类中心，这样就有K 个初始聚类中心。 
+* 2.将样本集中的样本按照最小距离原则分配到最邻近聚类
+* 3.使用每个聚类中的样本均值作为新的聚类中心。
+* 4.重复步骤2.3直到聚类中心不再变化。 
+* 5.结束，得到K个聚类
+
+```python
+#!/usr/bin/env python
+# coding: utf-8
+%matplotlib inline
+import time
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+
+from sklearn.datasets.samples_generator import make_blobs
+from sklearn.datasets.samples_generator import make_circles
+
+N = 200
+K = 4
+DATA_TYPE = 'blobs'
+MAX_ITERS = 1000
+colourindexes = [2, 1, 4, 3]
+# k-means不适用于circles数据，2个类足以demo这个问题
+if (DATA_TYPE == 'circle'):
+    K = 2
+    colourindexes = [2, 1]
+
+# 根据聚类中心生成测试数据
+centers = [(-2, -2), (-2, 1.5), (1.5, -2), (2, 1.5)]
+if (DATA_TYPE == 'circle'):
+    data, features = make_circles(
+        n_samples=N, shuffle=True, noise=0.01, factor=0.4)
+else:
+    data, features = make_blobs(n_samples=N, centers=centers,
+                                n_features=2, cluster_std=0.8,
+                                shuffle=False, random_state=42)
+    #fig, ax = plt.subplots()
+    #ax.scatter(np.asarray(centers).transpose()[0], np.asarray(
+    #    centers).transpose()[1], marker='o', s=250)
+    #plt.show()
+
+    fig, ax = plt.subplots()
+    ax.scatter(np.asarray(centers).transpose()[0], np.asarray(
+        centers).transpose()[1], marker='o', s=250)
+    ax.scatter(data.transpose()[0], data.transpose()[
+               1], marker='o', s=100, c=features, cmap=plt.cm.coolwarm)
+    plt.show()
+
+def bucket_mean(data, bucket_ids, num_buckets):
+    total = tf.unsorted_segment_sum(data, bucket_ids, num_buckets)
+    count = tf.unsorted_segment_sum(
+        tf.ones_like(data), bucket_ids, num_buckets)
+    return total / count
+
+start = time.time()
+points = tf.Variable(data)
+cluster_assignments = tf.Variable(tf.zeros([N], dtype=tf.int64))
+centroids = tf.Variable(tf.slice(points.initialized_value(), [0, 0], [K, 2]))
+
+rep_centroids = tf.reshape(tf.tile(centroids, [N, 1]), [N, K, 2])
+rep_points = tf.reshape(tf.tile(points, [1, K]), [N, K, 2])
+sum_squares = tf.reduce_sum(tf.square(rep_points - rep_centroids),
+                            reduction_indices=2)
+best_centroids = tf.argmin(sum_squares, 1)
+did_assignments_change = tf.reduce_any(
+    tf.not_equal(best_centroids, cluster_assignments))
+means = bucket_mean(points, best_centroids, K)
+
+with tf.control_dependencies([did_assignments_change]):
+    do_updates = tf.group(
+        centroids.assign(means),
+        cluster_assignments.assign(best_centroids))
+
+changed = True
+iters = 0
+
+sess = tf.Session()
+sess.run(tf.initialize_all_variables())
+while changed and iters < MAX_ITERS:
+    iters += 1
+    [changed, _] = sess.run([did_assignments_change, do_updates])
+    [centers, assignments] = sess.run([centroids, cluster_assignments])
+    fig, ax = plt.subplots()
+    ax.scatter(sess.run(points).transpose()[0], sess.run(points).transpose()[
+               1], marker='o', s=200, c=assignments, cmap=plt.cm.coolwarm)
+    ax.scatter(centers[:, 0], centers[:, 1], marker='^',
+               s=550, c=colourindexes, cmap=plt.cm.plasma)
+    ax.set_title('Iteration ' + str(iters))
+    # plt.savefig("kmeans" + str(iters) + ".png")
+    plt.show()
+
+fig, ax = plt.subplots()
+ax.scatter(sess.run(points).transpose()[0], sess.run(points).transpose()[
+           1], marker='o', s=200, c=assignments, cmap=plt.cm.coolwarm)
+ax.scatter(np.asarray(centers).transpose()[0], np.asarray(
+        centers).transpose()[1], marker='o', s=250, c=colourindexes, cmap=plt.cm.plasma)
+plt.show()
+
+
+end = time.time()
+print ("Found in %.2f seconds" % (end - start)), iters, "iterations"
+print "Centroids:", centers
+print "Cluster assignments:", assignments
+```
 
 #### 优点
 
