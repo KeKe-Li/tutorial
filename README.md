@@ -112,7 +112,7 @@
      * [径向基函数（Radial Basis Function ，RBF)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/KBO/KBO.0.3.md)
      * [线性判别分析（Linear Discriminate Analysis ，LDA)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/KBO/KBO.0.4.md)
  * [聚类算法(Cluster analysis)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CA/CA.0.1.md)
-     * [K-均值(K-Means Algorithm)]()
+     * [K-均值(K-Means Algorithm)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CA/CA.0.2.md)
      * [k-均值聚类(K-Means Clustering)]()
      * [期望最大化(Expectation-Maximization)]()
      * [聚类分析(Cluster Analysis)]()
