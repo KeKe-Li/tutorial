@@ -25,7 +25,7 @@ k-means算法属于非监督学习方法。此算法以k为参数，把n 个对�
 ```python
 #!/usr/bin/env python
 # coding: utf-8
-%matplotlib inline
+# matplotlib inline
 import time
 import numpy as np
 import tensorflow as tf
