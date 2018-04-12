@@ -8,5 +8,13 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 还有一个输出是各个类的聚类中心向量集合V，一共有c个元素。每个元素也是有p维的。
 <p align="center">
-<img width="400" align="center" src="../../images/235.jpg" />
+<img width="200" align="center" src="../../images/235.jpg" />
+</p>
+
+<p align="center">
+<img width="200" align="center" src="../../images/236.jpg" />
+</p>
+
+<p align="center">
+<img width="200" align="center" src="../../images/237.jpg" />
 </p>
