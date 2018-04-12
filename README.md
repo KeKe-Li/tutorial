@@ -114,7 +114,7 @@
  * [聚类算法(Cluster analysis)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CA/CA.0.1.md)
      * [K-均值(K-Means Algorithm)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CA/CA.0.2.md)
      * [模糊c-均值聚类算法(Fuzzy C-means Algorithm)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CA/CA.0.3.md)
-     * [期望最大化(Expectation-Maximization)]()
+     * [期望最大化(Expectation-Maximization)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CA/CA.0.4.md)
      * [聚类分析(Cluster Analysis)]()
  * [关联规则学习]()   
      * [Apriori算法]() 
