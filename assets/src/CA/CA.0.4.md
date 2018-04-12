@@ -3,3 +3,4 @@
 AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### 期望最大化(Expectation-Maximization)
+期望最大化（Expectation-maximization）算法在统计中被用于寻找，依赖于不可观察的隐性变量的概率模型中，参数的最大似然估计。
