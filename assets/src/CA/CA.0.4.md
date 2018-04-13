@@ -52,17 +52,12 @@ import matplotlib.pyplot as plt
 from scipy.stats import multivariate_normal
 
 DEBUG = True
-
-
 # 调试输出函数
 # 由全局变量 DEBUG 控制输出
 def debug(*args, **kwargs):
     global DEBUG
     if DEBUG:
         print(*args, **kwargs)
-
-
-
 # 第 k 个模型的高斯分布密度函数
 # 每 i 行表示第 i 个样本在各模型中的出现概率
 # 返回一维列表
@@ -132,6 +127,7 @@ def maximize(Y, gamma):
         alpha[k] = Nk / N
     cov = np.array(cov)
     return mu, cov, alpha
+    
 # 数据预处理
 # 将所有数据都缩放到 0 和 1 之间
 def scale_data(Y):
