@@ -21,7 +21,7 @@ EM算法还是许多非监督聚类算法的基础（如Cheeseman et al. 1988）
 
 对于每一个样例i，让<img width="20" align="center" src="../../images/241.jpg" />表示该样例隐含变量z的某种分布，<img width="20" align="center" src="../../images/241.jpg" />满足的条件是<img width="80" align="center" src="../../images/242.jpg" />，<img width="80" align="center" src="../../images/243.jpg" />。由此，可以确定式子的下界，然后不断的提高此下界达到逼近最后真实值的目的值，这个不等式变成等式为止，然后再依据jensen不等式，当不等式变为等式的时候，当且仅当，也就是说X是常量，推出就是下面的公式：
 <p align="center">
-<img width="100" align="center" src="../../images/244.jpg" />
+<img width="280" align="center" src="../../images/244.jpg" />
 </p>
 
 由于Q是随机变量z的概率密度函数，因此，可以得到：分子的和等于c（分子分母都对所有z求和：多个等式分子分母相加不变，这个认为每个样例的两个概率比值都是c）。
