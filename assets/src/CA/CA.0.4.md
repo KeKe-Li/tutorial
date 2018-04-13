@@ -9,4 +9,14 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 期望最大化算法的提出主要是用来计算后验分布的众数或极大似然估计。然而，近年来它引起了统计学家的极大兴趣，在统计领域得到了广泛的应用。该方法广泛的应用于缺损数据、截尾数据、成群数据、带有复杂参数的数据等不完整数据。期望最大化算法流行的原因，一是在于它的理论简单化和一般性，二是许多应用都能够纳入到期望最大化算法的范畴，期望最大化算法已经成为统计学上的一个标准工具。
 EM算法还是许多非监督聚类算法的基础（如Cheeseman et al. 1988），而且它是用于学习部分可观察马尔可夫模型（Partially Observable Markov Model）的广泛使用的Baum-Welch前向后向算法的基础。
 
-给定的训练样本是<img width="200" align="center" src="../../images/238.jpg" />，样例间独立，我们想找到每个样例隐含的类别z，能使得p(x,z)最大。p(x,z)的最大似然估计如下：<img width="200" align="center" src="../../images/239.jpg" />
+给定的训练样本是<img width="80" align="center" src="../../images/238.jpg" />，样例间独立，我们想找到每个样例隐含的类别z，能使得p(x,z)最大。p(x,z)的最大似然估计如下：
+<p align="center">
+<img width="200" align="center" src="../../images/239.jpg" />
+</p>
+
+由jensen不等式可得：
+<p align="center">
+<img width="200" align="center" src="../../images/240.jpg" />
+</p>
+
+对于每一个样例i，让<img width="80" align="center" src="../../images/241.jpg" />表示该样例隐含变量z的某种分布，<img width="80" align="center" src="../../images/241.jpg" />满足的条件是<img width="80" align="center" src="../../images/242.jpg" />，<img width="80" align="center" src="../../images/243.jpg" />。由此，可以确定式子的下界，然后不断的提高此下界达到逼近最后真实值的目的值，这个不等式变成等式为止，然后再依据jensen不等式，当不等式变为等式的时候，当且仅当，也就是说X是常量，推出就是下面的公式：
