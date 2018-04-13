@@ -29,3 +29,17 @@ EM算法还是许多非监督聚类算法的基础（如Cheeseman et al. 1988）
 <p align="center">
 <img width="230" align="center" src="../../images/245.jpg" />
 </p>
+
+
+由此可得出EM算法的一般过程：循环重复E步骤和M步骤直到收敛。
+E步骤：对于每一个i，计算：
+
+<p align="center">
+<img width="230" align="center" src="../../images/246.jpg" />
+</p>
+
+M步骤计算:
+
+<p align="center">
+<img width="230" align="center" src="../../images/247.jpg" />
+</p>
