@@ -35,11 +35,17 @@ EM算法还是许多非监督聚类算法的基础（如Cheeseman et al. 1988）
 E步骤：对于每一个i，计算：
 
 <p align="center">
-<img width="230" align="center" src="../../images/246.jpg" />
+<img width="260" align="center" src="../../images/246.jpg" />
 </p>
 
 M步骤计算:
 
 <p align="center">
-<img width="230" align="center" src="../../images/247.jpg" />
+<img width="280" align="center" src="../../images/247.jpg" />
 </p>
+
+#### EM算法的特点编辑
+
+* 1.EM算法中，由于似然函数是有界的，并且算法的每一步迭代都使似然函数增加，根据单调有界定理可以证明EM算法具有收敛性。
+* 2.EM算法是一种初始值敏感的算法，选取不同初始参数会有不同的最终结果；
+* 3.EM算法得到的不会是全局最优，每次迭代逼近的都是当前的局部最优。
