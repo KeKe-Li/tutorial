@@ -47,6 +47,7 @@ M步骤计算:
 
 
 #### 应用示例
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
