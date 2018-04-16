@@ -41,3 +41,37 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 根据分类的方法可将聚类分析分为：系统聚类、快速聚类、有序聚类。
 根据分类的对象可将聚类分析分为：Q型——样品聚类clustering for individuals；R型——指标聚类clustering for variables。
+
+#### 应用示例
+```python
+from numpy import vstack 
+from scipy.cluster.vq import kmeans,vq 
+from matplotlib.finance import quotes_historical_yahoo_ochl 
+from datetime import datetime 
+
+start = datetime(2014,7,1) 
+end = datetime(2014,9,30) 
+listDji = ['AXP','BA','CAT','CSCO','CVX','DD','DIS','GE',
+'GS','HD','IBM', 'INTC','JNJ','JPM','KO','MCD','MMM','MRK',
+'MSFT','NKE','PFE','PG','T','TRV', 'UNH','UTX','V','VZ','WMT','XOM']    #30家公司代号
+
+'''初始化两个二维数组'''
+quotes = [ [0 for col in range(90)] for row in range(30)] 
+listTemp = [ [0 for col in range(90)] for row in range(30)]      
+
+for i in range(30):
+    quotes[i] = quotes_historical_yahoo_ochl(listDji[i], start, end)       #摘录数据，放入quotes
+
+days = len(quotes[0])                                           
+for i in range(30):
+    for j in range(days-1):
+        if (quotes[i][j][2] and quotes[i][j+1][2] and (quotes[i][j+1][2]>=quotes[i][j][2])):    #比较前后两天的收盘价
+            listTemp[i][j] = 1.0
+        else:
+            listTemp[i][j] = -1.0 
+
+data = vstack(listTemp) 
+centroids,_ = kmeans(data,4) #float or double is supported  
+result,_= vq(data,centroids) 
+print(result)
+```
