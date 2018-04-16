@@ -168,6 +168,7 @@ def GMM_EM(Y, K, times):
     return mu, cov, alpha
 ```
 
+
 ```python
 main.py 文件：
 import matplotlib.pyplot as plt
