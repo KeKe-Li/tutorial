@@ -116,7 +116,7 @@
      * [模糊c-均值聚类算法(Fuzzy C-means Algorithm)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CA/CA.0.3.md)
      * [期望最大化(Expectation-Maximization)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CA/CA.0.4.md)
      * [聚类分析(Cluster Analysis)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CA/CA.0.5.md)
- * [关联规则学习(Association Rule Learning)]()   
+ * [关联规则学习(Association Rule Learning)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARL/ARL.0.1.md)   
      * [先验算法(Apriori Algorithm)]() 
      * [Eclat算法(Eclat Algorithm)]() 
      * [FP-growth算法(FP-Growth Algorithm)]() 
