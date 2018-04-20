@@ -118,7 +118,7 @@
      * [聚类分析(Cluster Analysis)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CA/CA.0.5.md)
  * [关联规则学习(Association Rule Learning)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARL/ARL.0.1.md)   
      * [先验算法(Apriori Algorithm)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARL/ARL.0.2.md) 
-     * [Eclat算法(Eclat Algorithm)]() 
+     * [Eclat算法(Eclat Algorithm)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARL/ARL.0.3.md) 
      * [FP-growth算法(FP-Growth Algorithm)]() 
  * [神经网络]()      
      * [感知器]() 
