@@ -25,3 +25,16 @@
 人工神经网络中，神经元处理单元可表示不同的对象，例如特征、字母、概念，或者一些有意义的抽象模式。网络中处理单元的类型分为三类：输入单元、输出单元和隐单元。输入单元接受外部世界的信号与数据；输出单元实现系统处理结果的输出；隐单元是处在输入和输出单元之间，不能由系统外部观察的单元。神经元间的连接权值反映了单元间的连接强度，信息的表示和处理体现在网络处理单元的连接关系中。
 
 应用领域：神经网络克服了传统人工智能方法对于直觉的缺陷，因而在神经专家系统、模式识别、智能控制、组合优化、预测等领域有成功的应用。
+
+人工神经网络(Artificial Neural Network)算法应用： 
+ * 自动编码器(Autoencoder) 
+ * 反向传播(Backpropagation)
+ * 回归神经网络(Recurrent Neural Network)
+ * 多层感知器(Multilayer Perceptron)
+ * 玻尔兹曼机(Boltzmann Machine)
+ * 卷积神经网络(Convolutional Neural Network)
+ * Hopfield网络(Hopfield Network)]() 
+ * 径向基函数网络(Radial Basis Function Network)
+ * 受限玻尔兹曼机(Restricted Boltzmann Machine)
+ * 自组织映射(Self-Organizing Map)
+ * 尖峰神经网络(Spiking Neural Network)
