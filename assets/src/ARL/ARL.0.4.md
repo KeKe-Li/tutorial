@@ -3,3 +3,6 @@
 AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### FP-growth算法(FP-Growth Algorithm)
+FP-growth算法是基于Apriori原理的，通过将数据集存储在FP（Frequent Pattern)树上发现频繁项集，但不能发现数据之间的关联规则。FP-growth算法只需要对数据库进行两次扫描，而Apriori算法在求每个潜在的频繁项集时都需要扫描一次数据集，所以说Apriori算法是高效的。其中算法发现频繁项集的过程是：
+* 1.构建FP树；
+* 2.从FP树中挖掘频繁项集。

@@ -119,7 +119,7 @@
  * [关联规则学习(Association Rule Learning)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARL/ARL.0.1.md)   
      * [先验算法(Apriori Algorithm)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARL/ARL.0.2.md) 
      * [Eclat算法(Eclat Algorithm)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARL/ARL.0.3.md) 
-     * [FP-growth算法(FP-Growth Algorithm)]() 
+     * [FP-growth算法(FP-Growth Algorithm)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARL/ARL.0.4.md) 
  * [神经网络]()      
      * [感知器]() 
      * [反向传播算法（BP）]() 
