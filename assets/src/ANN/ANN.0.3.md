@@ -63,6 +63,12 @@ BP网络都是多层感知机（通常都会有一个输入层、一个隐藏层
 <img width="300" align="center" src="../../images/265.jpg" />
 </p>
 
+由于反向传播使用梯度下降法，需要计算平方误差函数对网络权重的导数。假设对于一个输出神经元，[note 2] 平方误差函数为：
+<p align="center">
+<img width="150" align="center" src="../../images/267.jpg" />
+</p>
+其中E 为平方误差,t 为训练样本的目标输出，y 为输出神经元的实际输出。
+
 #### 应用示例
 ```python
 
