@@ -165,7 +165,6 @@ class NeuronLayer:
 
         # 同一层的神经元共享一个截距项b
         self.bias = bias if bias else random.random()
-
         self.neurons = []
         for i in range(num_neurons):
             self.neurons.append(Neuron(self.bias))
@@ -189,7 +188,7 @@ class NeuronLayer:
         for neuron in self.neurons:
             outputs.append(neuron.output)
         return outputs
-
+        
 class Neuron:
     def __init__(self, bias):
         self.bias = bias
@@ -210,27 +209,21 @@ class Neuron:
     def squash(self, total_net_input):
         return 1 / (1 + math.exp(-total_net_input))
 
-
     def calculate_pd_error_wrt_total_net_input(self, target_output):
         return self.calculate_pd_error_wrt_output(target_output) * self.calculate_pd_total_net_input_wrt_input();
 
     # 每一个神经元的误差是由平方差公式计算的
     def calculate_error(self, target_output):
         return 0.5 * (target_output - self.output) ** 2
-
-    
+        
     def calculate_pd_error_wrt_output(self, target_output):
         return -(target_output - self.output)
-
-    
+        
     def calculate_pd_total_net_input_wrt_input(self):
         return self.output * (1 - self.output)
 
-
     def calculate_pd_total_net_input_wrt_weight(self, index):
         return self.inputs[index]
-
-
 # 示例:
 
 nn = NeuralNetwork(2, 2, 2, hidden_layer_weights=[0.15, 0.2, 0.25, 0.3], hidden_layer_bias=0.35, output_layer_weights=[0.4, 0.45, 0.5, 0.55], output_layer_bias=0.6)
