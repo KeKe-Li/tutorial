@@ -48,7 +48,16 @@ BP网络的拓扑结构包括输入层、隐层和输出层，它能够在事先
 
 三层网络算法（只有一个隐藏层）：
 
+输入x:计算输入层相应的激活函数值<img width="30" align="center" src="../../images/254.jpg" />。
+正向传播：对每个<img width="30" align="center" src="../../images/255.jpg" />计算<img width="30" align="center" src="../../images/256.jpg" />和<img width="30" align="center" src="../../images/257.jpg" />。
+输出误差<img width="30" align="center" src="../../images/258.jpg" /> ：计算向量<img width="30" align="center" src="../../images/259.jpg" />。
+将误差反向传播：对每个<img width="30" align="center" src="../../images/260.jpg" />,<img width="30" align="center" src="../../images/261.jpg" /> 计算<img width="30" align="center" src="../../images/262.jpg" />
+输出：代价函数的梯度为<img width="30" align="center" src="../../images/263.jpg" />和<img width="30" align="center" src="../../images/264.jpg" /> 
 
+这个算法的名称意味着误差会从输出结点反向传播到输入结点。严格地讲，反向传播算法对网络的可修改权值计算了网络误差的梯度。[2] 这个梯度会在简单随机梯度下降法中经常用来求最小化误差的权重。通常“反向传播”这个词使用更一般的含义，用来指涵盖了计算梯度以及在随机梯度下降法中使用的整个过程。在适用反向传播算法的网络中，它通常可以快速收敛到令人满意的极小值。
+BP网络都是多层感知机（通常都会有一个输入层、一个隐藏层及一个输出层）。为了使隐藏层能够适合所有有用的函数，多层网络必须具有用于多个层的非线性激活函数：仅用线性激活函数的多层网络会与相当于单层线性网络。常用的非线性激活函数有逻辑函数、柔性最大函数和高斯函数。
+用反向传播算法求梯度已被重新发现多次，是更加一般的自动微分技术在反向积累模式的特例。
+它也与高斯-牛顿算法密切相关，也是继续研究神经反向传播的一部分。
 
 #### 应用示例
 ```python
