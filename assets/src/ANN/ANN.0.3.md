@@ -121,21 +121,24 @@ BP网络都是多层感知机（通常都会有一个输入层、一个隐藏层
 
 并关于<img width="30" align="center" src="/KeKe-Li/tutorial/raw/master/assets/images/268.jpg">取全微分，可以得到该导数的一个递归表达式：
 <p align="center">
-<img width="300" align="center" src="../../images/284.jpg" />
+<img width="500" align="center" src="../../images/284.jpg" />
 </p>
-因此，若已知所有关于下一层（更接近输出神经元的一层）的输出 {\displaystyle o_{l}} o_{l} 的导数，则可以计算<img width="30" align="center" src="/KeKe-Li/tutorial/raw/master/assets/images/268.jpg">的导数。
+因此，若已知所有关于下一层（更接近输出神经元的一层）的输出<img width="30" align="center" src="../../images/288.jpg" />的导数，则可以计算<img width="30" align="center" src="/KeKe-Li/tutorial/raw/master/assets/images/268.jpg">的导数。
 
 把它们放在一起：
 <p align="center">
-<img width="300" align="center" src="../../images/285.jpg" />
+<img width="200" align="center" src="../../images/285.jpg" />
 </p>
 
 其中:
 <p align="center">
-<img width="300" align="center" src="../../images/286.jpg" />
+<img width="500" align="center" src="../../images/286.jpg" />
 </p>
 
 要使用梯度下降法更新<img width="30" align="center" src="../../images/273.jpg" />，必须选择一个学习速率a。要加在原本的权重上的权重的变化，等于学习速率与梯度的乘积，乘以-1：
+<p align="center">
+<img width="300" align="center" src="../../images/287.jpg" />
+</p>
 
 之所以要乘以-1 是因为要更新误差函数极小值而不是极大值的方向。对于单层网络，这个表达式变为Delta规则。
 
