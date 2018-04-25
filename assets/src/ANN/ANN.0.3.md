@@ -112,7 +112,8 @@ BP网络都是多层感知机（通常都会有一个输入层、一个隐藏层
 <img width="300" align="center" src="../../images/281.jpg" />
 </p>
 所以第一项可以直接算出。
-但如果j 是网络中任一内层，求E 关于<img width="30" align="center" src="/KeKe-Li/tutorial/raw/master/assets/images/268.jpg">的导数就不太简单了。
+
+但如果j 是网络中任一内层，求E关于<img width="30" align="center" src="/KeKe-Li/tutorial/raw/master/assets/images/268.jpg">的导数就不太简单了。
 
 考虑E为接受来自神经元j的输入的所有神经元<img width="30" align="center" src="/KeKe-Li/tutorial/raw/master/assets/images/282.jpg">的输入的函数，
 <p align="center">
