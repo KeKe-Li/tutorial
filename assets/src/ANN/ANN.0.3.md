@@ -70,14 +70,14 @@ BP网络都是多层感知机（通常都会有一个输入层、一个隐藏层
 </p>
 其中E 为平方误差,t 为训练样本的目标输出，y 为输出神经元的实际输出。
 
-加入系数<img width="50" align="center" src="../../images/266.jpg" />是为了抵消微分出来的指数。之后，该表达式会乘以一个任意的学习速率，因此在这里乘上一个常系数是没有关系的。 对每个神经元j，它的输出<img width="100" align="center" src="../../images/268.jpg" /> 定义为
+加入系数<img width="30" align="center" src="../../images/266.jpg" />是为了抵消微分出来的指数。之后，该表达式会乘以一个任意的学习速率，因此在这里乘上一个常系数是没有关系的。 对每个神经元j，它的输出<img width="30" align="center" src="../../images/268.jpg" /> 定义为
 <p align="center">
-<img width="150" align="center" src="../../images/269.jpg" />
+<img width="300" align="center" src="../../images/269.jpg" />
 </p>
 
-通向一个神经元的输入<img width="70" align="center" src="../../images/270.jpg" /> 是之前神经元的输出<img width="70" align="center" src="../../images/271.jpg" /> 的加权和。若该神经元输出层后的第一层，输入层的输出<img width="70" align="center" src="../../images/271.jpg" /> 就是网络的输入<img width="70" align="center" src="../../images/272.jpg" />。该神经元的输入数量是n。变<img width="70" align="center" src="../../images/273.jpg" />表示神经元i 与j 之间的权重。
+通向一个神经元的输入<img width="70" align="center" src="../../images/270.jpg" /> 是之前神经元的输出<img width="30" align="center" src="../../images/271.jpg" /> 的加权和。若该神经元输出层后的第一层，输入层的输出<img width="30" align="center" src="../../images/271.jpg" /> 就是网络的输入<img width="30" align="center" src="../../images/272.jpg" />。该神经元的输入数量是n。变<img width="30" align="center" src="../../images/273.jpg" />表示神经元i 与j 之间的权重。
 
-激活函数<img width="70" align="center" src="../../images/274.jpg" />一般是非线性可微函数。常用作激活函数的是逻辑函数：
+激活函数<img width="30" align="center" src="../../images/274.jpg" />一般是非线性可微函数。常用作激活函数的是逻辑函数：
 <p align="center">
 <img width="300" align="center" src="../../images/275.jpg" />
 </p>
