@@ -79,12 +79,12 @@ BP网络都是多层感知机（通常都会有一个输入层、一个隐藏层
 
 激活函数<img width="30" align="center" src="../../images/274.jpg" />一般是非线性可微函数。常用作激活函数的是逻辑函数：
 <p align="center">
-<img width="300" align="center" src="../../images/275.jpg" />
+<img width="200" align="center" src="../../images/275.jpg" />
 </p>
 
 其导数的形式很好：
 <p align="center">
-<img width="300" align="center" src="../../images/276.jpg" />
+<img width="200" align="center" src="../../images/276.jpg" />
 </p>
 
 #### 求误差的导数
