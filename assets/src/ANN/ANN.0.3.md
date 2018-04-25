@@ -64,7 +64,7 @@ BP网络都是多层感知机（通常都会有一个输入层、一个隐藏层
 <img width="300" align="center" src="../../images/265.jpg" />
 </p>
 
-由于反向传播使用梯度下降法，需要计算平方误差函数对网络权重的导数。假设对于一个输出神经元，[note 2] 平方误差函数为：
+由于反向传播使用梯度下降法，需要计算平方误差函数对网络权重的导数。假设对于一个输出神经元，平方误差函数为：
 <p align="center">
 <img width="150" align="center" src="../../images/267.jpg" />
 </p>
@@ -75,16 +75,16 @@ BP网络都是多层感知机（通常都会有一个输入层、一个隐藏层
 <img width="150" align="center" src="../../images/269.jpg" />
 </p>
 
-通向一个神经元的输入<img width="150" align="center" src="../../images/270.jpg" /> 是之前神经元的输出<img width="150" align="center" src="../../images/271.jpg" /> 的加权和。若该神经元输出层后的第一层，输入层的输出<img width="150" align="center" src="../../images/271.jpg" /> 就是网络的输入<img width="150" align="center" src="../../images/272.jpg" />。该神经元的输入数量是n。变<img width="150" align="center" src="../../images/273.jpg" />表示神经元i 与j 之间的权重。
+通向一个神经元的输入<img width="70" align="center" src="../../images/270.jpg" /> 是之前神经元的输出<img width="70" align="center" src="../../images/271.jpg" /> 的加权和。若该神经元输出层后的第一层，输入层的输出<img width="70" align="center" src="../../images/271.jpg" /> 就是网络的输入<img width="70" align="center" src="../../images/272.jpg" />。该神经元的输入数量是n。变<img width="70" align="center" src="../../images/273.jpg" />表示神经元i 与j 之间的权重。
 
-激活函数<img width="150" align="center" src="../../images/274.jpg" />一般是非线性可微函数。常用作激活函数的是逻辑函数：
+激活函数<img width="70" align="center" src="../../images/274.jpg" />一般是非线性可微函数。常用作激活函数的是逻辑函数：
 <p align="center">
-<img width="150" align="center" src="../../images/275.jpg" />
+<img width="300" align="center" src="../../images/275.jpg" />
 </p>
 
 其导数的形式很好：
 <p align="center">
-<img width="150" align="center" src="../../images/276.jpg" />
+<img width="300" align="center" src="../../images/276.jpg" />
 </p>
 
 
