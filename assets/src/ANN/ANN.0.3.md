@@ -128,7 +128,7 @@ BP网络都是多层感知机（通常都会有一个输入层、一个隐藏层
 
 把它们放在一起：
 <p align="center">
-<img width="100" align="center" src="../../images/285.jpg" />
+<img width="200" align="center" src="../../images/285.jpg" />
 </p>
 
 其中:
