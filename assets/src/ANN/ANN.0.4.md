@@ -108,3 +108,34 @@ RNN训练困难的主要原因在于隐藏层参数w的传播：由于误差传�
 LSTM 全称叫 Long Short-Term Memory networks，它和传统 RNN 唯一的不同就在与其中的神经元（感知机）的构造不同。传统的 RNN 每个神经元和一般神经网络的感知机没啥区别，但在 LSTM 中，每个神经元是一个“记忆细胞”（元胞状态，Cell State），将以前的信息连接到当前的任务中来。每个LSTM细胞里面都包含:
 
 * 输入门（input gate）: 一个Sigmoid层，观察<img width="60" align="center" src="../../images/299.jpg" />和<img width="50" align="center" src="../../images/298.jpg" />,对于元胞状态<img width="50" align="center" src="../../images/306.jpg" />中的每一个元素，输出一个0~1之间的数。1表示“完全保留该信息”，0表示“完全丢弃该信息”：
+
+<p align="center">
+<img width="380" align="center" src="../../images/307.jpg" />
+</p>
+
+* 遗忘门（forget gate): 一个Sigmoid层决定我们要更新哪些信息，并由一个tanh层创造了一个新的候选值（结果在(-1, 1)(−1,1)范围）
+<p align="center">
+<img width="380" align="center" src="../../images/308.jpg" />
+</p>
+
+<p align="center">
+<img width="380" align="center" src="../../images/309.jpg" />
+</p>
+
+<p align="center">
+<img width="380" align="center" src="../../images/310.jpg" />
+</p>
+
+输出门（output gate）：控制哪些信息需要输出
+
+<p align="center">
+<img width="380" align="center" src="../../images/311.jpg" />
+</p>
+
+<p align="center">
+<img width="380" align="center" src="../../images/312.jpg" />
+</p>
+
+<p align="center">
+<img width="380" align="center" src="../../images/313.jpg" />
+</p>
