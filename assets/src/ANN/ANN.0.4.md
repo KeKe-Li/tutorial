@@ -52,5 +52,11 @@ RNN主要解决序列数据的处理，比如文本、语音、视频等等。�
 隐马尔科夫模型实际上建模的是观察值X，隐变量h和模型参数θ的联合分布,HMM的模型长度T是事先固定的，模型参数不共享，其复杂度为<img width="50" align="center" src="../../images/296.jpg" />。
 
 <p align="center">
-<img width="300" align="center" src="../../images/297.jpg" />
+<img width="380" align="center" src="../../images/297.jpg" />
+</p>
+
+把序列视作时间序列，隐含层h的自连接边实际上是和上一时刻的h相连.在每一个时刻t，<img width="30" align="center" src="../../images/299.jpg" />的取值是当前时刻的输入<img width="30" align="center" src="../../images/298.jpg" />,和上一时刻的隐含层值<img width="30" align="center" src="../../images/301.jpg" />的一个函数:
+
+<p align="center">
+<img width="380" align="center" src="../../images/300.jpg" />
 </p>
