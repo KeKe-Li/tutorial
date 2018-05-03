@@ -64,3 +64,51 @@ RNN主要解决序列数据的处理，比如文本、语音、视频等等。�
 将h层的自连接展开，就成为了上图右边的样子，看上去和HMM很像。两者最大的区别在于，RNN的参数是跨时刻共享的。也就是说，对任意时刻t，<img width="30" align="center" src="../../images/301.jpg" />到<img width="60" align="center" src="../../images/299.jpg" />以及<img width="50" align="center" src="../../images/298.jpg" />到<img width="60" align="center" src="../../images/299.jpg" />的网络参数都是相同的。
 
 共享参数的思想和和卷积神经网络（CNN）是相通的，CNN在二维数据的空间位置之间共享卷积核参数，而RNN则是在序列数据的时刻之间共享参数。共享参数使得模型的复杂度大大减少，并使RNN可以适应任意长度的序列，带来了更好的可推广性。
+
+* 双向RNN
+
+单向RNN的问题在于t时刻进行分类的时候只能利用tt时刻之前的信息， 但是在t时刻进行分类的时候可能也需要利用未来时刻的信息。双向RNN（bi-directional RNN）模型正是为了解决这个问题， 双向RNN在任意时刻tt都保持两个隐藏层，一个隐藏层用于从左往右的信息传播记作， 另一个隐藏层用于从右往左的信息传播记作。
+
+
+<p align="center">
+<img width="380" align="center" src="../../images/302.jpg" />
+</p>
+
+Deep(Bidirectional)RNNs与Bidirectional RNNs相似，只是对于每一步的输入有多层网络。这样，该网络便有更强大的表达与学习能力，但是复杂性也提高了，同时需要更多的训练数据。
+
+<p align="center">
+<img width="380" align="center" src="../../images/303.jpg" />
+</p>
+
+* Gradient Vanishing Exploding (梯度消失和梯度爆炸)
+<p align="center">
+<img width="380" align="center" src="../../images/304.jpg" />
+</p>
+
+RNN训练困难的主要原因在于隐藏层参数w的传播：由于误差传播在展开后的RNN上，无论在前向传播过程还是在反向传播过程中w都会乘上多次，这就导致：
+
+* 梯度消失：如果梯度很小的话（<1），乘上多次指数级下降，对输出几乎就没有影响了
+* 梯度爆炸：反过来，如果梯度很大的话，乘上多次指数级增加，又导致了梯度爆炸
+
+<p align="center">
+<img width="380" align="center" src="../../images/303.jpg" />
+</p>
+
+这个问题其实存在于任何深度神经网络中，只是由于RNN的递归结构导致其尤其明显。
+
+对于梯度爆炸问题，可以通过截断的方式来有效避免：
+
+<p align="center">
+<img width="380" align="center" src="../../images/304.jpg" />
+</p>
+而对梯度消失问题，则有很多不同的方案：
+
+* 有效初始化+ReLU激活函数能够得到较好效果
+* 算法上的优化，例如截断的BPTT算法。
+* 模型上的改进，例如LSTM、GRU单元都可以有效解决长期依赖问题。
+* 在BPTT算法中加入skip connection，此时误差可以间歇的向前传播。
+* 加入一些Leaky Units，思路类似于skip connection
+
+LSTM 全称叫 Long Short-Term Memory networks，它和传统 RNN 唯一的不同就在与其中的神经元（感知机）的构造不同。传统的 RNN 每个神经元和一般神经网络的感知机没啥区别，但在 LSTM 中，每个神经元是一个“记忆细胞”（元胞状态，Cell State），将以前的信息连接到当前的任务中来。每个LSTM细胞里面都包含:
+
+* 输入门（input gate）: 一个Sigmoid层，观察<img width="60" align="center" src="../../images/299.jpg" />和<img width="50" align="center" src="../../images/298.jpg" />,对于元胞状态<img width="50" align="center" src="../../images/306.jpg" />中的每一个元素，输出一个0~1之间的数。1表示“完全保留该信息”，0表示“完全丢弃该信息”：
