@@ -124,7 +124,7 @@
      * [自动编码器(Autoencoder)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.2.md) 
      * [反向传播(Backpropagation)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.3.md) 
      * [递归神经网络(Recurrent Neural Network)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.4.md)) 
-     * [多层感知器(Multilayer Perceptron)]() 
+     * [多层感知器(Multilayer Perceptron)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.5.md) 
      * [玻尔兹曼机(Boltzmann Machine)]() 
      * [卷积神经网络(Convolutional Neural Network)]() 
      * [Hopfield网络(Hopfield Network)]() 
