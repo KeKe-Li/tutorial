@@ -115,27 +115,51 @@ LSTM 全称叫 Long Short-Term Memory networks，它和传统 RNN 唯一的不�
 
 * 遗忘门（forget gate): 一个Sigmoid层决定我们要更新哪些信息，并由一个tanh层创造了一个新的候选值（结果在(-1, 1)(−1,1)范围）
 <p align="center">
-<img width="380" align="center" src="../../images/308.jpg" />
+<img width="320" align="center" src="../../images/308.jpg" />
 </p>
 
 <p align="center">
-<img width="380" align="center" src="../../images/309.jpg" />
+<img width="320" align="center" src="../../images/309.jpg" />
 </p>
 
 <p align="center">
-<img width="380" align="center" src="../../images/310.jpg" />
+<img width="320" align="center" src="../../images/310.jpg" />
 </p>
 
 输出门（output gate）：控制哪些信息需要输出
 
 <p align="center">
-<img width="380" align="center" src="../../images/311.jpg" />
+<img width="320" align="center" src="../../images/311.jpg" />
 </p>
 
 <p align="center">
-<img width="380" align="center" src="../../images/312.jpg" />
+<img width="320" align="center" src="../../images/312.jpg" />
 </p>
 
 <p align="center">
-<img width="380" align="center" src="../../images/313.jpg" />
+<img width="500" align="center" src="../../images/313.jpg" />
+</p>
+
+典型的工作流为：在“输入门”中，根据当前的数据流来控制接受细胞记忆的影响；接着，在 “遗忘门”里，更新这个细胞的记忆和数据流；然后在“输出门”里产生输出更新后的记忆和数据流。LSTM 模型的关键之一就在于这个“遗忘门”， 它能够控制训练时候梯度在这里的收敛性（从而避免了 RNN 中的梯度 vanishing/exploding 问题），同时也能够保持长期的记忆性。
+
+如果我们把LSTM的forget gate全部置0（总是忘记之前的信息），input gate全部 置1，output gate全部置1（把cell state中的信息全部输出），这样LSTM就变成一个标准的RNN。
+
+目前 LSTM 模型在实践中取得了非常好的效果， 只需要训练一个两三层的LSTM, 它就可以:
+* 模仿保罗·格雷厄姆进行写作
+* 生成维基百科的 markdown 页面
+* 手写识别
+* 写代码
+
+<p align="center">
+<img width="500" align="center" src="../../images/314.jpg" />
+</p>
+
+GRU (Gated Recurrent Unit) 是LSTM的变种，把LSTM中的遗忘门和输入门合并成为单一的“更新门(Update Gate)”，同时也将元胞状态(Cell State)和隐状态(Hidden State)合并，在计算当前时刻新信息的方法和LSTM有所不同。
+
+<p align="center">
+<img width="500" align="center" src="../../images/315.jpg" />
+</p>
+
+<p align="center">
+<img width="500" align="center" src="../../images/316.jpg" />
 </p>
