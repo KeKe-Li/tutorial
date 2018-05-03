@@ -29,7 +29,7 @@
 人工神经网络(Artificial Neural Network)算法应用： 
  * 自动编码器(Autoencoder) 
  * 反向传播(Backpropagation)
- * 回归神经网络(Recurrent Neural Network)
+ * 递归神经网络(Recurrent Neural Network)
  * 多层感知器(Multilayer Perceptron)
  * 玻尔兹曼机(Boltzmann Machine)
  * 卷积神经网络(Convolutional Neural Network)
