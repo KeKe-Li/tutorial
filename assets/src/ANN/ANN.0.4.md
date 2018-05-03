@@ -60,3 +60,7 @@ RNN主要解决序列数据的处理，比如文本、语音、视频等等。�
 <p align="center">
 <img width="380" align="center" src="../../images/300.jpg" />
 </p>
+
+将h层的自连接展开，就成为了上图右边的样子，看上去和HMM很像。两者最大的区别在于，RNN的参数是跨时刻共享的。也就是说，对任意时刻t，<img width="30" align="center" src="../../images/301.jpg" />到<img width="60" align="center" src="../../images/299.jpg" />以及<img width="50" align="center" src="../../images/298.jpg" />到<img width="60" align="center" src="../../images/299.jpg" />的网络参数都是相同的。
+
+共享参数的思想和和卷积神经网络（CNN）是相通的，CNN在二维数据的空间位置之间共享卷积核参数，而RNN则是在序列数据的时刻之间共享参数。共享参数使得模型的复杂度大大减少，并使RNN可以适应任意长度的序列，带来了更好的可推广性。
