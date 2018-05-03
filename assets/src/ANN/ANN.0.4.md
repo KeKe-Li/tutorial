@@ -49,4 +49,4 @@ RNN主要解决序列数据的处理，比如文本、语音、视频等等。�
 <img width="600" align="center" src="../../images/295.jpg" />
 </p>
 
-隐马尔科夫模型实际上建模的是观察值X，隐变量h和模型参数θ的联合分布,HMM的模型长度T是事先固定的，模型参数不共享，其复杂度为<img width="70" align="center" src="../../images/296.jpg" />。
+隐马尔科夫模型实际上建模的是观察值X，隐变量h和模型参数θ的联合分布,HMM的模型长度T是事先固定的，模型参数不共享，其复杂度为<img width="50" align="center" src="../../images/296.jpg" />。
