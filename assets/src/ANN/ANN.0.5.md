@@ -29,7 +29,7 @@ MLP在80年代的时候曾是相当流行的机器学习方法，拥有广泛的
 </p>
 
 
-正式的单一隐藏层的MLP可以表现为：<img width="130" align="center" src="../../images/318.jpg" />，其中D是输入向量x的大小，L是输出向量f(x)的大小，矩阵表现为：<img width="130" align="center" src="../../images/319.jpg" />, b是偏差向量，W是权重矩阵，G和s是激活函数。
+正式的单一隐藏层的MLP可以表现为：<img width="200" align="center" src="../../images/318.jpg" />，其中D是输入向量x的大小，L是输出向量f(x)的大小，矩阵表现为：<img width="200" align="center" src="../../images/319.jpg" />, b是偏差向量，W是权重矩阵，G和s是激活函数。
 
 向量<img width="130" align="center" src="../../images/320.jpg" />构成隐藏层。<img width="130" align="center" src="../../images/321.jpg" />是连接输入向量和隐藏层的权重矩阵。Wi代表输入单元到第i个隐藏单元的权重。一般选择tanh作为s的激活函数，使用<img width="130" align="center" src="../../images/322.jpg" />或者使用逻辑sigmoid函数，<img width="130" align="center" src="../../images/323.jpg" />。
 
@@ -41,6 +41,6 @@ MLP在80年代的时候曾是相当流行的机器学习方法，拥有广泛的
 
 训练一个MLP，我们学习模型所有的参数，这里我们使用随机梯度下降和批处理。要学习的参数为：<img width="130" align="center" src="../../images/325.jpg" />。
 
-梯度<img width="130" align="center" src="../../images/326.jpg" />可以使用反向传播算法获得（连续微分的特殊形式），Theano可以自动计算这一微分过程。
+梯度<img width="70" align="center" src="../../images/326.jpg" />可以使用反向传播算法获得（连续微分的特殊形式），Theano可以自动计算这一微分过程。
 
 从逻辑回归到多层感知机我们将聚焦单隐藏层的多层感知机。 我们从构建一个单隐藏层的类开始。之后只要在此基础之上加一个逻辑回归层就构建了MLP。
