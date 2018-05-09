@@ -79,8 +79,8 @@ class HiddenLayer(object):
 隐藏层i权重的初始值应当根据激活函数以对称间断的方式取得样本。
 
 
-对于tanh函数，区间在<img width="70" align="center" src="../../images/327.jpg" />
+对于tanh函数，区间在<img width="270" align="center" src="../../images/327.jpg" />
 
-对于sigmoid函数，区间在<img width="70" align="center" src="../../images/328.jpg" />
+对于sigmoid函数，区间在<img width="270" align="center" src="../../images/328.jpg" />
 
 这种初始化方式保证了在训练早期，每一个神经元在它的激活函数内操作，信息可以便利的向上（输入到输出）或反向（输出到输入）传播。
