@@ -25,6 +25,13 @@ MLP在80年代的时候曾是相当流行的机器学习方法，拥有广泛的
 通常一个单一隐藏层的多层感知机（或人工神经网络—ANN）可以用图表现为：
 
 <p align="center">
-<img width="100" align="center" src="../../images/317.jpg" />
+<img width="300" align="center" src="../../images/317.jpg" />
 </p>
+
+
+正式的单一隐藏层的MLP可以表现为：<img width="70" align="center" src="../../images/318.jpg" />，其中D是输入向量x的大小，L是输出向量f(x)的大小，矩阵表现为：<img width="70" align="center" src="../../images/319.jpg" />, b是偏差向量，W是权重矩阵，G和s是激活函数。
+
+向量<img width="70" align="center" src="../../images/320.jpg" />构成隐藏层。<img width="70" align="center" src="../../images/321.jpg" />是连接输入向量和隐藏层的权重矩阵。Wi代表输入单元到第i个隐藏单元的权重。一般选择tanh作为s的激活函数，使用<img width="70" align="center" src="../../images/322.jpg" />或者使用逻辑sigmoid函数，<img width="70" align="center" src="../../images/323.jpg" />。
+
+这里我们使用Tanh因为一般它训练速度更快（有时也有利于解决局部最优）。tanh和sigmoid都是标量到标量函数，但通过点积运算向量和张量自然延伸（将向量分解成元素，生成同样大小的向量）。
 
