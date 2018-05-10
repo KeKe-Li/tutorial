@@ -125,7 +125,7 @@
      * [反向传播(Backpropagation)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.3.md) 
      * [递归神经网络(Recurrent Neural Network)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.4.md)) 
      * [多层感知器(Multilayer Perceptron)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.5.md) 
-     * [玻尔兹曼机(Boltzmann Machine)]() 
+     * [玻尔兹曼机(Boltzmann Machine)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.6.md) 
      * [卷积神经网络(Convolutional Neural Network)]() 
      * [Hopfield网络(Hopfield Network)]() 
      * [径向基函数网络(Radial Basis Function Network)]() 
