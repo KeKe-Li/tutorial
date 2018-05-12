@@ -22,3 +22,4 @@
 <img width="300" align="center" src="../../images/330.jpg" />
 </p>
 
+玻尔兹曼机的图像表示. 每条无向边都表示一对依赖关系. 在这个例子中有三个隐藏节点和四个可见节点，它并不是一个约束玻尔兹曼机（restricted Boltzmann machine）
