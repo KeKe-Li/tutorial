@@ -16,7 +16,6 @@
 * 2016.10.Hybrid computing using a neural network with dynamic external memory
 * 2017.10.Mastering the game of Go without human knowledge
 
-
 #### 机器学习步骤框架
 * 把数据拆分为训练集合测试集
 * 用训练集合训练集的特征向量来训练算法
