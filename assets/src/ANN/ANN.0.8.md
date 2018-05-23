@@ -47,6 +47,80 @@ DHNN的设计原则：吸引子的分布是由网络的权值（包括阀值）�
 
 CHNN：在连续型Hopfield神经网络中，所有神经元都随时间t并行更新，网络状态随时间连续改变。
 
+
+#### 应用领域
+```python
+import numpy as np
+from random import randint, shuffle
+
+class InvalidWeightsException(Exception):
+    pass
+
+
+class InvalidNetworkInputException(Exception):
+    pass
+
+class HopfieldNetwork(object):
+    def __init__(self, num_inputs):
+        self._num_inputs = num_inputs
+        self._weights = np.random.uniform(-1.0, 1.0, (num_inputs, num_inputs))
+
+    def set_weights(self, weights):
+        """Update the weights array"""
+        if weights.shape != (self._num_inputs, self._num_inputs):
+            raise InvalidWeightsException()
+
+        self._weights = weights
+
+    def get_weights(self):
+        """Return the weights array"""
+        return self._weights
+    
+    def calculate_neuron_output(self, neuron, input_pattern):
+        """Calculate the output of the given neuron"""
+        num_neurons = len(input_pattern)
+
+        s = 0.0
+
+        for j in range(num_neurons):
+            s += self._weights[neuron][j] * input_pattern[j]
+
+        return 1.0 if s > 0.0 else -1.0
+
+    def run_once(self, update_list, input_pattern):
+        """Iterate over every neuron and update it's output"""
+        result = input_pattern.copy()
+
+        changed = False
+        for neuron in update_list:
+            neuron_output = self.calculate_neuron_output(neuron, result)
+
+            if neuron_output != result[neuron]:
+                result[neuron] = neuron_output
+                changed = True
+
+        return changed, result
+
+    def run(self, input_pattern, max_iterations=10):
+        """Run the network using the input data until the output state doesn't change
+        or a maximum number of iteration has been reached."""
+        iteration_count = 0
+
+        result = input_pattern.copy()
+
+        while True:
+            update_list = range(self._num_inputs)
+            shuffle(update_list)
+
+            changed, result = self.run_once(update_list, result)
+
+            iteration_count += 1
+
+            if not changed or iteration_count == max_iterations:
+                return result
+```
+
+
 #### 优缺点
 
 Hopfield网络是一种非线性的动力网络，可通过反复的网络动态迭代来求解问题，这是符号逻辑方法所不具有的特性。在求解某些问题时，其求解问题的方法与人类求解问题的方法很相似，虽然所求得的解不是最佳解，但其求解速度快，更符合人们日常解决问题的策略。
