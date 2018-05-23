@@ -14,3 +14,18 @@
 #### Hopfield网络(Hopfield Network)
 
 Hopfield神经网络是一种递归神经网络，由约翰·霍普菲尔德在1982年发明。Hopfield网络是一种结合存储系统和二元系统的神经网络。它保证了向局部极小的收敛，但收敛到错误的局部极小值（local minimum），而非全局极小（global minimum）的情况也可能发生。Hopfield网络也提供了模拟人类记忆的模型。
+
+Hopfield提出了连续和离散的Hopfield神经网络模型，并采用全互联型神经网络尝试对非多项式复杂度的旅行商问题（Travelling Salesman Problem，TSP）进行了求解，促进神经网络的研究再次进入了蓬勃发展的时期。
+
+Hopfield强调工程实践的重要性，他利用电阻、电容和运算放大器等元件组成的模拟电路实现了对网络神经元的描述，把最优化问题的目标函数转换成Hopfield神经网络的能量函数，通过网络能量函数最小化来寻找对应问题的最优解．Hopfield网络是一种循环神经网络，从输出到输入有反馈连接，典型的Hopfield神经网络模型如图所示．
+<p align="center">
+<img width="300" align="center" src="../../images/92.jpg" />
+</p>
+在图中每组运算放大器及其相关的电阻、电容组成的网络代表一个神经元。每个神经元有两组输入，一组是恒定的外部电流，另一组是来自其他运算放大器输出的正向或反向的反馈连接。假设第i个神经元的内部膜电位为Ui(i=1,2,…,n)，细胞膜的输入电容和传递电阻分别为Ci和Ri，神经元的输出电位为Vi，外部输入电流为Ii，并用电阻Rij(i，j=1,2,…,n)来模拟第i个和第j个神经元之间的突触特性。由基尔霍夫电流定律(Kirchhoff’s Cureent Law ,KCL)可知，放大器输入节点处的流入电流和流出电流保持平衡，亦即有下式成立：
+<p align="center">
+<img width="300" align="center" src="../../images/93.jpg" />
+</p>
+同时，每一个运算放大器模拟了神经元输入和输出之间的非线性特性，即有
+<p align="center">
+<img width="300" align="center" src="../../images/94.jpg" />
+</p>
