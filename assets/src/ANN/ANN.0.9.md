@@ -23,7 +23,7 @@ RBF神经网络是一种三层前馈神经网络。第一层为输入层，由�
 <img width="500" align="center" src="../../images/331.jpg" />
 </p>
 
-径向基神经网络的激活函数采用径向基函数，通常定义为空间任一点到某一中心之间欧氏距离的单调函数。径向基神经网络的激活函数是以输入向量和权值向量之间的距离<img width="30" align="center" src="../../images/332.jpg" /> 为自变量的。径向神经网络的激活函数一般表达式为
+径向基神经网络的激活函数采用径向基函数，通常定义为空间任一点到某一中心之间欧氏距离的单调函数。径向基神经网络的激活函数是以输入向量和权值向量之间的距离<img width="60" align="center" src="../../images/332.jpg" /> 为自变量的。径向神经网络的激活函数一般表达式为
 <p align="center">
 <img width="300" align="center" src="../../images/333.jpg" />
 </p>
@@ -49,7 +49,7 @@ RBF神经网络是一种三层前馈神经网络。第一层为输入层，由�
 <img width="360" align="center" src="../../images/335.jpg" />
 </p>
 
-其中<img width="50" align="center" src="../../images/336.jpg" />为第p个输入样本。h为隐含层的结点数。
+其中<img width="30" align="center" src="../../images/336.jpg" />为第p个输入样本。h为隐含层的结点数。
 
 如果d是样本的期望输出值，那么基函数的方差可表示为：
 <p align="center">
