@@ -46,7 +46,7 @@ RBF神经网络是一种三层前馈神经网络。第一层为输入层，由�
 由此可得，径向基神经网络的结构可得到网络的输出为：
 
 <p align="center">
-<img width="300" align="center" src="../../images/335.jpg" />
+<img width="360" align="center" src="../../images/335.jpg" />
 </p>
 
 其中<img width="60" align="center" src="../../images/336.jpg" />为第p个输入样本。h为隐含层的结点数。
@@ -55,5 +55,9 @@ RBF神经网络是一种三层前馈神经网络。第一层为输入层，由�
 <p align="center">
 <img width="300" align="center" src="../../images/337.jpg" />
 </p>
+
+基于K-均值聚类方法求取基函数中心c:
+* 网络初始化 随机选取h个训练样本作为聚类中心<img width="60" align="center" src="../../images/338.jpg" />
+* 将输入的训练样本集合按最近邻规则分组，按照<img width="60" align="center" src="../../images/336.jpg" /> 与中心为<img width="60" align="center" src="../../images/338.jpg" />之间的欧式距离将<img width="60" align="center" src="../../images/336.jpg" />分配到输入样本的各个聚类集合<img width="600" align="center" src="../../images/339.jpg" />之中。
 
 
