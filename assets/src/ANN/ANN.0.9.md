@@ -58,18 +58,18 @@ RBF神经网络是一种三层前馈神经网络。第一层为输入层，由�
 
 基于K-均值聚类方法求取基函数中心c:
 
-* 网络初始化 随机选取h个训练样本作为聚类中心<img width="50" align="center" src="../../images/338.jpg" />
-* 将输入的训练样本集合按最近邻规则分组，按照<img width="50" align="center" src="../../images/336.jpg" /> 与中心为<img width="50" align="center" src="../../images/338.jpg" />之间的欧式距离将<img width="50" align="center" src="../../images/336.jpg" />分配到输入样本的各个聚类集合<img width="50" align="center" src="../../images/339.jpg" />之中。
-* 重新调整聚类中心 计算各个聚类集合<img width="50" align="center" src="../../images/339.jpg" /> 中训练样本的平均值，即新的聚类中心<img width="50" align="center" src="../../images/338.jpg" />， 如果新的聚类中心不再发生变化，所得到的<img width="50" align="center" src="../../images/338.jpg" />就是RBF神经网络最终的基函数中心，否则返回上一步进行下一轮求解.
+* 网络初始化 随机选取h个训练样本作为聚类中心<img width="30" align="center" src="../../images/338.jpg" />
+* 将输入的训练样本集合按最近邻规则分组，按照<img width="30" align="center" src="../../images/336.jpg" /> 与中心为<img width="30" align="center" src="../../images/338.jpg" />之间的欧式距离将<img width="30" align="center" src="../../images/336.jpg" />分配到输入样本的各个聚类集合<img width="30" align="center" src="../../images/339.jpg" />之中。
+* 重新调整聚类中心 计算各个聚类集合<img width="30" align="center" src="../../images/339.jpg" /> 中训练样本的平均值，即新的聚类中心<img width="30" align="center" src="../../images/338.jpg" />， 如果新的聚类中心不再发生变化，所得到的<img width="30" align="center" src="../../images/338.jpg" />就是RBF神经网络最终的基函数中心，否则返回上一步进行下一轮求解.
 
-求解方差<img width="50" align="center" src="../../images/339.jpg" />:
+求解方差<img width="30" align="center" src="../../images/340.jpg" />:
 
-* 该RBF神经网络的基函数为高斯函数，因此方差<img width="50" align="center" src="../../images/339.jpg" />可由下式求解得出:
+* 该RBF神经网络的基函数为高斯函数，因此方差<img width="30" align="center" src="../../images/340.jpg" />可由下式求解得出:
 <p align="center">
-<img width="300" align="center" src="../../images/340.jpg" />
+<img width="300" align="center" src="../../images/341.jpg" />
 </p>
 
-其中<img width="50" align="center" src="../../images/343.jpg" />是所选取中心之间的最大距离.
+其中<img width="30" align="center" src="../../images/342.jpg" />是所选取中心之间的最大距离.
 
 计算隐含层和输出层之间的权值：
 
