@@ -23,7 +23,7 @@ RBF神经网络是一种三层前馈神经网络。第一层为输入层，由�
 <img width="500" align="center" src="../../images/331.jpg" />
 </p>
 
-径向基神经网络的激活函数采用径向基函数，通常定义为空间任一点到某一中心之间欧氏距离的单调函数。径向基神经网络的激活函数是以输入向量和权值向量之间的距离<img width="70" align="center" src="../../images/332.jpg" /> 为自变量的。径向神经网络的激活函数一般表达式为
+径向基神经网络的激活函数采用径向基函数，通常定义为空间任一点到某一中心之间欧氏距离的单调函数。径向基神经网络的激活函数是以输入向量和权值向量之间的距离<img width="30" align="center" src="../../images/332.jpg" /> 为自变量的。径向神经网络的激活函数一般表达式为
 <p align="center">
 <img width="300" align="center" src="../../images/333.jpg" />
 </p>
@@ -69,11 +69,11 @@ RBF神经网络是一种三层前馈神经网络。第一层为输入层，由�
 <img width="300" align="center" src="../../images/341.jpg" />
 </p>
 
-其中<img width="30" align="center" src="../../images/342.jpg" />是所选取中心之间的最大距离.
+其中<img width="60" align="center" src="../../images/342.jpg" />是所选取中心之间的最大距离.
 
 计算隐含层和输出层之间的权值：
 
 * 用最小二乘法直接计算得到：
 <p align="center">
-<img width="300" align="center" src="../../images/342.jpg" />
+<img width="300" align="center" src="../../images/343.jpg" />
 </p>
