@@ -40,7 +40,7 @@ RBF神经网络是一种三层前馈神经网络。第一层为输入层，由�
 
 径向基神经网络中常用的径向基函数是高斯函数，因此径向基神经网络的激活函数可表示为：
 <p align="center">
-<img width="300" align="center" src="../../images/334.jpg" />
+<img width="360" align="center" src="../../images/334.jpg" />
 </p>
 
 由此可得，径向基神经网络的结构可得到网络的输出为：
