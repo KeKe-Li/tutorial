@@ -12,6 +12,7 @@
 如今的机器学习领域主要的研究工作在三个方面进行：1）面向任务的研究，研究和分析改进一组预定任务的执行性能的学习系统；2）认知模型，研究人类学习过程并进行计算模拟；3）理论的分析，从理论的层面探索可能的算法和独立的应用领域算法。
 
 #### 受限玻尔兹曼机(Restricted Boltzmann Machine)
+受限玻尔兹曼机（Restricted Boltzmann Machine，RBM）是一种可用随机神经网络（stochastic neural network）来解释的概率图模型（probabilistic graphical model）。RBM是Smolensky于1986年在波尔兹曼机（Boltzmann Machine，BM）基础上提出的，所谓“随机”是指网络中的神经元是随机神经元，输出状态只有两种（未激活和激活），状态的具体取值根据概率统计法则来决定。RBM理论是Hinton在2006年提出基于RBM的（Deep Belief Network）模型，大量学者开始研究RBM的理论及其应用。
 
 受限玻尔兹曼机(Restricted Boltzmann Machine)是玻尔兹曼机(Boltzmann machine，BM)的一种特殊拓扑结构。BM的原理起源于统计物理学，是一种基于能量函数的建模方法，能够描述变量之间的高阶相互作用，BM的学习算法较复杂，但所建模型和学习算法有比较完备的物理解释和严格的数理统计理论作基础。
 BM是一种对称耦合的随机反馈型二值单元神经网络，由可见层和多个隐层组成，网络节点分为可见单元(visible unit)和隐单元(hidden unit)，用可见单元和隐单元来表达随机网络与随机环境的学习模型，通过权值表达单元之间的相关性。
@@ -21,3 +22,5 @@ BM是一种对称耦合的随机反馈型二值单元神经网络，由可见层
 </p>
 
 Smolensky提出的RBM由一个可见神经元层和一个隐神经元层组成，由于隐层神经元之间没有相互连接并且隐层神经元独立于给定的训练样本，这使直接计算依赖数据的期望值变得容易，可见层神经元之间也没有相互连接，通过从训练样本得到的隐层神经元状态上执行马尔可夫链抽样过程，来估计独立于数据的期望值，并行交替更新所有可见层神经元和隐层神经元的值。
+
+受限玻尔兹曼机（Restricted Boltzmann Machine，RBM）是一种可用随机神经网络（stochastic neural network）来解释的概率图模型（probabilistic graphical model）。RBM是Smolensky于1986年在波尔兹曼机（Boltzmann Machine，BM）基础上提出的，所谓“随机”是指网络中的神经元是随机神经元，输出状态只有两种（未激活和激活），状态的具体取值根据概率统计法则来决定。RBM理论是Hinton在2006年提出基于RBM的（Deep Belief Network）模型，大量学者开始研究RBM的理论及其应用。
