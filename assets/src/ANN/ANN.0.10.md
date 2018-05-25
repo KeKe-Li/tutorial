@@ -23,4 +23,3 @@ BM是一种对称耦合的随机反馈型二值单元神经网络，由可见层
 
 Smolensky提出的RBM由一个可见神经元层和一个隐神经元层组成，由于隐层神经元之间没有相互连接并且隐层神经元独立于给定的训练样本，这使直接计算依赖数据的期望值变得容易，可见层神经元之间也没有相互连接，通过从训练样本得到的隐层神经元状态上执行马尔可夫链抽样过程，来估计独立于数据的期望值，并行交替更新所有可见层神经元和隐层神经元的值。
 
-受限玻尔兹曼机（Restricted Boltzmann Machine，RBM）是一种可用随机神经网络（stochastic neural network）来解释的概率图模型（probabilistic graphical model）。RBM是Smolensky于1986年在波尔兹曼机（Boltzmann Machine，BM）基础上提出的，所谓“随机”是指网络中的神经元是随机神经元，输出状态只有两种（未激活和激活），状态的具体取值根据概率统计法则来决定。RBM理论是Hinton在2006年提出基于RBM的（Deep Belief Network）模型，大量学者开始研究RBM的理论及其应用。
