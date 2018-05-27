@@ -13,3 +13,4 @@
 
 #### 自组织映射(Self-Organizing Map)
 
+自组织映射(Self-organizing Maps,SOM)算法是一种无导师学习方法,具有良好的自组织、可视化等特性,已经得到了广泛的应用和研究。
