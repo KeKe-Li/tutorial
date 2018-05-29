@@ -43,3 +43,6 @@
 <p align="center">
 <img width="300" align="center" src="../../images/356.jpg" />
 </p>
+
+迭代，直到收敛。
+
