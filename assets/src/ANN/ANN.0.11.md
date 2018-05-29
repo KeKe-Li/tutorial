@@ -21,3 +21,14 @@
 <p align="center">
 <img width="500" align="center" src="../../images/353.jpg" />
 </p>
+
+既然隐藏层是有拓扑关系的，所以我们也可以说，SOM可以把任意维度的输入离散化到一维或者二维(更高维度的不常见)的离散空间上。 Computation layer里面的节点与Input layer的节点是全连接的。
+
+拓扑关系确定后，开始计算过程，大体分成几个部分：
+
+1） 初始化：每个节点随机初始化自己的参数。每个节点的参数个数与Input的维度相同。
+
+2）对于每一个输入数据，找到与它最相配的节点。假设输入时D维的， 即 X={x_i, i=1,...,D}，那么判别函数可以为欧几里得距离：
+<p align="center">
+<img width="380" align="center" src="../../images/354.jpg" />
+</p>
