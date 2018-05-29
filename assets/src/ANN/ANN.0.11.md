@@ -142,12 +142,12 @@ class SOM():
         self.alpha = self.alpha*self.alpha_decay
         
         self.epoch = self.epoch + 1 
+
+```
+
+```python
         
-        
-##################################################### 
-#       EXAMPLE: TRAINING SOM ON MNIST DATA         #
-#####################################################       
-    
+           
 from PIL import Image
 from tools import make_tile
 import gzip
