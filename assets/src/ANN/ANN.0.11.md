@@ -33,4 +33,9 @@
 <img width="300" align="center" src="../../images/354.jpg" />
 </p>
 3. 找到激活节点I(x)之后，我们也希望更新和它临近的节点。令S_ij表示节点i和j之间的距离，对于I(x)临近的节点，分配给它们一个更新权重：
+<p align="center">
+<img width="300" align="center" src="../../images/355.jpg" />
+</p>
+简而言之就是临近的节点根据距离的远近，更新程度要会减弱。
 
+然后就是更新节点的参数了。按照梯度下降法更新：
