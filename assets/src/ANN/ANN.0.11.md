@@ -30,5 +30,5 @@
 
 2）对于每一个输入数据，找到与它最相配的节点。假设输入时D维的， 即 X={x_i, i=1,...,D}，那么判别函数可以为欧几里得距离：
 <p align="center">
-<img width="380" align="center" src="../../images/354.jpg" />
+<img width="300" align="center" src="../../images/354.jpg" />
 </p>
