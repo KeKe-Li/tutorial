@@ -19,5 +19,5 @@
 
 所以，SOM的一个特点是，隐藏层的节点是有拓扑关系的。这个拓扑关系需要我们确定，如果想要一维的模型，那么隐藏节点依次连成一条线；如果想要二维的拓扑关系，那么就行成一个平面，如下图所示（也叫Kohonen Network）：
 <p align="center">
-<img width="300" align="center" src="../../images/353.jpg" />
+<img width="500" align="center" src="../../images/353.jpg" />
 </p>
