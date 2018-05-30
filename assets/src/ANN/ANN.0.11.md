@@ -30,7 +30,7 @@
 
 2. 对于每一个输入数据，找到与它最相配的节点。假设输入时D维的， 即 X={x_i, i=1,...,D}，那么判别函数可以为欧几里得距离：
 <p align="center">
-<img width="300" align="center" src="../../images/354.jpg" />
+<img width="200" align="center" src="../../images/354.jpg" />
 </p>
 3. 找到激活节点I(x)之后，我们也希望更新和它临近的节点。令S_ij表示节点i和j之间的距离，对于I(x)临近的节点，分配给它们一个更新权重：
 <p align="center">
