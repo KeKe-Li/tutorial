@@ -129,7 +129,7 @@
      * [径向基函数网络(Radial Basis Function Network)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.9.md) 
      * [受限玻尔兹曼机(Restricted Boltzmann Machine)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.10.md) 
      * [自组织映射(Self-Organizing Map)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.11.md) 
-     * [尖峰神经网络(Spiking Neural Network)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.12.md) 
+     * [脉冲神经网络(Spiking Neural Network)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.12.md) 
  * [深度学习(Deep Learning)]() 
      * [深度信念网络(Deep Belief Machines)]() 
      * [深度卷积神经网络(Deep Convolutional Neural Networks)]() 
