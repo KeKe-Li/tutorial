@@ -130,7 +130,7 @@
      * [受限玻尔兹曼机(Restricted Boltzmann Machine)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.10.md) 
      * [自组织映射(Self-Organizing Map)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.11.md) 
      * [脉冲神经网络(Spiking Neural Network)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.12.md) 
- * [深度学习(Deep Learning)]() 
+ * [深度学习(Deep Learning)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.1.md) 
      * [深度信念网络(Deep Belief Machines)]() 
      * [深度卷积神经网络(Deep Convolutional Neural Networks)]() 
      * [深度递归神经网络(Deep Recurrent Neural Networks)]() 
