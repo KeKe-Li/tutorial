@@ -132,7 +132,7 @@
      * [脉冲神经网络(Spiking Neural Network)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.12.md) 
  * [深度学习(Deep Learning)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.1.md) 
      * [深度信念网络(Deep Belief Machines)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.2.md) 
-     * [深度卷积神经网络(Deep Convolutional Neural Networks)]() 
+     * [深度卷积神经网络(Deep Convolutional Neural Networks)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.3.md) 
      * [深度递归神经网络(Deep Recurrent Neural Networks)]() 
      * [分层时间记忆(Hierarchical Temporal Memory)]() 
      * [深度玻尔兹曼机(Deep Boltzmann Machine)]() 
