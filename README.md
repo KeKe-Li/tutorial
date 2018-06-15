@@ -1,16 +1,14 @@
 ### Deeplearning Algorithms tutorial
-
+<p align='left'>
+<img src="https://img.shields.io/badge/build-passing-brightgreen.svg">
+<a href="https://twitter.com/perfactsen"><img src="https://img.shields.io/badge/twitter-keke-green.svg?style=flat&colorA=009df2"></a>
+<a href="https://www.zhihu.com/people/sencoed.com/activities"><img src="https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-keke-green.svg?style=flat&colorA=009df2"></a>
+</p>
 最近以来一直在学习机器学习和算法，然后自己就在不断总结和写笔记，记录下自己的学习AI与算法历程。
 机器学习(Machine Learning, ML)是一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、算法复杂度理论等多门学科。专门研究计算机怎样模拟或实现人类的学习行为，以获取新的知识或技能，重新组织已有的知识结构使之不断改善自身的性能。
 
 <p align="center">
 <img width="100%" align="center" src="assets/images/global.png" />
-</p>
-
-<p align='center'>
-<img src="https://img.shields.io/badge/build-passing-brightgreen.svg">
-<a href="https://twitter.com/perfactsen"><img src="https://img.shields.io/badge/twitter-keke-green.svg?style=flat&colorA=009df2"></a>
-<a href="https://www.zhihu.com/people/sencoed.com/activities"><img src="https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-keke-green.svg?style=flat&colorA=009df2"></a>
 </p>
 
 * 机器学习是计算机科学的一个子领域，在人工智能领域，机器学习逐渐发展成模式识别和计算科学理论的研究。
