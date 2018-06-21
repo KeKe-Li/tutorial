@@ -9,7 +9,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 深度信念网络(Deep Belief Network, DBN)组成元件是受限玻尔兹曼机 (Restricted Boltzmann Machines, RBM)。训练 DBN 的过程是一层一层地进行的。在每一层中，用数据向量来推断隐层，再把这一隐层当作下一层 (高一层) 的数据向量。
 
 <p align="center">
-<img width="500" align="center" src="../../images/357.jpg" />
+<img width="400" align="center" src="../../images/357.jpg" />
 </p>
 
 如上图所示用两个限制玻尔兹曼机堆叠起来，构成深度信念网络(Deep Belief Nets, 简称DBN)。
@@ -24,7 +24,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 wake-sleep算法：在分类问题中，DBN的最底层可以是已知的label层，如下图:
 <p align="center">
-<img width="500" align="center" src="../../images/358.jpg" />
+<img width="400" align="center" src="../../images/358.jpg" />
 </p>
 
 上图是MNIST数字识别的一个任务，输入是28*28的图片，输出是0到9的数字。
