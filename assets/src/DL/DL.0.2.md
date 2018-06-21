@@ -8,5 +8,5 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 深度信念网络(Deep Belief Network, DBN)组成元件是受限玻尔兹曼机 (Restricted Boltzmann Machines, RBM)。训练 DBN 的过程是一层一层地进行的。在每一层中，用数据向量来推断隐层，再把这一隐层当作下一层 (高一层) 的数据向量。
 <p align="center">
-<img width="300" align="center" src="../../images/357.jpg" />
+<img width="400" align="center" src="../../images/357.jpg" />
 </p>
