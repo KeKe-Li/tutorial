@@ -35,4 +35,7 @@ wake-sleep算法：在分类问题中，DBN的最底层可以是已知的label�
 
 在上面的训练完成后，如果对最上的两层进行随机的Gibbs采样，然后再逐渐从顶到底，生成的图像就是0到9中的一个图像。 
 感觉这个跟人回忆、画画、做梦的过程非常像。
-
+<p align="center">
+<img width="400" align="center" src="../../images/359.jpg" />
+</p>
+由stuff、image、label的构成，是右边这种模式，而非左边那种。所以，一个更好的方式是直接从image，进行非监督还原成stuff，然后再学习stuff与label的关系。这也就是非监督的预训练有效的原因。
