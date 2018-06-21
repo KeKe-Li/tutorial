@@ -7,3 +7,6 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 深度信念网络(Deep Belief Network, DBN)由多层神经元构成，这些神经元又分为显性神经元和隐性神经元（以下简称显元和隐元）。显元用于接受输入，隐元用于提取特征。因此隐元也有个别名，叫特征检测器 (feature detectors)。最顶上的两层间的连接是无向的，组成联合内存 (associative memory)。较低的其他层之间有连接上下的有向连接。最底层代表了数据向量 (data vectors)，每一个神经元代表数据向量的一维。 
 
 深度信念网络(Deep Belief Network, DBN)组成元件是受限玻尔兹曼机 (Restricted Boltzmann Machines, RBM)。训练 DBN 的过程是一层一层地进行的。在每一层中，用数据向量来推断隐层，再把这一隐层当作下一层 (高一层) 的数据向量。
+<p align="center">
+<img width="300" align="center" src="../../images/357.jpg" />
+</p>
