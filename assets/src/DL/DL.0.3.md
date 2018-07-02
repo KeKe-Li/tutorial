@@ -12,7 +12,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 线性整流层（Rectified Linear Units layer, ReLU layer）使用线性整流（Rectified Linear Units, ReLU） {\displaystyle f(x)=\max(0,x)} {\displaystyle f(x)=\max(0,x)}作为这一层神经的激励函数（Activation function）。它可以增强判定函数和整个神经网络的非线性特性，而本身并不会改变卷积层。
 
-事实上，其他的一些函数也可以用于增强网络的非线性特性，如双曲正切函数 {\displaystyle f(x)=\tanh(x)} {\displaystyle f(x)=\tanh(x)}, {\displaystyle f(x)=|\tanh(x)|} {\displaystyle f(x)=|\tanh(x)|}，或者Sigmoid函数 {\displaystyle f(x)=(1+e^{-x})^{-1}} {\displaystyle f(x)=(1+e^{-x})^{-1}}。相比其它函数来说，ReLU函数更受青睐，这是因为它可以将神经网络的训练速度提升数倍[3]，而并不会对模型的泛化准确度造成显著影响。
+事实上，其他的一些函数也可以用于增强网络的非线性特性，如双曲正切函数 {\displaystyle f(x)=\tanh(x)} {\displaystyle f(x)=\tanh(x)}, {\displaystyle f(x)=|\tanh(x)|} {\displaystyle f(x)=|\tanh(x)|}，或者Sigmoid函数 {\displaystyle f(x)=(1+e^{-x})^{-1}} {\displaystyle f(x)=(1+e^{-x})^{-1}}。相比其它函数来说，ReLU函数更受青睐，这是因为它可以将神经网络的训练速度提升数倍，而并不会对模型的泛化准确度造成显著影响。
 
 池化（Pooling）是卷积神经网络中另一个重要的概念，它实际上是一种形式的降采样。有多种不同形式的非线性池化函数，而其中“最大池化（Max pooling）”是最为常见的。它是将输入的图像划分为若干个矩形区域，对每个子区域输出最大值。直觉上，这种机制能够有效地原因在于，在发现一个特征之后，它的精确位置远不及它和其他特征的相对位置的关系重要。池化层会不断地减小数据的空间大小，因此参数的数量和计算量也会下降，这在一定程度上也控制了过拟合。通常来说，CNN的卷积层之间都会周期性地插入池化层。
 
@@ -20,7 +20,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 除了最大池化之外，池化层也可以使用其他池化函数，例如“平均池化”甚至“L2-范数池化”等。过去，平均池化的使用曾经较为广泛，但是最近由于最大池化在实践中的表现更好，平均池化已经不太常用。
 
-由于池化层过快地减少了数据的大小，目前文献中的趋势是使用较小的池化滤镜，[4]甚至不再使用池化层。
+由于池化层过快地减少了数据的大小，目前文献中的趋势是使用较小的池化滤镜，甚至不再使用池化层。
 
 <p align="center">
 <img width="400" align="center" src="../../images/360.jpg" />
