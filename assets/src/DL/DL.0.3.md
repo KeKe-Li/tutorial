@@ -19,3 +19,6 @@ CNN主要用来识别位移、缩放及其他形式扭曲不变性的二维图�
 </p>
 
 一个典型的卷积神经网络包含两个卷积层（convolution layer），两个池化层（pooling layer）和一个全连接层（fully connected layer）。
+<p align="center">
+<img width="300" align="center" src="../../images/360.jpg" />
+</p>
