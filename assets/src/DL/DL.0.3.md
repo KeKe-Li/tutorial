@@ -19,6 +19,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 </p>
 
 一个典型的卷积神经网络包含两个卷积层（convolution layer），两个池化层（pooling layer）和一个全连接层（fully connected layer）。
+
 <p align="center">
 <img width="300" align="center" src="../../images/360.jpg" />
 </p>
