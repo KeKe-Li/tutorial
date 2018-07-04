@@ -3,3 +3,5 @@
 AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### 深度递归神经网络(Deep Recurrent Neural Networks)
+
+递归神经网络（RNN）是两种人工神经网络的总称。一种是时间递归神经网络（recurrent neural network），又名循环神经网络，另一种是结构递归神经网络（recursive neural network）。时间递归神经网络的神经元间连接构成矩阵，而结构递归神经网络利用相似的神经网络结构递归构造更为复杂的深度网络。RNN一般指代时间递归神经网络。单纯递归神经网络因为无法处理随着递归，权重指数级爆炸或消失的问题（Vanishing gradient problem），难以捕捉长期时间关联；而结合不同的LSTM可以很好解决这个问题。
