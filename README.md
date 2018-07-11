@@ -4,6 +4,7 @@
 <a href="https://twitter.com/perfactsen"><img src="https://img.shields.io/badge/twitter-keke-green.svg?style=flat&colorA=009df2"></a>
 <a href="https://www.zhihu.com/people/sencoed.com/activities"><img src="https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-keke-green.svg?style=flat&colorA=009df2"></a>
 </p>
+
 最近以来一直在学习机器学习和算法，然后自己就在不断总结和写笔记，记录下自己的学习AI与算法历程。
 机器学习(Machine Learning, ML)是一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、算法复杂度理论等多门学科。专门研究计算机怎样模拟或实现人类的学习行为，以获取新的知识或技能，重新组织已有的知识结构使之不断改善自身的性能。
 
@@ -193,11 +194,7 @@
 
 ### 机器学习
 
-觉得此文章不错，支持我的话可以给我star ，:star:！如果有问题可以加我的微信,加入我们的交流群一起交流机器学习！
-
-<p style="left">
-  <img src="https://github.com/KeKe-Li/book/blob/master/images/1.jpg" width="260">
-</p>
+觉得此文章不错，支持我的话可以给我star ，:star:！如果有问题可以加我的微信**Sen0676**,加入我们的交流群一起交流机器学习！
 
 ### License
 This is free software distributed under the terms of the MIT license
