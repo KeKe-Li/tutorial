@@ -8,3 +8,6 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 时间递归神经网络可以描述动态时间行为，因为和前馈神经网络（feedforward neural network）接受较特定结构的输入不同，RNN将状态在自身网络中循环传递，因此可以接受更广泛的时间序列结构输入。手写识别是最早成功利用RNN的研究结果
 
 循环神经网络不同于传统的FNNs(Feed-forward Neural Networks，前向反馈神经网络)，循环神经网络引入了定向循环，能够处理那些输入之间前后关联的问题。
+<p align="center">
+<img width="500" align="center" src="../../images/362.jpg" />
+</p>
