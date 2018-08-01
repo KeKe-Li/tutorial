@@ -37,3 +37,58 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
  
  接下来我们需要对RNNs进行扩展和模型改进.
  
+* 第一种:Simple RNNs(SRNs)
+
+SRNs是RNNs的一种特例，它是一个由三层网络组成的，并且在隐藏层增加了上下文单元，下图中的便是隐藏层，便是上下文单元。上下文单元节点与隐藏层中的节点的连接是固定的，并且权值也是固定的(值是多少)，其实是一个上下文节点与隐藏层节点一一对应，并且值是确定的。在每一步中，使用标准的前向反馈进行传播，然后使用学习算法进行学习。上下文每一个节点保存其连接的隐藏层节点的上一步的输出，即保存上文，并作用于当前步对应的隐藏层节点的状态，即隐藏层的输入由输入层的输出与上一步的自己的状态所决定的。因此SRNs能够解决标准的多层感知机(MLP)无法解决的对序列数据进行预测的任务。
+
+<p align="center">
+<img width="300" align="center" src="../../images/365.jpg" />
+</p>
+
+* 第二种:Bidirectional RNNs
+
+ Bidirectional RNNs双向网络改进之处，假设当前的输出(第步的输出)不仅仅与前面的序列有关，并且还与后面的序列有关。例如：预测一个语句中缺失的词语那么就需要根据上下文来进行预测。Bidirectional RNNs是一个相对较简单的RNNs，是由两个RNNs上下叠加在一起组成的。输出由这两个RNNs的隐藏层的状态决定的。
+ 
+ 
+<p align="center">
+<img width="300" align="center" src="../../images/366.jpg" />
+</p>
+
+* 第三种: Deep(Bidirectional)RNNs
+
+Deep(Bidirectional)RNNs与Bidirectional RNNs相似，只是对于每一步的输入有多层网络。该网络便有更强大的表达与学习能力，但是复杂性也提高了，同时需要更多的训练数据。
+
+<p align="center">
+<img width="300" align="center" src="../../images/367.jpg" />
+</p>
+
+* 第四种:Echo State Networks
+
+ ESNs(回声状态网络)也是一种RNNs，但是它与传统的RNNs相差很大。回声状态网络具有三个特点：
+
+* 它的核心结构时一个随机生成、且保持不变的储备池(Reservoir)，储备池是大规模的、随机生成的、稀疏连接(SD通常保持1%～5%，SD表示储备池中互相连接的神经元占总的神经元个数N的比例)的循环结构；
+* 它的储备池到输出层的权值矩阵是唯一需要调整的部分；
+* 通过简单的线性回归就可完成网络的训练。
+
+回声状态网络是一种特殊类型的循环神经网络，其基本思想是：使用大规模随机连接的循环网络取代经典神经网络中的中间层，从而简化网络的训练过程。因此ESNs的关键是中间的储备池。网络中的参数包括：为储备池中节点的连接权值矩阵，为输入层到储备池之间的连接权值矩阵，表明储备池中的神经元之间是连接的，为输出层到储备池之间的反馈连接权值矩阵，表明储备池会有输出层来的反馈，为输入层、储备池、输出层到输出层的连接权值矩阵，表明输出层不仅与储备池连接，还与输入层和自己连接。表示输出层的偏置项。
+
+ 对于ESNs，关键是储备池的四个参数，如储备池内部连接权谱半径SR(，只有SR <1时，ESNs才能具有回声状态属性)、储备池规模N(即储备池中神经元的个数)、储备池输入单元尺度IS(IS为储备池的输入信号连接到储备池内部神经元之前需要相乘的一个尺度因子)、储备池稀疏程度SD(即为储备池中互相连接的神经元个数占储备池神经元总个数的比例)。对于IS，如果需要处理的任务的非线性越强，那么输入单元尺度越大。该原则的本质就是通过输入单元尺度IS，将输入变换到神经元激活函数相应的范围(神经元激活函数的不同输入范围，其非线性程度不同)。
+ <p align="center">
+<img width="300" align="center" src="../../images/368.jpg" />
+</p>
+
+<p align="center">
+<img width="300" align="center" src="../../images/369.jpg" />
+</p>
+
+<p align="center">
+<img width="300" align="center" src="../../images/370.jpg" />
+</p>
+
+* 第五种:Gated Recurrent Unit Recurrent Neural Networks
+
+ GRUs也是一般的RNNs的改良版本，主要是体现在两个方面。一是，序列中不同的位置处的单词(已单词举例)对当前的隐藏层的状态的影响不同，越前面的影响越小，即每个前面状态对当前的影响进行了距离加权，距离越远，权值越小。二是，在产生误差error时，误差可能是由某一个或者几个单词而引发的，所以应当仅仅对对应的单词weight进行更新。GRUs的结构如下图所示。GRUs首先根据当前输入单词向量word vector已经前一个隐藏层的状态hidden state计算出update gate和reset gate。再根据reset gate、当前word vector以及前一个hidden state计算新的记忆单元内容(new memory content)。当reset gate为1的时候，new memory content忽略之前的所有memory content，最终的memory是之前的hidden state与new memory content的结合。
+ <p align="center">
+<img width="300" align="center" src="../../images/371.jpg" />
+</p>
+ 
