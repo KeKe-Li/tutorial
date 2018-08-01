@@ -42,7 +42,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 SRNs是RNNs的一种特例，它是一个由三层网络组成的，并且在隐藏层增加了上下文单元，下图中的便是隐藏层，便是上下文单元。上下文单元节点与隐藏层中的节点的连接是固定的，并且权值也是固定的(值是多少)，其实是一个上下文节点与隐藏层节点一一对应，并且值是确定的。在每一步中，使用标准的前向反馈进行传播，然后使用学习算法进行学习。上下文每一个节点保存其连接的隐藏层节点的上一步的输出，即保存上文，并作用于当前步对应的隐藏层节点的状态，即隐藏层的输入由输入层的输出与上一步的自己的状态所决定的。因此SRNs能够解决标准的多层感知机(MLP)无法解决的对序列数据进行预测的任务。
 
 <p align="center">
-<img width="470" align="center" src="../../images/365.jpg" />
+<img width="300" align="center" src="../../images/365.jpg" />
 </p>
 
 * 第二种:Bidirectional RNNs
@@ -51,7 +51,7 @@ SRNs是RNNs的一种特例，它是一个由三层网络组成的，并且在隐
  
  
 <p align="center">
-<img width="470" align="center" src="../../images/366.jpg" />
+<img width="300" align="center" src="../../images/366.jpg" />
 </p>
 
 * 第三种: Deep(Bidirectional)RNNs
@@ -59,7 +59,7 @@ SRNs是RNNs的一种特例，它是一个由三层网络组成的，并且在隐
 Deep(Bidirectional)RNNs与Bidirectional RNNs相似，只是对于每一步的输入有多层网络。该网络便有更强大的表达与学习能力，但是复杂性也提高了，同时需要更多的训练数据。
 
 <p align="center">
-<img width="470" align="center" src="../../images/367.jpg" />
+<img width="300" align="center" src="../../images/367.jpg" />
 </p>
 
 * 第四种:Echo State Networks
@@ -74,7 +74,7 @@ Deep(Bidirectional)RNNs与Bidirectional RNNs相似，只是对于每一步的输
 
  对于ESNs，关键是储备池的四个参数，如储备池内部连接权谱半径SR(，只有SR <1时，ESNs才能具有回声状态属性)、储备池规模N(即储备池中神经元的个数)、储备池输入单元尺度IS(IS为储备池的输入信号连接到储备池内部神经元之前需要相乘的一个尺度因子)、储备池稀疏程度SD(即为储备池中互相连接的神经元个数占储备池神经元总个数的比例)。对于IS，如果需要处理的任务的非线性越强，那么输入单元尺度越大。该原则的本质就是通过输入单元尺度IS，将输入变换到神经元激活函数相应的范围(神经元激活函数的不同输入范围，其非线性程度不同)。
  <p align="center">
-<img width="470" align="center" src="../../images/368.jpg" />
+<img width="300" align="center" src="../../images/368.jpg" />
 </p>
 
 <p align="center">
