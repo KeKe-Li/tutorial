@@ -29,7 +29,7 @@ HTM的原理：稀疏分布表征理论,运用的表征方法称作稀疏分布�
 
 <p align="center">
 <img width="500" align="center" src="../../images/372.jpg" />
-<span>HTM 算法在图像识别中的应用</span>
+<p>HTM 算法在图像识别中的应用</p>
 </p>
 
 
