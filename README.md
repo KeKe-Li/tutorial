@@ -139,7 +139,7 @@
      * [深度卷积神经网络(Deep Convolutional Neural Networks)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.3.md) 
      * [深度递归神经网络(Deep Recurrent Neural Networks)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.4.md) 
      * [分层时间记忆(Hierarchical Temporal Memory)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.5.md) 
-     * [堆叠自动编码器(Stacked Boltzmann Machine)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.6.md) 
+     * [堆叠自动编码器(Stacked AutoEncoder)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.6.md) 
      * [生成式对抗网络(Generative Adversarial Networks)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.7.md)
  * [降维算法]()
      * [主成分分析法（PCA）]()
