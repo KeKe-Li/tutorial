@@ -7,5 +7,6 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 自从Hinton 2006年的工作之后，越来越多的研究者开始关注各种自编码器模型相应的堆叠模型。实际上，自编码器（Auto-Encoder）是一个较早的概念了，比如Hinton等人在1986, 1989年的工作。
 
 自编码器可以理解为一个试图去还原其原始输入的系统。
-
-堆叠自编码器(Stacked Autoencoder，SAE)
+<p align="center">
+<img width="300" align="center" src="../../images/373.jpg" />
+</p>
