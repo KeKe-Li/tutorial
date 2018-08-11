@@ -80,7 +80,7 @@ layer-wise unsuperwised pre-training（逐层非监督预训练）。
 
 既然要求平均激活度为ρ，那么我们只要引入一个度量，来衡量神经元i的实际激活度<img width="10" align="center" src="../../images/394.jpg" />与期望激活度ρ之间的差异即可，然后将这个度量添加到目标函数作为正则，训练整个网络即可。那么，什么样的度量适合这个任务呢？了解过概率论、信息论基础的人应该清楚——相对熵，也就是KL散度（KL divergence）。因此，整个网络所添加的惩罚项：
 <p align="center">
-<img width="500" align="center" src="../../images/392.jpg" />
+<img width="300" align="center" src="../../images/392.jpg" />
 </p>
 
 我们可以从下图（摘自UFLDL）中直观理解KL散度作为惩罚项的含义。图中假设平均激活度ρ=0.2。
@@ -90,3 +90,8 @@ layer-wise unsuperwised pre-training（逐层非监督预训练）。
 </p>
 
 可以看出，当<img width="10" align="center" src="../../images/394.jpg" />一旦偏离期望激活度ρ，这种误差便急剧增大，从而作为惩罚项添加到目标函数，指导整个网络学习出稀疏的特征表达。
+
+
+降噪自编码器(Stacked Denoising Autoencoders)核心思想是，一个能够从中恢复出原始信号的表达未必是最好的，能够对“被污染/破坏”的原始数据编码、解码，然后还能恢复真正的原始数据，这样的特征才是好的。
+
+假设原始数据x被我们“故意破坏”，比如加入高斯白噪，或者把某些维度数据抹掉，变成了<img width="50" align="center" src="../../images/374.jpg" />，然后再对<img width="50" align="center" src="../../images/374.jpg" />编码、解码，得到恢复信号<img width="50" align="center" src="../../images/395.jpg" />，该恢复信号尽可能逼近未被污染的数据x。此时，监督训练的误差从<img width="50" align="center" src="../../images/396.jpg" />变成了<img width="50" align="center" src="../../images/397.jpg" />。
