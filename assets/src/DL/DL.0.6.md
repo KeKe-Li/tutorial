@@ -94,4 +94,4 @@ layer-wise unsuperwised pre-training（逐层非监督预训练）。
 
 降噪自编码器(Stacked Denoising Autoencoders)核心思想是，一个能够从中恢复出原始信号的表达未必是最好的，能够对“被污染/破坏”的原始数据编码、解码，然后还能恢复真正的原始数据，这样的特征才是好的。
 
-假设原始数据x被我们“故意破坏”，比如加入高斯白噪，或者把某些维度数据抹掉，变成了<img width="50" align="center" src="../../images/374.jpg" />，然后再对<img width="50" align="center" src="../../images/374.jpg" />编码、解码，得到恢复信号<img width="50" align="center" src="../../images/395.jpg" />，该恢复信号尽可能逼近未被污染的数据x。此时，监督训练的误差从<img width="50" align="center" src="../../images/396.jpg" />变成了<img width="50" align="center" src="../../images/397.jpg" />。
+假设原始数据x被我们“故意破坏”，比如加入高斯白噪，或者把某些维度数据抹掉，变成了<img width="20" align="center" src="../../images/374.jpg" />，然后再对<img width="50" align="center" src="../../images/374.jpg" />编码、解码，得到恢复信号<img width="20" align="center" src="../../images/395.jpg" />，该恢复信号尽可能逼近未被污染的数据x。此时，监督训练的误差从<img width="100" align="center" src="../../images/396.jpg" />变成了<img width="100" align="center" src="../../images/397.jpg" />。
