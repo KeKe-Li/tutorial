@@ -41,3 +41,8 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="300" align="center" src="../../images/383.jpg" />
 </p>
 
+这里我们可以利用训练数据训练这个网络，等训练结束后，这个网络即学习出了<img width="100" align="center" src="../../images/384.jpg" />的能力。对我们来说，此时的h是至关重要的，因为它是在尽量不损失信息量的情况下，对原始数据的另一种表达。结合神经网络的惯例，我们再将自编码器的公式表示如下：（假设激活函数是sigmoid，用s表示）
+
+<p align="center">
+<img width="300" align="center" src="../../images/385.jpg" />
+</p>
