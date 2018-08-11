@@ -60,7 +60,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 堆叠自编码器实际上就在做这样的事情，如前所述，单个自编码器通过虚构<img width="30" align="center" src="../../images/388.jpg" />的三层网络，能够学习出一种特征变化<img width="30" align="center" src="../../images/389.jpg" />(这里用θ表示变换的参数，包括W,b和激活函数)。实际上，当训练结束后，输出层就没什么意义了，我们一般会将其去掉的，即将自编码器表示为:
 <p align="center">
-<img width="200" align="center" src="../../images/390.jpg" />
+<img width="500" align="center" src="../../images/390.jpg" />
 </p>
 
 自编码器模型这里表示为3层的神经网络，这是因为训练的需要，我们将原始数据作为假想的目标输出，以此构建监督误差来训练整个网络。等训练结束后，输出层就可以去掉了，而我们关心的只是从x到h的变换过程。
@@ -69,6 +69,6 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 堆叠自编码器（Stacked Auto-Encoder, SAE）,这里Stacked就是逐层垒叠的意思，跟“栈”有点像，当把多个自编码器Stack起来之后就是如下的过程：
 <p align="center">
-<img width="200" align="center" src="../../images/391.jpg" />
+<img width="500" align="center" src="../../images/391.jpg" />
 </p>
 
