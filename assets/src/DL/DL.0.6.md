@@ -46,3 +46,5 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <p align="center">
 <img width="300" align="center" src="../../images/385.jpg" />
 </p>
+
+其中，<img width="30" align="center" src="../../images/386.jpg" />表示损失函数，结合数据的不同形式，可以是二次误差（squared error loss）或交叉熵误差（cross entropy loss）。如果<img width="30" align="center" src="../../images/387.jpg" />，一般称为tied weights。
