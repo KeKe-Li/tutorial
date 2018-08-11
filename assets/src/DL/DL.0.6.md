@@ -26,3 +26,8 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <p align="center">
 <img width="300" align="center" src="../../images/377.jpg" />
 </p>
+
+该网络把输入层数据<img width="30" align="center" src="../../images/378.jpg" />转换到中间层（隐层）<img width="30" align="center" src="../../images/379.jpg" />，再转换到输出层<img width="30" align="center" src="../../images/380.jpg" />。图中的每个节点代表数据的一个维度（偏置项图中未标出）。每两层之间的变换都是“线性变化”+“非线性激活”，用公式表示即为。图中的每个节点代表数据的一个维度（偏置项图中未标出）。每两层之间的变换都是“线性变化”+“非线性激活”，用公式表示为:
+<p align="center">
+<img width="300" align="center" src="../../images/381.jpg" />
+</p>
