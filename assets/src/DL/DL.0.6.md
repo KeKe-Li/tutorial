@@ -10,3 +10,6 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <p align="center">
 <img width="300" align="center" src="../../images/373.jpg" />
 </p>
+
+图中，虚线蓝色框内就是一个自编码器模型，它由编码器（Encoder）和解码器（Decoder）两部分组成，本质上都是对输入信号做某种变换。
+编码器将输入信号x变换成编码信号y，而解码器将编码y转换成输出信号<img width="300" align="center" src="../../images/374.jpg" />，即
