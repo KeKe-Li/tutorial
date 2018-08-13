@@ -3,3 +3,6 @@
 AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### 生成式对抗网络(Generative Adversarial Networks)
+生成对抗网络（英语：Generative Adversarial Network，简称GAN）是非监督式学习的一种方法，通过让两个神经网络相互博弈的方式进行学习。该方法由伊恩·古德费洛等人于2014年提出。
+
+
