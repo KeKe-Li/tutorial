@@ -140,7 +140,7 @@
      * [分层时间记忆(Hierarchical Temporal Memory)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.5.md) 
      * [堆叠自动编码器(Stacked AutoEncoder)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.6.md) 
      * [生成式对抗网络(Generative Adversarial Networks)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.7.md)
- * [降维算法]()
+ * [降维算法(Dimensionality Reduction Algorithm)]()
      * [主成分分析法（PCA）]()
      * [主成分回归（PCR）]()
      * [偏最小二乘回归（PLSR）]()
