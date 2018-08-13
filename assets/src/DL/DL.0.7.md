@@ -15,7 +15,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 * 判别模型：给定一张图，判断这张图里的动物是猫还是狗
 * 生成模型：给一系列猫的图片，生成一张新的猫咪（不在数据集里）
 <p align="center">
-<img width="300" align="center" src="../../images/400.jpg" />
+<img width="500" align="center" src="../../images/400.jpg" />
 </p>
 
 
