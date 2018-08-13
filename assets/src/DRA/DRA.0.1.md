@@ -17,22 +17,25 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 通俗的理解，如果把所有的点都映射到一起，那么几乎所有的信息（如点和点之间的距离关系）都丢失了，而如果映射后方差尽可能的大，那么数据点则会分散开来，以此来保留更多的信息。可以证明，PCA 是丢失原始数据信息最少的一种线性降维方式。（实际上就是最接近原始数据，但是 PCA 并不试图去探索数据内在结构）。
 
 * 线性判别分析(LDA)
+
 线性判别分析(Linear Discriminant Analysis,简称LDA)是一种有监督的（supervised）线性降维算法。与 PCA 保持数据信息不同，LDA 是为了使得降维后的数据点尽可能地容易被区分！
 
 * 局部线性嵌入(LLE)
+
 局部线性嵌入(Locally linear embedding,简称LLE）是一种非线性降维算法，它能够使降维后的数据较好地保持原有流形结构。LLE 可以说是流形学习方法最经典的工作之一。很多后续的流形学习、降维方法都与 LLE 有密切联系。
 
 * 拉普拉斯特征映射(LE)
+
 拉普拉斯特征映射（Laplacian Eigenmaps,简称LE）看问题的角度和 LLE 有些相似，也是用局部的角度去构建数据之间的关系。它的直观思想是希望相互间有关系的点（在图中相连的点）在降维后的空间中尽可能的靠近。Laplacian Eigenmaps 可以反映出数据内在的流形结构。
 
 降维算法(Dimensionality Reduction Algorithm)的应用算法有：
-* 主成分分析法（PCA）
-* 主成分回归（PCR）
-* 偏最小二乘回归（PLSR）
-* 萨蒙映射]()
-* 多维尺度分析法（MDS)
-* 投影寻踪法(PP)
-* 线性判别分析法（LDA）
-* 混合判别分析法（MDA）
-* 二次判别分析法（QDA）
-* 灵活判别分析法（Flexible Discriminant Analysis，简称FDA)
+* 主成分分析法（Principal Component Analysis）
+* 主成分回归（Principle Component Regression）
+* 偏最小二乘回归（Partial Least Squares Regression）
+* 萨蒙映射(Sammon Mapping)
+* 多维尺度分析法（Multidimensional Scaling)
+* 投影寻踪法(Projection Pursuit)
+* 线性判别分析法（Linear Discriminant Analysis）
+* 二次判别分析法（discriminant_analysis.QuadraticDiscriminantAnalysis）
+* 局部线性嵌入(LLE)
+* 拉普拉斯特征映射(LE)
