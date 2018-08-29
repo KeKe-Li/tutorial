@@ -12,5 +12,5 @@ PCA是最简单的以特征量分析多元统计分布的方法。通常情况�
 PCA跟因子分析密切相关，并且已经有很多混合这两种分析的统计包。而真实要素分析则是假定底层结构，求得微小差异矩阵的特征向量。
 
 <p align="center">
-<img width="600" align="center" src="../../images/401.jpg" />
+<img width="300" align="center" src="../../images/401.jpg" />
 </p>
