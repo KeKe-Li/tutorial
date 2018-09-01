@@ -11,23 +11,28 @@
 <p align="center">
 <img width="100%" align="center" src="assets/images/global.png" />
 </p>
+
 * 机器学习是计算机科学的一个子领域，在人工智能领域，机器学习逐渐发展成模式识别和计算科学理论的研究。
 * 机器学习：多领域交叉学科，涉及概率论统计学，逼近论，凸分析，算法复杂度理论等多门学科。
 * 机器学习的应用：语音识别，自动驾驶，语言翻译，计算机视觉，推荐系统，无人机，识别垃圾邮件，人脸识别，电商推荐系统。
 * 机器学习的基本概念：训练集，测试集，特征值，监督学习，非监督学习，分类，回归 
 
 目前国内在AI感知层面应用已经百花齐放，主要是无人驾驶、智能音箱、嵌入式。但在认知层面还是比较缺乏，所以新入行的AI应用团队可以放在认知层。如开头所述，认知层最重要的是算法，因此需要阅读Nature上最领先的算法公司DeepMind的几篇大作，如下：
+
 * 2016.01.Mastering the game of Go with deep neural networks and tree search
 * 2016.10.Hybrid computing using a neural network with dynamic external memory
 * 2017.10.Mastering the game of Go without human knowledge
 
 #### 机器学习步骤框架
+
 * 把数据拆分为训练集合测试集
 * 用训练集合训练集的特征向量来训练算法
 * 用学习来的算法运用在测试集上累评估算法(可能要设计到调整参数(parameter tuning) 用来验证集(validation set))
 
 #### 机器学习
+
 * 机器学习：机器学习是计算机科学的一个子领域，在人工智能领域，机器学习逐渐发展成模式识别和计算科学理论的研究。通俗的讲机器学习是一种能够赋予机器学习的能力，可以让它完成直接编程无法完成的功能的方法。但从实践的意义上来说，机器学习是一种通过利用数据，训练出模型，然后使用模型预测的一种方法。
+
 * 机器学习的应用：机器学习已广泛应用于数据挖掘、计算机视觉、自然语言处理、生物特征识别、搜索引擎、医学诊断、检测信用卡欺诈、证券市场分析、DNA序列测序、语音和手写识别、战略游戏和机器人等领域。下面开启我们的机器学习！
   
  * [机器学习环境的搭建](https://github.com/AI-algorithms/Algorithms-Tutorial/blob/master/src/Machine%20Learning/ML.01.md)
