@@ -146,7 +146,7 @@
      * [生成式对抗网络(Generative Adversarial Networks)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.7.md)
  * [降维算法(Dimensionality Reduction Algorithm)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.1.md)
      * [主成分分析法（PCA）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.2.md)
-     * [主成分回归（PCR）]()
+     * [主成分回归（PCR）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.３.md)
      * [偏最小二乘回归（PLSR）]()
      * [萨蒙映射]()
      * [多维尺度分析法（MDS]()
