@@ -147,7 +147,7 @@
  * [降维算法(Dimensionality Reduction Algorithm)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.1.md)
      * [主成分分析法（PCA）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.2.md)
      * [主成分回归（PCR）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.３.md)
-     * [偏最小二乘回归（PLSR）]()
+     * [偏最小二乘回归（PLSR）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.４.md)
      * [萨蒙映射]()
      * [多维尺度分析法（MDS]()
      * [投影寻踪法（PP）]()
