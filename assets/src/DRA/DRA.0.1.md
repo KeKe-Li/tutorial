@@ -29,13 +29,12 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 拉普拉斯特征映射（Laplacian Eigenmaps,简称LE）看问题的角度和 LLE 有些相似，也是用局部的角度去构建数据之间的关系。它的直观思想是希望相互间有关系的点（在图中相连的点）在降维后的空间中尽可能的靠近。Laplacian Eigenmaps 可以反映出数据内在的流形结构。
 
 降维算法(Dimensionality Reduction Algorithm)的应用算法有：
-* 主成分分析法（Principal Component Analysis）
-* 主成分回归（Principle Component Regression）
-* 偏最小二乘回归（Partial Least Squares Regression）
-* 萨蒙映射(Sammon Mapping)
-* 多维尺度分析法（Multidimensional Scaling)
-* 投影寻踪法(Projection Pursuit)
-* 线性判别分析法（Linear Discriminant Analysis）
-* 二次判别分析法（discriminant_analysis.QuadraticDiscriminantAnalysis）
-* 局部线性嵌入(LLE)
-* 拉普拉斯特征映射(LE)
+
+* 主成分分析法(Principal Component Analysis)
+* 多维缩放(Mutiple Dimensional Scaling)
+* 线性判别分析(Linear Discriminant Analysis)
+* 等度量映射(IsometricMapping,Isomap)
+* 局部线性嵌入(Locally linear embedding)
+* 拉普拉斯特征映射(Laplacian Eigenmaps)
+* t－分布随机近邻嵌入(t-Distributed Stochastic Neighbor Embedding,t-SNE)
+* 深度自动编码器(Deep Autoencoder Networks)
