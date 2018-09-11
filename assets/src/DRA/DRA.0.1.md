@@ -38,3 +38,9 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 * 拉普拉斯特征映射(Laplacian Eigenmaps)
 * t－分布随机近邻嵌入(t-Distributed Stochastic Neighbor Embedding,t-SNE)
 * 深度自动编码器(Deep Autoencoder Networks)
+
+不同降维算法的区别和特征对比:
+
+<p align="center">
+<img width="300" align="center" src="../../images/402.jpg" />
+</p>
