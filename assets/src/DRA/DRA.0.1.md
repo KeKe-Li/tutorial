@@ -31,11 +31,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 降维算法(Dimensionality Reduction Algorithm)的应用算法有：
 * 主成分分析法（Principal Component Analysis）
 * 主成分回归（Principle Component Regression）
-* 偏最小二乘回归（Partial Least Squares Regression）
-* 萨蒙映射(Sammon Mapping)
-* 多维尺度分析法（Multidimensional Scaling)
-* 投影寻踪法(Projection Pursuit)
-* 线性判别分析法（Linear Discriminant Analysis）
-* 二次判别分析法（discriminant_analysis.QuadraticDiscriminantAnalysis）
-* 局部线性嵌入(LLE)
-* 拉普拉斯特征映射(LE)
+
