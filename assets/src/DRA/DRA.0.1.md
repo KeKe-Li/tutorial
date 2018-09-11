@@ -20,9 +20,9 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 线性判别分析(Linear Discriminant Analysis,简称LDA)是一种有监督的（supervised）线性降维算法。与 PCA 保持数据信息不同，LDA 是为了使得降维后的数据点尽可能地容易被区分！
 
-* 局部线性嵌入(Locally linear embedding)
+* 局部线性嵌入(Locally Linear embedding)
 
-局部线性嵌入(Locally linear embedding,简称LLE）是一种非线性降维算法，它能够使降维后的数据较好地保持原有流形结构。LLE 可以说是流形学习方法最经典的工作之一。很多后续的流形学习、降维方法都与 LLE 有密切联系。
+局部线性嵌入(Locally Linear embedding,简称LLE）是一种非线性降维算法，它能够使降维后的数据较好地保持原有流形结构。LLE 可以说是流形学习方法最经典的工作之一。很多后续的流形学习、降维方法都与 LLE 有密切联系。
 
 * 拉普拉斯特征映射(Laplacian Eigenmaps)
 
