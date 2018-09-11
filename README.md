@@ -149,7 +149,7 @@
      * [多维缩放(Mutiple Dimensional Scaling)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.3.md)
      * [线性判别分析(Linear Discriminant Analysis)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.4.md)
      * [等度量映射(IsometricMapping,Isomap)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.5.md)
-     * [局部线性嵌入(Locally linear embedding)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.6.md)
+     * [局部线性嵌入(Locally Linear Embedding)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.6.md)
      * [拉普拉斯特征映射(Laplacian Eigenmaps)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.7.md)
      * [t－分布随机近邻嵌入(t-SNE)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.8.md)
      * [深度自动编码器(Deep Autoencoder Networks)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.9.md)
