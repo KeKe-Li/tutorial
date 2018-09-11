@@ -42,5 +42,5 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 不同降维算法的区别和特征对比:
 
 <p align="center">
-<img width="300" align="center" src="../../images/402.jpg" />
+<img width="600" align="center" src="../../images/402.jpg" />
 </p>
