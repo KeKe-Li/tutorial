@@ -16,5 +16,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="500" align="center" src="../../images/403.jpg" />
 </p>
 
-
 多维缩放(Mutiple Dimensional Scaling)的目标是在降维的过程中将数据的dissimilarity(差异性)保持下来，也可以理解降维让高维空间中的距离关系与低维空间中距离关系保持不变.
