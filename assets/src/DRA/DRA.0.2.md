@@ -20,7 +20,7 @@ PCA跟因子分析密切相关，并且已经有很多混合这两种分析的�
 #### 应用示例
 ```python
 # coding:utf-8
-"""
+
 from __future__ import division
 import numpy as np
 import pandas as pd
