@@ -21,12 +21,12 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 算法原理:
 
-假定m个样本在原始空间的距离矩阵为<img width="100" align="center" src="../../images/435.jpg" />，其第i 行和第j 列的元素<img width="70" align="center" src="../../images/436.jpg" />为样本<img width="20" align="center" src="../../images/404.jpg" />和<img width="50" align="center" src="../../images/437.jpg" /> 的距离。这样就可以获得样本在d′ 维空间的表示<img width="70" align="center" src="../../images/405.jpg" />,<img width="70" align="center" src="../../images/406.jpg" />，而且任意两个样本在d′ 维空间中的欧式距离等于原始空间中的距离，即<img width="70" align="center" src="../../images/407.jpg" />.
+假定m个样本在原始空间的距离矩阵为<img width="100" align="center" src="../../images/435.jpg" />，其第i 行和第j 列的元素<img width="70" align="center" src="../../images/436.jpg" />为样本<img width="50" align="center" src="../../images/404.jpg" />和<img width="50" align="center" src="../../images/437.jpg" /> 的距离。这样就可以获得样本在d′ 维空间的表示<img width="70" align="center" src="../../images/405.jpg" />,<img width="200" align="center" src="../../images/406.jpg" />，而且任意两个样本在d′ 维空间中的欧式距离等于原始空间中的距离，即<img width="70" align="center" src="../../images/407.jpg" />.
 
-令<img width="70" align="center" src="../../images/408.jpg" />，其中B 为降维后样本的内积矩阵，<img width="70" align="center" src="../../images/409.jpg" />，因而会有:
+因此令<img width="200" align="center" src="../../images/408.jpg" />，其中B 为降维后样本的内积矩阵，<img width="100" align="center" src="../../images/409.jpg" />，因而会有:
 
 <p align="center">
-<img width="300" align="center" src="../../images/410.jpg" />
+<img width="500" align="center" src="../../images/410.jpg" />
 </p>
 
 则有：
@@ -35,33 +35,33 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="300" align="center" src="../../images/411.jpg" />
 </p>
 
-接下来我们用要用<img width="70" align="center" src="../../images/436.jpg" />来表示<img width="70" align="center" src="../../images/412.jpg" />. 
+接下来我们用要用<img width="70" align="center" src="../../images/436.jpg" />来表示<img width="50" align="center" src="../../images/412.jpg" />. 
 
-通常我们为方便计算，首先需要对数据进行中心化，即<img width="300" align="center" src="../../images/413.jpg" />，则有:
+通常我们为方便计算，首先需要对数据进行中心化，即<img width="80" align="center" src="../../images/413.jpg" />，则有:
 
 <p align="center">
 <img width="300" align="center" src="../../images/414.jpg" />
 </p>
 
 <p align="center">
-<img width="300" align="center" src="../../images/415.jpg" />
+<img width="500" align="center" src="../../images/415.jpg" />
 </p>
 
-同理也有<img width="300" align="center" src="../../images/416.jpg" />.则我们可以得到 
+同理也有<img width="100" align="center" src="../../images/416.jpg" />.则我们可以得到 
 <p align="center">
-<img width="300" align="center" src="../../images/417.jpg" />
-</p>
-
-<p align="center">
-<img width="300" align="center" src="../../images/418.jpg" />
+<img width="500" align="center" src="../../images/417.jpg" />
 </p>
 
 <p align="center">
-<img width="300" align="center" src="../../images/419.jpg" />
+<img width="500" align="center" src="../../images/418.jpg" />
+</p>
+
+<p align="center">
+<img width="500" align="center" src="../../images/419.jpg" />
 </p>
 
 
-其中<img width="100" align="center" src="../../images/420.jpg" />为矩阵B的迹，定义为<img width="100" align="center" src="../../images/421.jpg" />则可得到： 
+其中<img width="70" align="center" src="../../images/420.jpg" />为矩阵B的迹，定义为<img width="150" align="center" src="../../images/421.jpg" />则可得到： 
 
 <p align="center">
 <img width="300" align="center" src="../../images/422.jpg" />
@@ -104,7 +104,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 这样就可以求得降维后矩阵B的各个元素，接着对矩阵B 做特征值分解，即 
 
 <p align="center">
-<img width="300" align="center" src="../../images/430.jpg" />
+<img width="200" align="center" src="../../images/430.jpg" />
 </p>
 
 通常，D 是一个对称实矩阵，此时得到的B刚好会有d个非0的特征值.其中 <img width="300" align="center" src="../../images/431.jpg" />为特征值构成的对角矩阵.假定其中有d∗ 个非零特征值，它们构成对角矩阵 <img width="300" align="center" src="../../images/432.jpg" />，令V∗表示相应的特征向量矩阵，则Z可表达为:
@@ -113,7 +113,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="300" align="center" src="../../images/433.jpg" />
 </p>
 
-此外如果想还原原始样本矩阵，就选择d 个特征值和对应的特征向量，如果想要达到降维目的，就取<img width="300" align="center" src="../../images/434.jpg" />个最大特征值和相应的特征向量.
+此外如果想还原原始样本矩阵，就选择d 个特征值和对应的特征向量，如果想要达到降维目的，就取<img width="100" align="center" src="../../images/434.jpg" />个最大特征值和相应的特征向量.
 
 应用示例:
 ```python
