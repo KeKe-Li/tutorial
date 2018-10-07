@@ -22,8 +22,6 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 应用示例:
 ```python
-
-
 import os, sys, getopt, pdb
 from numpy import *
 from numpy.linalg import *
