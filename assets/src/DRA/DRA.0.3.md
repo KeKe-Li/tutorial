@@ -84,7 +84,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 因此就会有:
 
 <p align="center">
-<img width="300" align="center" src="../../images/426.jpg" />
+<img width="200" align="center" src="../../images/426.jpg" />
 </p>
 
 <p align="center">
