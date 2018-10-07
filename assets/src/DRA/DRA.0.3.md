@@ -21,7 +21,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 算法原理:
 
-假定m个样本在原始空间的距离矩阵为<img width="300" align="center" src="../../images/435.jpg" />，其第i 行和第j 列的元素
+假定m个样本在原始空间的距离矩阵为<img width="100" align="center" src="../../images/435.jpg" />，其第i 行和第j 列的元素<img width="100" align="center" src="../../images/436.jpg" />
 
 
 
