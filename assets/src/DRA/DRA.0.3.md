@@ -21,7 +21,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 算法原理:
 
-假定m个样本在原始空间的距离矩阵为<img width="100" align="center" src="../../images/435.jpg" />，其第i 行和第j 列的元素<img width="70" align="center" src="../../images/436.jpg" />为样本<img width="20" align="center" src="../../images/404.jpg" />和<img width="20" align="center" src="../../images/437.jpg" /> 的距离。这样就可以获得样本在d′ 维空间的表示<img width="70" align="center" src="../../images/405.jpg" />,<img width="70" align="center" src="../../images/406.jpg" />，而且任意两个样本在d′ 维空间中的欧式距离等于原始空间中的距离，即<img width="70" align="center" src="../../images/407.jpg" />.
+假定m个样本在原始空间的距离矩阵为<img width="100" align="center" src="../../images/435.jpg" />，其第i 行和第j 列的元素<img width="70" align="center" src="../../images/436.jpg" />为样本<img width="20" align="center" src="../../images/404.jpg" />和<img width="50" align="center" src="../../images/437.jpg" /> 的距离。这样就可以获得样本在d′ 维空间的表示<img width="70" align="center" src="../../images/405.jpg" />,<img width="70" align="center" src="../../images/406.jpg" />，而且任意两个样本在d′ 维空间中的欧式距离等于原始空间中的距离，即<img width="70" align="center" src="../../images/407.jpg" />.
 
 令<img width="70" align="center" src="../../images/408.jpg" />，其中B 为降维后样本的内积矩阵，<img width="70" align="center" src="../../images/409.jpg" />，因而会有:
 
