@@ -35,7 +35,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="300" align="center" src="../../images/411.jpg" />
 </p>
 
-接下来我们用要用<img width="70" align="center" src="../../images/436.jpg" />来表示<img width="50" align="center" src="../../images/412.jpg" />. 
+接下来我们用要用<img width="70" align="center" src="../../images/436.jpg" />来表示<img width="30" align="center" src="../../images/412.jpg" />. 
 
 通常我们为方便计算，首先需要对数据进行中心化，即<img width="80" align="center" src="../../images/413.jpg" />，则有:
 
