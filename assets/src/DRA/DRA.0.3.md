@@ -19,6 +19,12 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 多维缩放(Mutiple Dimensional Scaling)的目标是在降维的过程中将数据的dissimilarity(差异性)保持下来，也可以理解降维让高维空间中的距离关系与低维空间中距离关系保持不变.
 
+算法原理:
+
+假定m个样本在原始空间的距离矩阵为<img width="100" align="center" src="../../images/435.jpg" />，其第i 行和第j 列的元素<img width="100" align="center" src="../../images/436.jpg" />
+
+
+
 
 应用示例:
 ```python
