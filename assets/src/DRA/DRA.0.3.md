@@ -107,7 +107,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 <img width="200" align="center" src="../../images/430.jpg" />
 </p>
 
-通常，D 是一个对称实矩阵，此时得到的B刚好会有d个非0的特征值.其中 <img width="300" align="center" src="../../images/431.jpg" />为特征值构成的对角矩阵.假定其中有d∗ 个非零特征值，它们构成对角矩阵 <img width="300" align="center" src="../../images/432.jpg" />，令V∗表示相应的特征向量矩阵，则Z可表达为:
+通常，D 是一个对称实矩阵，此时得到的B刚好会有d个非0的特征值.其中 <img width="200" align="center" src="../../images/431.jpg" />为特征值构成的对角矩阵.假定其中有d∗ 个非零特征值，它们构成对角矩阵 <img width="200" align="center" src="../../images/432.jpg" />，令V∗表示相应的特征向量矩阵，则Z可表达为:
 
 <p align="center">
 <img width="300" align="center" src="../../images/433.jpg" />
