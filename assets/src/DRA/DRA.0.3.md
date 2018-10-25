@@ -61,7 +61,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 </p>
 
 
-其中<img width="70" align="center" src="../../images/420.jpg" />为矩阵B的迹，定义为<img width="150" align="center" src="../../images/421.jpg" />则可得到： 
+其中<img width="60" align="center" src="../../images/420.jpg" />为矩阵B的迹，定义为<img width="150" align="center" src="../../images/421.jpg" />则可得到： 
 
 <p align="center">
 <img width="300" align="center" src="../../images/422.jpg" />
