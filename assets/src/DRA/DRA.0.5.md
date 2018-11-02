@@ -8,7 +8,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 测地距离(Geometric Distance)是高维流形中两点之间的最短距离，高维流形中，空间是不规则的，所以最短距离不一定是直线距离(欧氏距离)。就像蚂蚁从立方体的一面爬到另一面，不能直接横穿立方体一样。
 
 <p align="center">
-<img width="500" align="center" src="../../images/438.jpg" />
+<img width="600" align="center" src="../../images/438.jpg" />
 </p>
 
 图中左边的两个点的最近距离是蓝色实线的距离，而不应该是虚线的距离。
@@ -27,5 +27,5 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 最后的结果是这样的。
 
 <p align="center">
-<img width="500" align="center" src="../../images/439.jpg" />
+<img width="600" align="center" src="../../images/439.jpg" />
 </p>
