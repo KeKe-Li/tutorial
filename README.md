@@ -82,7 +82,7 @@
  * [关联规则](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARS/ARS.md)
  * [支持向量机（SVM）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/SVM/SVM.md)
 
-后面的算法和我们的算法模型，我会持续更新整理，后续的算法章节会不断的补上，希望可以对新入门学习AI开发和算法的开发者有所帮助！
+后面的算法和算法模型，我会持续更新整理，后续的算法章节会不断的补上，希望可以对新入门学习AI开发和算法的开发者有所帮助！
 
 #### 算法模型
  * [回归算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RAM/RAM.0.1.md)
