@@ -15,7 +15,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 贝叶斯网络的分析流程通常由三个步骤组成，即(1)网络建立,(2)参数学习或参数设置,(3)网络推理，如图所示.
 <p align="center">
-<img width="400" align="center" src="../../images/25.jpg" />
+<img width="500" align="center" src="../../images/25.jpg" />
 </p>
 
 贝叶斯网络分析流程
