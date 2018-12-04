@@ -59,7 +59,7 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 如果要计算节点D的概率，由于节点D和节点A、B相关，根据边界概率的定义有:
 
 <p align="center">
-<img width="400" align="center" src="../../images/29.jpg" />
+<img width="500" align="center" src="../../images/29.jpg" />
 </p>
 
 在没有任何证据提供给网络的情况下有初始边界概率为
