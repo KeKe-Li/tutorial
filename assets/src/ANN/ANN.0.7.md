@@ -24,8 +24,6 @@ CNN主要用来识别位移、缩放及其他形式扭曲不变性的二维图�
 <p align="center">
 <img width="330" align="center" src="../../images/1.jpg" />
 </p>
-
-
 #### 应用示例
 ```python
 import numpy as np
