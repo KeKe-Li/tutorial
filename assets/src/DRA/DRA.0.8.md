@@ -3,4 +3,4 @@
 AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### t－分布随机近邻嵌入(t-SNE)
-t－分布随机近邻嵌入(t-Distributed Stochastic Neighbor Embedding,t-SNE)
+t－分布随机近邻嵌入(t-Distributed Stochastic Neighbor Embedding,t-SNE).
