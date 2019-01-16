@@ -30,6 +30,7 @@
 * 用学习来的算法运用在测试集上累评估算法(可能要设计到调整参数(parameter tuning) 用来验证集(validation set))
 
 #### 机器学习
+
 * 机器学习：机器学习是计算机科学的一个子领域，在人工智能领域，机器学习逐渐发展成模式识别和计算科学理论的研究。通俗的讲机器学习是一种能够赋予机器学习的能力，可以让它完成直接编程无法完成的功能的方法。但从实践的意义上来说，机器学习是一种通过利用数据，训练出模型，然后使用模型预测的一种方法。
 * 机器学习的应用：机器学习已广泛应用于数据挖掘、计算机视觉、自然语言处理、生物特征识别、搜索引擎、医学诊断、检测信用卡欺诈、证券市场分析、DNA序列测序、语音和手写识别、战略游戏和机器人等领域。下面开启我们的机器学习！
   
@@ -80,7 +81,7 @@
  * [关联规则](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARS/ARS.md)
  * [支持向量机（SVM）](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/SVM/SVM.md)
 
-后面的算法和算法模型，我会持续更新整理，后续的算法章节会不断的补上，希望可以对新入门学习AI开发和算法的开发者有所帮助！
+后面的算法和我们的算法模型，我会持续更新整理，后续的算法章节会不断的补上，希望可以对新入门学习AI开发和算法的开发者有所帮助！
 
 #### 算法模型
  * [回归算法](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RAM/RAM.0.1.md)
@@ -152,7 +153,7 @@
      * [拉普拉斯特征映射(Laplacian Eigenmaps)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.7.md)
      * [t－分布随机近邻嵌入(t-SNE)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.8.md)
      * [深度自动编码器(Deep Autoencoder Networks)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.9.md)
- * [集成算法]()
+ * [集成算法(Ensemble Learning)]()
       * [Boosting]()
       * [Bagging]()
       * [AdaBoost]()
