@@ -4,4 +4,4 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 
 #### Bagging
 
-Bagging是bootstrap aggregating的简写。先说一下bootstrap，bootstrap也称为自助法，它是一种有放回的抽样方法，目的为了得到统计量的分布以及置信区间。
+Bagging是Bootstrap aggregating的简写。先说一下bootstrap，bootstrap也称为自助法，它是一种有放回的抽样方法，目的为了得到统计量的分布以及置信区间。
