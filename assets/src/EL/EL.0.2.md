@@ -5,3 +5,5 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 #### Bagging
 
 Bagging是Bootstrap aggregating的简写。先说一下bootstrap，bootstrap也称为自助法，它是一种有放回的抽样方法，目的为了得到统计量的分布以及置信区间。
+
+Baggging 和Boosting都是模型融合的方法，可以将弱分类器融合之后形成一个强分类器，而且融合之后的效果会比最好的弱分类器更好。
