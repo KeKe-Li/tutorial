@@ -47,7 +47,7 @@ Laplacian Eigenmap算法主要步骤:
 <img width="200" align="center" src="../../images/445.jpg" />
 </p>
 
-得到特征值<img width="200" align="center" src="../../images/445.jpg" />
+得到特征值<img width="200" align="center" src="../../images/446.jpg" />
 
 5. 特征映射：（先验地）假定低维流形维数d的值，并将数据映射到特征空间上，即
 
