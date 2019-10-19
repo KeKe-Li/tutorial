@@ -9,3 +9,84 @@ AI的开发离不开算法那我们就接下来开始学习算法吧！
 拉普拉斯特征映射是一种基于图的降维算法，它希望相互间有关系的点（在图中相连的点）在降维后的空间中尽可能的靠近，从而在降维后仍能保持原有的数据结构。 借鉴了图论里面的Laplacian矩阵，把每个样本点看成图中的一个节点，通过样本距离或者邻接矩阵得到W（可以表征样本间的相似关系，用来重构数据流形的局部结构特征），再通过D = diag(sum(W,2))，得到对角的度矩阵（每个元素都是行和或者列和），然后通过L = D - W 得到Laplacian矩阵。
 
 Laplacian Eigenmaps算法的主要思想是，如果两个数据实例i和j很相似，那么i和j在降维后目标子空间中应该尽量接近。设数据实例的数目为n，目标子空间即最终的降维目标的维度为m。定义n×m大小的矩阵Y，其中每一个行向量yTi是数据实例i在目标m维子空间中的向量表示（即降维后的数据实例i）。
+
+
+Laplacian Eigenmap算法主要步骤:
+
+1. 建立邻接图：这里采用ϵ−最近邻图和K−最近邻图都能够解决问题。两种方法各有利弊，前者几何解释清楚，并且邻接矩阵天然是对称的，然而参数选择有困难，并且图的连通性未必有好的保证；后者参数选择容易，且图的连接性较好，但是几何解释不清晰。
+
+
+2. 赋权：我们常用热核来赋给权重，即对于连通的两个点i,i′,令<img width="200" align="center" src="../../images/440.jpg" />；而对其它点对权值赋0. 最终我们可以用邻接矩阵W来表示这个图.
+
+3. 计算Laplace算子矩阵：完成建图后，我们定义顶点vi的度是:
+<p align="center">
+<img width="200" align="center" src="../../images/441.jpg" />
+</p>
+
+并构造一个度矩阵:
+
+<p align="center">
+<img width="200" align="center" src="../../images/442.jpg" />
+</p>
+
+由此即可得到未归一化的图Laplace矩阵:
+
+<p align="center">
+<img width="200" align="center" src="../../images/443.jpg" />
+</p>
+
+容易说明, L是对称半正定矩阵，特征值是非负实数，且0是L的特征值，而特征向量是常1向量。值得说明的是我们经常采用的是经过归一化的L矩阵，规范化的方法是:
+
+<p align="center">
+<img width="200" align="center" src="../../images/444.jpg" />
+</p>
+
+4. 计算特征向量：即解以下问题：
+
+<p align="center">
+<img width="200" align="center" src="../../images/445.jpg" />
+</p>
+
+得到特征值<img width="200" align="center" src="../../images/446.jpg" />
+
+5. 特征映射：（先验地）假定低维流形维数d的值，并将数据映射到特征空间上，即
+
+<p align="center">
+<img width="200" align="center" src="../../images/447.jpg" />
+</p>
+
+这就是拉普拉斯特征映射(Laplacian Eigenmaps)算法进行数据降维处理的全过程。
+
+应用示例:
+```python
+  # import libraries
+  import numpy as np
+  import matplotlib.pyplot as plt
+  %matplotlib inline
+  from mpl_toolkits.mplot3d import Axes3D
+  from IPython.core.pylabtools import figsize
+  from IPython.core.interactiveshell import InteractiveShell
+  InteractiveShell.ast_node_interactivity = "all";
+  np.random.seed(8888)
+  plt.style.use('default')
+  plt.rcParams['figure.facecolor'] = 'white'
+  # ignore warnings
+  import warnings
+  warnings.filterwarnings('ignore');
+
+  # draw samples to create the grid
+  x = np.linspace(-2, 2, 50)
+  y = np.linspace(-2, 2, 50)
+  x,y = np.meshgrid(x,y)
+
+  # scalar function
+  z = x*np.exp(-1*(x**2 + y**2))
+
+  # plot 3d surface
+  fig = plt.figure(figsize = (6, 6))
+  ax = fig.gca(projection = '3d')
+  colors = plt.cm.jet(z*4)
+  ax.plot_surface(x, y, z, rstride=1, cstride=1, facecolors=colors, cmap=plt.cm.coolwarm, linewidth=1.4, alpha=0.8)
+  ax.set_title(r'$f(x, y)=x e^{-\left(x^{2}+y^{2}\right)}$', size=14);
+  
+```
