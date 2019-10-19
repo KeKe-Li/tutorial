@@ -57,3 +57,36 @@ Laplacian Eigenmap算法主要步骤:
 
 这就是拉普拉斯特征映射(Laplacian Eigenmaps)算法进行数据降维处理的全过程。
 
+应用示例:
+```python
+  # import libraries
+  import numpy as np
+  import matplotlib.pyplot as plt
+  %matplotlib inline
+  from mpl_toolkits.mplot3d import Axes3D
+  from IPython.core.pylabtools import figsize
+  from IPython.core.interactiveshell import InteractiveShell
+  InteractiveShell.ast_node_interactivity = "all";
+  np.random.seed(8888)
+  plt.style.use('default')
+  plt.rcParams['figure.facecolor'] = 'white'
+  # ignore warnings
+  import warnings
+  warnings.filterwarnings('ignore');
+
+  # draw samples to create the grid
+  x = np.linspace(-2, 2, 50)
+  y = np.linspace(-2, 2, 50)
+  x,y = np.meshgrid(x,y)
+
+  # scalar function
+  z = x*np.exp(-1*(x**2 + y**2))
+
+  # plot 3d surface
+  fig = plt.figure(figsize = (6, 6))
+  ax = fig.gca(projection = '3d')
+  colors = plt.cm.jet(z*4)
+  ax.plot_surface(x, y, z, rstride=1, cstride=1, facecolors=colors, cmap=plt.cm.coolwarm, linewidth=1.4, alpha=0.8)
+  ax.set_title(r'$f(x, y)=x e^{-\left(x^{2}+y^{2}\right)}$', size=14);
+  
+```
