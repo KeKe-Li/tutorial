@@ -36,23 +36,23 @@ t-SNE是流形学习（Manifold Learning）分支下的一种模型。其实不�
 
 降维技术可以分为线性和非线性两大类：
 
-* 线性降维技术。侧重让不相似的点在低维表示中分开。
+线性降维技术。侧重让不相似的点在低维表示中分开。
 
-①PCA（Principle Components Analysis，主成分分析）.
+* PCA（Principle Components Analysis，主成分分析）.
 
-②MDS（Multiple Dimensional Scaling，多维缩放）等.
+* MDS（Multiple Dimensional Scaling，多维缩放）等.
 
-* 非线性降维技术（广义上“非线性降维技术”≈“流形学习”，狭义上后者是前者子集）。这类技术假设高维数据实际上处于一个比所处空间维度低的非线性流形上，因此侧重让相似的近邻点在低维表示中靠近。
+非线性降维技术（广义上“非线性降维技术”≈“流形学习”，狭义上后者是前者子集）。这类技术假设高维数据实际上处于一个比所处空间维度低的非线性流形上，因此侧重让相似的近邻点在低维表示中靠近。
 
-①Sammon mapping.
+* Sammon mapping.
 
-②SNE（Stochastic Neighbor Embedding，随机近邻嵌入），t-SNE是基于SNE的。
+* SNE（Stochastic Neighbor Embedding，随机近邻嵌入），t-SNE是基于SNE的。
 
-③Isomap（Isometric Mapping，等度量映射）.
+* Isomap（Isometric Mapping，等度量映射）.
 
-④MVU（Maximum Variance Unfolding）.
+* MVU（Maximum Variance Unfolding）.
 
-⑤LLE（Locally Linear Embedding，局部线性嵌入）等.
+* LLE（Locally Linear Embedding，局部线性嵌入）等.
 
 
 流形（manifold）：
@@ -114,6 +114,63 @@ t-SNE可以看做是SNE的改进，所以我们从SNE开始说起。SNE的核心
 
 
 相应的，在低维度我们做同样的处理，设 xi 在低维的映射是 yi ，则可以得到低维下拟合每对数据点相似度的条件概率 <img width="260" align="center" src="../../images/451.jpg" />。另外由于我们可以任意假设低维下数据点的分布，为了方便和好看就设置每个数据点的相似度分布（同样是高斯分布）的 <img width="260" align="center" src="../../images/452.jpg" /> 。于是有
+
+
+<p align="center">
+<img width="260" align="center" src="../../images/453.jpg" />
+</p>
+
+此时就很明朗了，如果 yi 和 yj 能真实反映 xi 和 xj 的关系，那么 pj|i 和 qj|i 就应该是完全相等的。我们对所有j计算条件概率，就能得到这个条件概率的完整分布 Pi 。同理可以得到低维下的分布 Qi 。我们的目标就是使两个分布尽量接近，自然而然想到了KL散度。于是SNE的代价函数就可以写出来了，用梯度下降求解即可。
+
+
+<p align="center">
+<img width="260" align="center" src="../../images/454.jpg" />
+</p>
+
+求梯度的过程参考softmax函数的梯度，这里不重要，省略过程。对 yi 求梯度得到:
+
+<p align="center">
+<img width="260" align="center" src="../../images/455.jpg" />
+</p>
+
+其实这个梯度是有一定物理意义的，可以把 yi 看做一个分子，它最终的受力方向是由所有其他分子对它的合力决定的。对其中一个分子j来说， (pj∣i−qj∣i+pi∣j−qi∣j) 决定了力的大小，(yi−yj) 决定了力的方向。在初始化中，可以用较小的 σ 下的高斯分布来进行初始化。为了加速优化过程和避免陷入局部最优解，梯度中需要使用一个相对较大的动量(momentum)。即参数更新中除了当前的梯度，还要引入之前的梯度累加的指数衰减项，如下:
+
+
+<p align="center">
+<img width="260" align="center" src="../../images/457.jpg" />
+</p>
+
+这里的 Y(t) 表示迭代t次的解，η 表示学习速率, α(t) 表示迭代t次的动量。另外SNE在超参数的选择上需要做多次优化才可以。
+
+
+#### 困惑度（Perplexity）
+
+刚才在构建 qj|i 时，我们假设已知了每个 xi 的高斯相似度分布的 σ 。那 σ 究竟应该怎么设置呢？SNE的唯一参数困惑度就是用来为每个数据点 xi 寻找合适的 σi 的。困惑度可以定义为:
+
+<p align="center">
+<img width="260" align="center" src="../../images/458.jpg" />
+</p>
+
+其中 H(Pi) 是 Pi 的香农熵。从直观上是可以理解这个式子的，数据越混乱，熵越大，为了使每个数据点的困惑度都满足给定的困惑度，就需要一个很大的 σi使高斯分布尽量平坦，这样得到的每个 pj|i 就更接近一些。实际上我们经常将Perp设置为近邻数，因为增大 σ 就相当于增加近邻数据点。困惑度通常会被设置为 5 - 50 之间，并且在这个范围内具有良好的鲁棒性。
+
+因为 σi 和 Perp(Pi)是线性相关的，所以当设置好Perp后，我们可以简单的用 Binary Search 去为每个高斯分布找一个对应的 σi 。
+
+#### Symmetric SNE
+
+SNE设计出来之后，效果其实并没有想象的那么好。在人们尝试着去寻找优化方案时发现了这样一个问题， pj|i 和 pi|j 是不对称的。这违背了相似度这个概念的初衷，Symmetric SNE 就是来解决这个问题的。
+
+Symmetric SNE 把条件概率转换为了联合概率去度量相似度，这样就确保了对称性。在实践中联合概率采用了一种简单直观的定义方式:
+
+<p align="center">
+<img width="260" align="center" src="../../images/459.jpg" />
+</p>
+
+其中n为数据点总数。这样定义既保证了对称性，又保证了每个点对总代价的贡献都不会太小（因为 ∑jpij≥12n ）。此外，由联合分布计算出的梯度拥有更简单的形式，计算效率更高了。
+
+<p align="center">
+<img width="260" align="center" src="../../images/460.jpg" />
+</p>
+
 
 
 
