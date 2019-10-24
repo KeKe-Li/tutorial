@@ -113,7 +113,7 @@ t-SNE可以看做是SNE的改进，所以我们从SNE开始说起。SNE的核心
 </p>
 
 
-相应的，在低维度我们做同样的处理，设 xi 在低维的映射是 yi ，则可以得到低维下拟合每对数据点相似度的条件概率 <img width="30" align="center" src="../../images/451.jpg" />。另外由于我们可以任意假设低维下数据点的分布，为了方便和好看就设置每个数据点的相似度分布（同样是高斯分布）的 <img width="30" align="center" src="../../images/452.jpg" /> 。于是有
+相应的，在低维度我们做同样的处理，设 xi 在低维的映射是 yi ，则可以得到低维下拟合每对数据点相似度的条件概率 <img width="60" align="center" src="../../images/451.jpg" />。另外由于我们可以任意假设低维下数据点的分布，为了方便和好看就设置每个数据点的相似度分布（同样是高斯分布）的 <img width="60" align="center" src="../../images/452.jpg" /> 。于是有
 
 
 <p align="center">
