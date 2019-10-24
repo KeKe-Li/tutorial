@@ -130,14 +130,14 @@ t-SNE可以看做是SNE的改进，所以我们从SNE开始说起。SNE的核心
 求梯度的过程参考softmax函数的梯度，这里不重要，省略过程。对 yi 求梯度得到:
 
 <p align="center">
-<img width="260" align="center" src="../../images/455.jpg" />
+<img width="300" align="center" src="../../images/455.jpg" />
 </p>
 
 其实这个梯度是有一定物理意义的，可以把 yi 看做一个分子，它最终的受力方向是由所有其他分子对它的合力决定的。对其中一个分子j来说， (pj∣i−qj∣i+pi∣j−qi∣j) 决定了力的大小，(yi−yj) 决定了力的方向。在初始化中，可以用较小的 σ 下的高斯分布来进行初始化。为了加速优化过程和避免陷入局部最优解，梯度中需要使用一个相对较大的动量(momentum)。即参数更新中除了当前的梯度，还要引入之前的梯度累加的指数衰减项，如下:
 
 
 <p align="center">
-<img width="260" align="center" src="../../images/457.jpg" />
+<img width="300" align="center" src="../../images/457.jpg" />
 </p>
 
 这里的 Y(t) 表示迭代t次的解，η 表示学习速率, α(t) 表示迭代t次的动量。另外SNE在超参数的选择上需要做多次优化才可以。
