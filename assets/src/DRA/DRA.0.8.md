@@ -165,7 +165,7 @@ Symmetric SNE 把条件概率转换为了联合概率去度量相似度，这样
 <img width="260" align="center" src="../../images/459.jpg" />
 </p>
 
-其中n为数据点总数。这样定义既保证了对称性，又保证了每个点对总代价的贡献都不会太小（因为 <img width="260" align="center" src="../../images/461.jpg" /> ）。此外，由联合分布计算出的梯度拥有更简单的形式，计算效率更高了。
+其中n为数据点总数。这样定义既保证了对称性，又保证了每个点对总代价的贡献都不会太小（因为 <img width="60" align="center" src="../../images/461.jpg" /> ）。此外，由联合分布计算出的梯度拥有更简单的形式，计算效率更高了。
 
 <p align="center">
 <img width="260" align="center" src="../../images/460.jpg" />
