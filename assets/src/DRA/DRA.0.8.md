@@ -54,7 +54,6 @@ t-SNE是流形学习（Manifold Learning）分支下的一种模型。其实不�
 
 * LLE（Locally Linear Embedding，局部线性嵌入）等.
 
-
 流形（manifold）：
 
 * 机器学习中指的流形指本征维度较低但嵌入在高维空间中的空间（a manifold haslow intrinsic dimensions, and is embedded within a space of much higher dimensionality）。比如上图中的S-curve数据集，本征维度=2（摊开来是一个二维空间），但被嵌在三维空间中。
@@ -72,7 +71,6 @@ t-SNE是流形学习（Manifold Learning）分支下的一种模型。其实不�
 * 神经网络学习参数；流形学习（以t-SNE为例）直接学习低维数据的表达。
 
 * 两者均有损失函数、梯度下降、迭代轮数等学习算法的特点。
-
 
 #### t-分布
 
@@ -113,7 +111,6 @@ t-SNE可以看做是SNE的改进，所以我们从SNE开始说起。SNE的核心
 </p>
 
 此时就很明朗了，如果 yi 和 yj 能真实反映 xi 和 xj 的关系，那么 pj|i 和 qj|i 就应该是完全相等的。我们对所有j计算条件概率，就能得到这个条件概率的完整分布 Pi 。同理可以得到低维下的分布 Qi 。我们的目标就是使两个分布尽量接近，自然而然想到了KL散度。于是SNE的代价函数就可以写出来了，用梯度下降求解即可。
-
 
 <p align="center">
 <img width="260" align="center" src="../../images/454.jpg" />
@@ -229,5 +226,3 @@ t-SNE得到的是局部最优解。因为KL散度是一个不对称的度量，�
 * 由于代价函数非凸，多次执行算法的结果是随机的（名字中“Stochatsic”的由来？），需要多次运行选取最好的结果。
 
 * 全局结构不能很清楚的保留。这个问题可以通过先用PCA降维到一个合理的维度（如50）后再用t-SNE来缓解，前置的PCA步骤也可以起到去除噪声等功能。（sklearn中可以直接使用参数init='pca'）.
-
-
