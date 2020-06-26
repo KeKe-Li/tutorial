@@ -194,7 +194,10 @@
 
 ### 机器学习
 
-如果觉得此文章不错，支持我的话可以给我star ，:star:！有问题也可以给我直接提issues,我会及时回复的.
+觉得此文章不错，支持我的话可以给我star ，:star:！ 如果有问题可以加我的微信,也可以加入我们的交流群一起交流技术！
+<p align="center">
+<img width="300" align="center" src="https://github.com/KeKe-Li/micro-Services-Tutorial/blob/master/src/images/12.jpg" />
+</p>
 
 ### License
 This is free software distributed under the terms of the MIT license
