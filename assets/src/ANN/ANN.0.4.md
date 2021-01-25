@@ -57,7 +57,7 @@ RNN主要解决序列数据的处理，比如文本、语音、视频等等。�
 <img width="380" align="center" src="../../images/297.jpg" />
 </p>
 
-把序列视作时间序列，隐含层h的自连接边实际上是和上一时刻的h相连.在每一个时刻t，<img width="60" align="center" src="../../images/299.jpg" />的取值是当前时刻的输入<img width="50" align="center" src="../../images/298.jpg" />,和上一时刻的隐含层值<img width="30" align="center" src="../../images/301.jpg" />的一个函数:
+把序列视作时间序列，隐含层h的自连接边实际上是和上一时刻的h相连.在每一个时刻t，<img width="60" align="center" src="../../images/299.jpg" />的取值是当前时刻的输入<img width="30" align="center" src="../../images/298.jpg" />,和上一时刻的隐含层值<img width="30" align="center" src="../../images/301.jpg" />的一个函数:
 
 <p align="center">
 <img width="380" align="center" src="../../images/300.jpg" />
