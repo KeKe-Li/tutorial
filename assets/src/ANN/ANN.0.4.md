@@ -40,6 +40,7 @@ RNN主要解决序列数据的处理，比如文本、语音、视频等等。�
 </p>
 
 当k=1时，模型变为:
+
 <p align="center">
 <img width="500" align="center" src="../../images/294.jpg" />
 </p>
@@ -56,7 +57,7 @@ RNN主要解决序列数据的处理，比如文本、语音、视频等等。�
 <img width="380" align="center" src="../../images/297.jpg" />
 </p>
 
-把序列视作时间序列，隐含层h的自连接边实际上是和上一时刻的h相连.在每一个时刻t，<img width="60" align="center" src="../../images/299.jpg" />的取值是当前时刻的输入<img width="50" align="center" src="../../images/298.jpg" />,和上一时刻的隐含层值<img width="30" align="center" src="../../images/301.jpg" />的一个函数:
+把序列视作时间序列，隐含层h的自连接边实际上是和上一时刻的h相连.在每一个时刻t，<img width="60" align="center" src="../../images/299.jpg" />的取值是当前时刻的输入<img width="30" align="center" src="../../images/298.jpg" />,和上一时刻的隐含层值<img width="30" align="center" src="../../images/301.jpg" />的一个函数:
 
 <p align="center">
 <img width="380" align="center" src="../../images/300.jpg" />
@@ -98,6 +99,7 @@ RNN训练困难的主要原因在于隐藏层参数w的传播：由于误差传�
 <p align="center">
 <img width="380" align="center" src="../../images/305.jpg" />
 </p>
+
 而对梯度消失问题，则有很多不同的方案：
 
 * 有效初始化+ReLU激活函数能够得到较好效果
@@ -106,7 +108,7 @@ RNN训练困难的主要原因在于隐藏层参数w的传播：由于误差传�
 * 在BPTT算法中加入skip connection，此时误差可以间歇的向前传播。
 * 加入一些Leaky Units，思路类似于skip connection
 
-LSTM 全称叫 Long Short-Term Memory networks，它和传统 RNN 唯一的不同就在与其中的神经元（感知机）的构造不同。传统的 RNN 每个神经元和一般神经网络的感知机没啥区别，但在 LSTM 中，每个神经元是一个“记忆细胞”（元胞状态，Cell State），将以前的信息连接到当前的任务中来。每个LSTM细胞里面都包含:
+LSTM 全称叫 `Long Short-Term Memory networks`，它和传统 RNN 唯一的不同就在与其中的神经元（感知机）的构造不同。传统的 RNN 每个神经元和一般神经网络的感知机没啥区别，但在 LSTM 中，每个神经元是一个“记忆细胞”（元胞状态，Cell State），将以前的信息连接到当前的任务中来。每个LSTM细胞里面都包含:
 
 * 输入门（input gate）: 一个Sigmoid层，观察<img width="60" align="center" src="../../images/299.jpg" />和<img width="50" align="center" src="../../images/298.jpg" />,对于元胞状态<img width="50" align="center" src="../../images/306.jpg" />中的每一个元素，输出一个0~1之间的数。1表示“完全保留该信息”，0表示“完全丢弃该信息”：
 
@@ -146,6 +148,7 @@ LSTM 全称叫 Long Short-Term Memory networks，它和传统 RNN 唯一的不�
 如果我们把LSTM的forget gate全部置0（总是忘记之前的信息），input gate全部 置1，output gate全部置1（把cell state中的信息全部输出），这样LSTM就变成一个标准的RNN。
 
 目前 LSTM 模型在实践中取得了非常好的效果， 只需要训练一个两三层的LSTM, 它就可以:
+
 * 模仿保罗·格雷厄姆进行写作
 * 生成维基百科的 markdown 页面
 * 手写识别
