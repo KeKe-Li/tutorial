@@ -105,40 +105,36 @@ LLM 无疑将提高 Alexa、Google Assistant 和 Siri 等自动虚拟助手的�
 
 #### 学习大语言模型指南
 
-* 入门篇：
+1. 入门篇：
 
-1. 了解大语言模型的基础知识和常见术语。
+* 了解大语言模型的基础知识和常见术语。
+* 学会使用编程语言访问 OpenAI API 等常见大语言模型接口。
 
-2. 学会使用编程语言访问 OpenAI API 等常见大语言模型接口。
+2. 提高篇：
 
-* 提高篇：
+* 了解机器学习、神经网络、NLP 的基础知识。
+* 了解 Transformer 以及典型 Decoder-only 语言模型的基础结构和简单原理。
+* 了解大语言模型发展历史，以及业界主流模型（含开源模型）进展。
 
-1. 了解机器学习、神经网络、NLP 的基础知识。
-2. 了解 Transformer 以及典型 Decoder-only 语言模型的基础结构和简单原理。
-3. 了解大语言模型发展历史，以及业界主流模型（含开源模型）进展。
+3. 应用篇：
 
-* 应用篇：
+*  可以在本地环境搭建开源模型的推理环境。
+* Prompt 工程。
+* 使用已有框架（如Langchain）或自行开发，结合大语言模型结果，开发生产应用。
 
-1. 可以在本地环境搭建开源模型的推理环境。
-2. Prompt 工程。
-3. 使用已有框架（如Langchain）或自行开发，结合大语言模型结果，开发生产应用。
+4. 深入篇：
 
-* 深入篇：（本文涉及少量资料）
-
-1. 掌握 Continue Pre-train、Fine-tuning 已有开源模型的能力。
-2. 掌握 Lora、QLora 等低资源高效模型训练的能力。
-3. 掌握大语言模型微调以及预训练数据准备的能力。
-4. 深入了解大模型背后的技术原理。
-5. 了解生产环境部署大模型的相关技术点。
+* 掌握 Continue Pre-train、Fine-tuning 已有开源模型的能力。
+* 掌握 Lora、QLora 等低资源高效模型训练的能力。
+* 掌握大语言模型微调以及预训练数据准备的能力。
+* 深入了解大模型背后的技术原理。
+* 了解生产环境部署大模型的相关技术点。
 
 #### 学习资料
 
 1. 入门篇
 
 * [大语言模型](https://github.com/RUCAIBox/LLMSurvey)
-
-Prompt 工程:
-
 * [ChatGPT Prompt Engineering for Developers](https://learn.deeplearning.ai/courses/chatgpt-prompt-eng/lesson/1/introduction)
 * [Prompt中英双语字幕](https://github.com/GitHubDaily/ChatGPT-Prompt-Engineering-for-Developers-in-Chinese)
 * [OpenAI 官方 Quickstart 文档](https://platform.openai.com/docs/api-reference)
