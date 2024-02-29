@@ -188,7 +188,7 @@
 
 借助转换器神经网络架构，您可使用非常大规模的模型，其中通常具有数千亿个参数。这种大规模模型可以摄取通常来自互联网的大量数据，但也可以从包含 500 多亿个网页的 Common Crawl 和拥有约 5700 万个页面的 Wikipedia 等来源摄取数据。
 
-* [走进大语言模型LLM)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/LLM/llm.0.1.md)
+* [走进大语言模型LLM)](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/LLM/llm.md)
 
 #### 机器学习的基础
 
