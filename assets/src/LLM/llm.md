@@ -30,7 +30,7 @@ LightOn 的 Paradigm 提供根基模型，并且宣称该模型的功能超过 G
 Timeline of LLMs:
 
 <p align="center">
-<img width="400" align="center" src="../../images/467.jpg" />
+<img width="700" align="center" src="../../images/467.jpg" />
 </p>
 
 #### 大型语言模型如何运作？
