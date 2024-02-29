@@ -130,3 +130,17 @@ LLM 无疑将提高 Alexa、Google Assistant 和 Siri 等自动虚拟助手的�
 3. 掌握大语言模型微调以及预训练数据准备的能力。
 4. 深入了解大模型背后的技术原理。
 5. 了解生产环境部署大模型的相关技术点。
+
+#### 学习资料
+
+1. 入门篇
+
+* [大语言模型](https://github.com/RUCAIBox/LLMSurvey)
+
+Prompt 工程:
+
+* [ChatGPT Prompt Engineering for Developers](https://learn.deeplearning.ai/courses/chatgpt-prompt-eng/lesson/1/introduction)
+* [Prompt中英双语字幕](https://github.com/GitHubDaily/ChatGPT-Prompt-Engineering-for-Developers-in-Chinese)
+* [OpenAI 官方 Quickstart 文档](https://platform.openai.com/docs/api-reference)
+* [GPT的训练和应用](https://www.youtube.com/watch?v=bZQun8Y4L2A)
+* [GPT的训练和应用稳定](https://karpathy.ai/stateofgpt.pdf)
