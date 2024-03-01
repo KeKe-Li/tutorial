@@ -140,3 +140,13 @@ LLM 无疑将提高 Alexa、Google Assistant 和 Siri 等自动虚拟助手的�
 * [OpenAI 官方 Quickstart 文档](https://platform.openai.com/docs/api-reference)
 * [GPT的训练和应用](https://www.youtube.com/watch?v=bZQun8Y4L2A)
 * [GPT的训练和应用稳定](https://karpathy.ai/stateofgpt.pdf)
+
+
+2. 提高篇
+* [清华大模型公开课](https://www.bilibili.com/video/BV1UG411p7zv/?vd_source=66c6e275fb1f3c8315a531e1a1b051d8) ,从NLP到大模型的综合课程。
+* [深度学习：台湾大学李宏毅](https://www.bilibili.com/video/BV1J94y1f7u5/)
+* [The Illustrated GPT-2 (Visualizing Transformer Language Models](https://jalammar.github.io/illustrated-gpt2/),图解 GPT2 。
+* [图解 GPT2 中文翻译](https://zhuanlan.zhihu.com/p/139840113)
+* [InstructGPT: Training language models to follow instructions with human feedback](https://cdn.openai.com/papers/Training_language_models_to_follow_instructions_with_human_feedback.pdf), 著名的 InstructGPT 论文。
+* [RLHF技术详解](https://huggingface.co/blog/zh/rlhf)
+* [NLP 入门课程](https://huggingface.co/learn/nlp-course/chapter1/1)
