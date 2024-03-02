@@ -150,3 +150,14 @@ LLM 无疑将提高 Alexa、Google Assistant 和 Siri 等自动虚拟助手的�
 * [InstructGPT: Training language models to follow instructions with human feedback](https://cdn.openai.com/papers/Training_language_models_to_follow_instructions_with_human_feedback.pdf), 著名的 InstructGPT 论文。
 * [RLHF技术详解](https://huggingface.co/blog/zh/rlhf)
 * [NLP 入门课程](https://huggingface.co/learn/nlp-course/chapter1/1)
+
+3. 应用篇
+
+* [Building Systems with the ChatGPT API](https://learn.deeplearning.ai/courses/chatgpt-building-system/lesson/1/introduction)
+* [使用 ChatGPT API 构建系统](https://www.bilibili.com/video/BV1gj411X72B/)
+* [Langchain 是大语言模型框架](https://python.langchain.com/docs/get_started/introduction)
+* [LangChain for LLM Application Development](https://learn.deeplearning.ai/courses/langchain/lesson/1/introduction)
+* [LLM应用开发实践](https://www.bilibili.com/video/BV1Ku411x78m/?vd_source=66c6e275fb1f3c8315a531e1a1b051d8)
+* [OpenAI 官方出的最佳实践](https://platform.openai.com/docs/guides/gpt-best-practices/gpt-best-practices)
+* [OpenAI 官方 Cookbook](https://github.com/openai/openai-cookbook)
+* [Prompt 工程简介](https://github.com/brexhq/prompt-engineering)
