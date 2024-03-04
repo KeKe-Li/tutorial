@@ -161,3 +161,11 @@ LLM 无疑将提高 Alexa、Google Assistant 和 Siri 等自动虚拟助手的�
 * [OpenAI 官方出的最佳实践](https://platform.openai.com/docs/guides/gpt-best-practices/gpt-best-practices)
 * [OpenAI 官方 Cookbook](https://github.com/openai/openai-cookbook)
 * [Prompt 工程简介](https://github.com/brexhq/prompt-engineering)
+
+
+4. 深入篇
+
+* [Transformer 官方文档](https://huggingface.co/docs/transformers/index)
+* [大语言模型的北极星能力](https://yaofu.notion.site/6dafe3f8d11445ca9dcf8a2ca1c5b199)
+* [GPT，GPT-2，GPT-3 论文精读](https://www.bilibili.com/video/BV1AF411b7xQ/)
+* [在生产环境中构建 LLM 应用](https://huyenchip.com/2023/04/11/llm-engineering.html)
