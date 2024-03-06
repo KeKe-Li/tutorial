@@ -154,7 +154,7 @@ LLM 无疑将提高 Alexa、Google Assistant 和 Siri 等自动虚拟助手的�
 3. 应用篇
 
 * [Building Systems with the ChatGPT API](https://learn.deeplearning.ai/courses/chatgpt-building-system/lesson/1/introduction)
-* [使用 ChatGPT API 构建系统](https://www.bilibili.com/video/BV1gj411X72B/)
+* [使用ChatGPT API构建系统](https://www.bilibili.com/video/BV1gj411X72B/)
 * [Langchain 是大语言模型框架](https://python.langchain.com/docs/get_started/introduction)
 * [LangChain for LLM Application Development](https://learn.deeplearning.ai/courses/langchain/lesson/1/introduction)
 * [LLM应用开发实践](https://www.bilibili.com/video/BV1Ku411x78m/?vd_source=66c6e275fb1f3c8315a531e1a1b051d8)
