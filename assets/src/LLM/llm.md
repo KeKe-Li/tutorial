@@ -143,6 +143,7 @@ LLM 无疑将提高 Alexa、Google Assistant 和 Siri 等自动虚拟助手的�
 
 
 2. 提高篇
+
 * [清华大模型公开课:从NLP到大模型的综合课程](https://www.bilibili.com/video/BV1UG411p7zv/?vd_source=66c6e275fb1f3c8315a531e1a1b051d8) 
 * [深度学习：台湾大学李宏毅](https://www.bilibili.com/video/BV1J94y1f7u5/)
 * [The Illustrated GPT-2 (Visualizing Transformer Language Models](https://jalammar.github.io/illustrated-gpt2/)
