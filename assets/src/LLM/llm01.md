@@ -45,3 +45,32 @@ LLM 还擅长内容生成，可以自动创建内容，包括博客文章、营�
 
 LLM 将通过实现客户自助服务自动化、加快对越来越多任务的响应以及提高准确性、增强路由和智能上下文收集，影响从金融到保险、人力资源到医疗保健等各个行业。
 
+#### 增加大语言模型推理能力的方案
+
+目前，推理的方案与构建通用大型语言模型和聊天机器人的方案密切相关。总共有三个阶段：
+
+- 预训练或持续训练：在这个阶段，我们通常在大型数据集（如科学文献或代码数据）上训练大型模型。
+- 有监督微调：在这个阶段，我们对模型进行微调，以便完成复杂任务的指令。
+- 强化学习：在这个阶段，我们使用诸如任务是否已全部/部分完成的信号作为奖励。
+
+因此，在我们的文献分析中，我们同时考虑推理和编码。我们将看到，就学习方法而言，这两者之间存在惊人的相关性。
+
+* 预训练与持续训练
+
+分析以下几项研究：
+
+1. Lewkowycz et. al. 2022. Minerva: [Solving Quantitative Reasoning Problems with Language Models](https://arxiv.org/abs/2206.14858)
+
+* 在来自 Arxiv 论文的 38.5B 的 token 上继续训练 PaLM 540B。 
+* 在 MATH （一个需要使用 LaTeX 格式回答问题的困难数据集），上的得分为 33.6（[GPT-4 的得分是 42.5](https://github.com/FranxYao/chain-of-thought-hub)）
+
+2. Taylor et. al. 2022. [Galactica: A Large Language Model for Science](https://arxiv.org/abs/2211.09085)
+
+* 在包含论文、代码、参考资料、知识库和其他内容的 106B token 上预训练一个120B语言模型。
+* 在MATH上的表现为 20.4（Minerva 33.6，GPT-4 42.5） 
+ 
+3. Chen et. al. 2021. [Codex: Evaluating Large Language Models Trained on Code](https://arxiv.org/abs/2107.03374)
+
+* 在159GB代码数据上继续训练 12B GPT-3 模型，提高了 HumanEval 数据集上的代码性能。
+
+这些研究发现，在大量科学文献代码上进行训练可以显著提高基础模型的推理编码能力。
