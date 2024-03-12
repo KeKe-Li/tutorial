@@ -74,3 +74,11 @@ LLM 将通过实现客户自助服务自动化、加快对越来越多任务的�
 * 在159GB代码数据上继续训练 12B GPT-3 模型，提高了 HumanEval 数据集上的代码性能。
 
 这些研究发现，在大量科学文献代码上进行训练可以显著提高基础模型的推理编码能力。
+
+####  监督微调
+
+1.  Chung et. al. 2022. [Scaling Instruction-Finetuned Language Models](https://arxiv.org/abs/2210.11416)
+- 使用多样化的指令显著提高了模型零样本泛化的能力
+- 在指令集合中混合思维链数据（[the flan collection](https://arxiv.org/abs/2301.13688) 文章中进一步讨论了这个问题）明显提高了模型的思维链能力
+- 注意：尽管 the flan collection 数据集从多个维度激发了基础模型的能力，但这些指令并非来自真实的聊天机器人用户互动，因此可能无法直接转化为更好的聊天性能。
+
