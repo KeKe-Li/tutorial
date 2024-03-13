@@ -78,7 +78,24 @@ LLM 将通过实现客户自助服务自动化、加快对越来越多任务的�
 ####  监督微调
 
 1.  Chung et. al. 2022. [Scaling Instruction-Finetuned Language Models](https://arxiv.org/abs/2210.11416)
+
 - 使用多样化的指令显著提高了模型零样本泛化的能力
 - 在指令集合中混合思维链数据（[the flan collection](https://arxiv.org/abs/2301.13688) 文章中进一步讨论了这个问题）明显提高了模型的思维链能力
-- 注意：尽管 the flan collection 数据集从多个维度激发了基础模型的能力，但这些指令并非来自真实的聊天机器人用户互动，因此可能无法直接转化为更好的聊天性能。
+- 注意：尽管 the flan collection 数据集从多个维度激发了基础模型的能力，但这些指令并非来自真实的聊天机器人用户互动，因此可能[无法直接转化为更好的聊天性能](https://www.yitay.net/blog/flan-ul2-20b)。
 
+2. Fu et. al. 2023. [Specializing Smaller Language Models towards Multi-Step Reasoning](https://arxiv.org/abs/2301.12726)
+
+- 将思维链推理能力提炼到较小规模（小于或等于 10B）的模型。通常，10B 规模的模型非常适合部署（更大的模型太贵了，更小的模型太弱了）。
+- 本文讨论了很多工程细节，如数据工程、能力平衡以及小型和大型模型之间的差异
+
+3.  [Li et. al. 2022. Competition-Level Code Generation with AlphaCode](https://arxiv.org/abs/2203.07814)
+
+- 在 715GB 的 GitHub 代码上预训练一个 41B 模型，然后在包含 13k 问题的 CodeContest 数据集上进行微调
+- 在测试期间，使用采样并根据是否通过示例测试来过滤解决方案。从某种意义上说，这种做法类似于推理问题中的 [self-consistency](https://arxiv.org/abs/2203.11171) 方法。
+
+
+目前关于指令微调的理解是：
+
+- 通过使用对话格式的数据，将基本模型调优为聊天机器人相对容易（参见像 Alpaca 和 MOSS 这样的优秀示例）。然而，闲聊的能力并不能转化为执行复杂任务的能力。从这个角度来看，模型就像人类一样：说得多不如干得好，代码见真章。
+- 实际上，指令调优问题是一个数据混合问题：如何最好地混合来自不同来源的指令数据，以便从所有角度均匀地提高模型性能（而不是像在 [CoT specialization](https://arxiv.org/abs/2301.12726) 和 [the flan collection](https://arxiv.org/abs/2301.13688) 中讨论的那样，增加一个维度但降低另一个维度）。
+- 数据混合的简单起点是：使用 10-20 个非思维链的数据点（以平衡不同维度的能力），但尽可能多地使用链式思维数据（以最大化推理能力）。
