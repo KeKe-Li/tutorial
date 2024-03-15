@@ -99,3 +99,14 @@ LLM 将通过实现客户自助服务自动化、加快对越来越多任务的�
 - 通过使用对话格式的数据，将基本模型调优为聊天机器人相对容易（参见像 Alpaca 和 MOSS 这样的优秀示例）。然而，闲聊的能力并不能转化为执行复杂任务的能力。从这个角度来看，模型就像人类一样：说得多不如干得好，代码见真章。
 - 实际上，指令调优问题是一个数据混合问题：如何最好地混合来自不同来源的指令数据，以便从所有角度均匀地提高模型性能（而不是像在 [CoT specialization](https://arxiv.org/abs/2301.12726) 和 [the flan collection](https://arxiv.org/abs/2301.13688) 中讨论的那样，增加一个维度但降低另一个维度）。
 - 数据混合的简单起点是：使用 10-20 个非思维链的数据点（以平衡不同维度的能力），但尽可能多地使用链式思维数据（以最大化推理能力）。
+
+#### 强化学习 
+
+我们分析：
+
+- Uesato. et. al. 2022. [Solving math word problems with process- and outcome-based feedback](https://arxiv.org/abs/2211.14275)
+    - 基于中间推理和最终推理结果构建奖励模型。
+- Le et. al. 2022. [CodeRL: Mastering Code Generation through Pretrained Models and Deep Reinforcement Learning](https://arxiv.org/abs/2207.01780)
+    - 根据诸如编译错误、运行时错误或是否通过测试等信号训练奖励模型。
+
+这两项工作都使用中间信号（对于推理，看中间步骤是否正确；对于编码，看代码是否编译）和最终信号作为奖励。 需要注意的是，这种类型的强化学习与基于人类反馈的强化学习（RLHF）有所不同，因为它不需要人类反馈。
