@@ -141,3 +141,28 @@ LLM 将通过实现客户自助服务自动化、加快对越来越多任务的�
 - 在有监督的微调阶段，可以根据要求完成复杂任务的指令或编写代码对模型进行微调
 - 在强化学习阶段，将中间推理步骤 / 编译率和最终推理结果 / 代码通过率作为奖励
 - 在解码过程中，推理和编码都会采样多个解决方案，然后从解码空间中选择最佳方案。
+
+#### 复杂推理的提示工程
+
+* 基础思维链提示工程
+
+推荐给初学者：
+
+- Wei et. al. 2022. [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903).
+  - 本文是第一篇发现当使用链式思维进行提示时，存在一个相变现象，表明大型模型在很大程度上优于较小的模型，这进一步导致了[涌现能力](https://arxiv.org/abs/2206.07682)的发现。
+- Wang et. al. 2022. [Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://arxiv.org/abs/2203.11171)
+  - 对采样的 CoT 推理路径进行多数投票，显著提高了推理性能。
+- Suzgun et. al. 2022. [Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them](https://arxiv.org/abs/2210.09261)
+  - 使用 CoT 处理 big-bench 中困难的任务。这篇论文的一个有意义的副产品是 BigBench Hard 数据集，它在测试模型推理能力方面非常有效。
+
+
+* 进阶技巧及分析
+
+高级 CoT 提示实践：
+
+- Fu et. al. 2023. [Complexity-Based Prompting for Multi-Step Reasoning](https://arxiv.org/abs/2210.00720)
+  - 使用复杂链代替简单链作为上下文示例
+- Khot et. al. 2023. [Decomposed Prompting: A Modular Approach for Solving Complex Tasks](https://arxiv.org/abs/2210.02406)
+  - 将复杂任务分解为更简单的任务，然后逐个解决
+
+通常，对于复杂任务，首先将其分解为更简单的任务，然后逐步解决更简单的任务。
