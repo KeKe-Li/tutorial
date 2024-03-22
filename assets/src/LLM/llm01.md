@@ -167,7 +167,7 @@ LLM 将通过实现客户自助服务自动化、加快对越来越多任务的�
 
 通常，对于复杂任务，首先将其分解为更简单的任务，然后逐步解决更简单的任务。
 
-以下论文讨论了**上下文学习为什么起作用**：
+以下论文讨论了上下文学习为什么起作用：
 
 - Xie et. al. 2021. [An Explanation of In-context Learning as Implicit Bayesian Inference](https://arxiv.org/abs/2111.02080)
   - 语言模型在提示中的示例之间推断出一个潜在概念，并进入相应的任务模式
