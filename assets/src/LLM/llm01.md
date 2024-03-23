@@ -177,7 +177,16 @@ LLM 将通过实现客户自助服务自动化、加快对越来越多任务的�
 简而言之，上下文学习的要点是提示中的示例使模型进入相应的任务模式，然后执行任务。
 
 
+以下论文讨论了**模型在进行思维链推理时的行为**：
 
+- Min et. al. 2022. [Rethinking the Role of Demonstrations: What Makes In-Context Learning Work](https://arxiv.org/abs/2202.12837)
+  - 当某些标签错误时，模型仍然可以做出正确的预测。这表明模型更受提示的 [格式] 影响，而不是提示的 [意义] 。
+- Wang et. al. 2022. [Towards Understanding Chain-of-Thought Prompting: An Empirical Study of What Matters](https://arxiv.org/abs/2212.10001)
+  - 即使提示中的推理错误，模型仍然可以正确推理，但提示的相关性和推理步骤的顺序更为重要 —— 这再次表明，模型更受提示的 [格式] 影响，而不是提示的[意义]。
+- Madaan and Yazdanbakhsh. 2022. [Text and Patterns: For Effective Chain of Thought, It Takes Two to Tango](https://arxiv.org/abs/2209.07686).
+  - 详细分析显示，提示的格式可以改善 CoT 推理（虽然内容的正确性可能不起到强烈作用）
+
+因此呢，模型只关注提示的格式，但可能不会受到提示正确性的显著影响。然而，模型在多大程度上会受到提示正确性的影响，或者提示可以在[多大程度上覆盖模型的先验信念](https://arxiv.org/abs/2303.03846)，还是一个尚待研究的问题。
 
 
 
