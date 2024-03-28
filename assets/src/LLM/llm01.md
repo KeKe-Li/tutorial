@@ -231,3 +231,9 @@ LLM 将通过实现客户自助服务自动化、加快对越来越多任务的�
 - 对于推理，链式思维比仅回答表现得更好（参见原始 [CoT 论文](https://arxiv.org/abs/2201.11903)，然后参见 [FlanPaLM论文](https://arxiv.org/abs/2210.11416)
 
 在实践中，因为 CoT 在达到或优于 Answer-only 的表现，而且 CoT 更加用户友好（因为它告诉用户思考过程），现代聊天机器人总是部署 CoT（无论你问 ChatGPT 什么，它都会告诉你一堆它的想法）。
+
+
+最后，在评估方面，我们区分了两种类型的模型：预训练之后的 checkpoint 和指令微调之后的 checkpoint。
+
+1. 预训练 checkpoint 具有 in-context learning 的能力。大多数预训练模型可以进行 in-context answer-only，一些更好的模型可以进行 in-context chain-of-thought（但目前尚不清楚为什么某些预训练模型可以进行 CoT 而其他模型却不能）。然而，预训练 checkpoint 可能无法进行 zero-shot，因为它们没有经过这方面的训练（但某些预训练检查点仍然可以进行 zero-shot CoT，请参阅 “[让我们逐步思考(https://arxiv.org/abs/2205.11916)” 的论文）。 
+2. 指令微调过后的 checkpoint 既具有 zero-shot 又有 in-context 的能力。这里需要注意的是，如果没调好，指令微调之后 in-context 性能可能会[稍有下降](https://arxiv.org/abs/2203.02155)。
