@@ -244,3 +244,43 @@ LLM 将通过实现客户自助服务自动化、加快对越来越多任务的�
 
 - In-context 是评估 pretrained checkpoint 的更好方法，因为它更好地揭示了模型潜力。Zero-shot 可能低估模型性能，尤其是对于不支持 Zero-shot chain-of-thought 的（“让我们逐步思考”）的模型。
 - Chain-of-thought prompting 是评估推理能力的更好方法，因为它比 answer-only prompting 更充分地发挥了模型的推理性能。
+
+#### Chain-of-thought Hub 简介
+
+在讨论了所有评估基础知识之后，这里在介绍 Chain-of-thought Hub，这是一个正在进行的工作，希望成为评估语言模型推理能力的统一平台。他们汇编了一个包括数学（GSM8K）、科学（MATH）、符号（BBH）、知识（MMLU）等复杂推理任务的列表，以衡量哪些模型确实更好。
+
+下面是当前的排行榜。尽管许多数字还没跑出来，但当前的内容仍然能给一个大概的模型排名：
+
+<p align="center">
+<img width="700" align="center" src="../../images/469.jpg" />
+</p>
+
+
+总的来说：
+
+- 我们根据 GSM8K 对模型性能进行排名，这是一个经典的基准测试，用于衡量链式思维数学推理性能。这不是唯一的度量标准，但一个很好的解释是 “在保持其他通用能力的同时，模型在数学方面的表现如何” —— 这也非常困难。
+- GPT-4 在 GSM8K 和 MMLU 上明显优于所有其他模型。
+- 65B LLaMA 与 text/code-davinci-002 非常接近，这意味着基于它，如果 SFT 和 RLHF 操作正确，我们很有可能基于 65B LLaMA 复现 ChatGPT。
+- Claude 是唯一可以与 GPT 系列相媲美的模型家族。
+- 较小的模型，如 FlanT5 11B 和 LLaMA 7B，明显落后于排行榜，这意味着复杂推理可能只是大型模型的能力。
+
+进一步地，在 github 仓库中，我们包括了：
+
+- 详细的实验设置和结果分析
+- 用于重现 GPT 和 Claude 所有结果的脚本
+
+因此，在上面我们讨论了大型语言模型的推理能力。复杂推理不仅仅是因为它是更强模型与更弱模型之间的核心区分点，而且它还是模型成为下一代计算平台或者操作系统的基础能力，从而有可能在大模型上建立一个新的生态系统。
+
+我们讨论了构建具有强大推理能力的模型的方法：预训练、有监督的微调和强化学习。我们发现提高推理能力的方法与提高代码能力的方法密切相关，这加深了我们先前关于推理与代码之间密切关系的假设。我们进一步讨论了高级提示工程技巧和在执行复杂推理时模型行为的分析。
+
+最后，我们讨论了如何评估模型的推理能力，并介绍了 chain-of-thought hub，这是一个正在进行的项目，旨在统一评估语言模型的推理性能。
+
+希望这篇文章能成为构建具有强大推理能力的开源模型的路线图。
+
+
+#### 更多大语言模型推理的相关资源
+
+* [Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
+* [Microsoft Semantic Kernel ](https://github.com/microsoft/semantic-kernel)
+* [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
+* [Towards Reasoning in Large Language Models: A Survey](https://arxiv.org/abs/2212.10403)
