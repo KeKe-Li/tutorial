@@ -235,7 +235,7 @@ LLM 将通过实现客户自助服务自动化、加快对越来越多任务的�
 1. 预训练 checkpoint 具有 in-context learning 的能力。大多数预训练模型可以进行 in-context answer-only，一些更好的模型可以进行 in-context chain-of-thought（但目前尚不清楚为什么某些预训练模型可以进行 CoT 而其他模型却不能）。然而，预训练 checkpoint 可能无法进行 zero-shot，因为它们没有经过这方面的训练（但某些预训练检查点仍然可以进行 zero-shot CoT，请参阅 “[让我们逐步思考(https://arxiv.org/abs/2205.11916)” 的论文）。 
 2. 指令微调过后的 checkpoint 既具有 zero-shot 又有 in-context 的能力。这里需要注意的是，如果没调好，指令微调之后 in-context 性能可能会[稍有下降](https://arxiv.org/abs/2203.02155)。
 
-最后，在评估方面，我们区分了两种类型的模型：预训练之后的 checkpoint 和指令微调之后的 checkpoint。
+最后，在评估方面，这里区分了两种类型的模型：预训练之后的 checkpoint 和指令微调之后的 checkpoint。
 
 - 预训练 checkpoint 具有 in-context learning 的能力。大多数预训练模型可以进行 in-context answer-only，一些更好的模型可以进行 in-context chain-of-thought（但目前尚不清楚为什么某些预训练模型可以进行 CoT 而其他模型却不能）。然而，预训练 checkpoint 可能无法进行 zero-shot，因为它们没有经过这方面的训练（但某些预训练检查点仍然可以进行 zero-shot CoT，请参阅 “让我们逐步思考” 的论文）。
 - 指令微调过后的 checkpoint 既具有 zero-shot 又有 in-context 的能力。这里需要注意的是，如果没调好，指令微调之后 in-context 性能可能会稍有下降。
@@ -258,7 +258,7 @@ LLM 将通过实现客户自助服务自动化、加快对越来越多任务的�
 
 总的来说：
 
-- 我们根据 GSM8K 对模型性能进行排名，这是一个经典的基准测试，用于衡量链式思维数学推理性能。这不是唯一的度量标准，但一个很好的解释是 “在保持其他通用能力的同时，模型在数学方面的表现如何” —— 这也非常困难。
+- 根据 GSM8K 对模型性能进行排名，这是一个经典的基准测试，用于衡量链式思维数学推理性能。这不是唯一的度量标准，但一个很好的解释是 “在保持其他通用能力的同时，模型在数学方面的表现如何” —— 这也非常困难。
 - GPT-4 在 GSM8K 和 MMLU 上明显优于所有其他模型。
 - 65B LLaMA 与 text/code-davinci-002 非常接近，这意味着基于它，如果 SFT 和 RLHF 操作正确，我们很有可能基于 65B LLaMA 复现 ChatGPT。
 - Claude 是唯一可以与 GPT 系列相媲美的模型家族。
