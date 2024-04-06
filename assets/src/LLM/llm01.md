@@ -240,7 +240,7 @@ LLM 将通过实现客户自助服务自动化、加快对越来越多任务的�
 - 预训练 checkpoint 具有 in-context learning 的能力。大多数预训练模型可以进行 in-context answer-only，一些更好的模型可以进行 in-context chain-of-thought（但目前尚不清楚为什么某些预训练模型可以进行 CoT 而其他模型却不能）。然而，预训练 checkpoint 可能无法进行 zero-shot，因为它们没有经过这方面的训练（但某些预训练检查点仍然可以进行 zero-shot CoT，请参阅 “让我们逐步思考” 的论文）。
 - 指令微调过后的 checkpoint 既具有 zero-shot 又有 in-context 的能力。这里需要注意的是，如果没调好，指令微调之后 in-context 性能可能会稍有下降。
 
-综上所述，我们建议使用 in-context chain-of-thought 进行评估：
+综上所述，我们建议使用 in-context 和 chain-of-thought 进行评估：
 
 - In-context 是评估 pretrained checkpoint 的更好方法，因为它更好地揭示了模型潜力。Zero-shot 可能低估模型性能，尤其是对于不支持 Zero-shot chain-of-thought 的（“让我们逐步思考”）的模型。
 - Chain-of-thought prompting 是评估推理能力的更好方法，因为它比 answer-only prompting 更充分地发挥了模型的推理性能。
